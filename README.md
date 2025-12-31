@@ -21,7 +21,7 @@ Focus su **UI moderna**, **responsive design** e componenti riutilizzabili.
 ## 📸 Preview
 > Metti uno screenshot della homepage in `assets/images/portfolio-preview.jpg` e verrà mostrato qui:
 
-![Portfolio Preview](assets/images/portfolio-preview.jpg)
+![Portfolio Preview](assets/images/portfolio-preview.png)
 
 
 ## 📂 Struttura
