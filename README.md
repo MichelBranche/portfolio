@@ -19,7 +19,6 @@ Focus su **UI moderna**, **responsive design** e componenti riutilizzabili.
 > Aggiungerò altri progetti man mano che procedo con lo studio e con il mio percorso da frontend developer.
 
 ## 📸 Preview
-> Metti uno screenshot della homepage in `assets/images/portfolio-preview.jpg` e verrà mostrato qui:
 
 ![Portfolio Preview](assets/images/portfolio-preview.png)
 
