@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo — Hotel</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="./demo.js" defer></script>
+</head>
+
+<body data-page="hotel">
+
+  <header class="page-header">
+    <div class="container">
+      <a class="back-link" href="index.html#biz-demos">← Torna al portfolio</a>
+      <h1 class="page-title">Demo — Hotel</h1>
+
+      <p class="page-sub">
+        Feature specifica: <strong>selezione camera</strong> + <strong>preventivo automatico</strong> in modale (demo).
+      </p>
+
+      <div class="demo-hero">
+        <img src="assets/images/hotel.jpg" alt="Hotel demo hero">
+
+        <div class="demo-body">
+
+          <div class="cta-row">
+            <button class="btn btn-primary" data-open-modal="modal-hotel">Richiedi preventivo</button>
+            <!-- IMPORTANTE: questo deve essere un <a>, non un button -->
+            <a class="btn btn-ghost" href="#camere">Vedi camere</a>
+          </div>
+
+          <!-- FEEDBACK VISIVO: qui vedi subito cosa hai selezionato -->
+          <div class="notice">
+            Camera selezionata: <strong id="hotel-picked">Standard</strong>
+            <span style="color: var(--muted); font-weight: 800;">(clicca una camera sotto)</span>
+          </div>
+
+          <section class="panel" id="camere">
+            <h3>Seleziona una camera</h3>
+            <p style="color: var(--muted); font-weight: 800;">Clicca una card per selezionare (si evidenzia).</p>
+
+            <div class="demo-grid-2" style="margin-top: 12px;">
+              <!-- NOTA: uso BUTTON per click “sicuro” -->
+              <button type="button" class="demo-item is-active" data-room="Standard" data-price="120">
+                <h4>Standard</h4>
+                <p>2 ospiti · wifi · colazione opzionale</p>
+                <div class="demo-row"><span class="badge">€120/notte</span></div>
+              </button>
+
+              <button type="button" class="demo-item" data-room="Superior" data-price="160">
+                <h4>Superior</h4>
+                <p>2–3 ospiti · vista · colazione inclusa</p>
+                <div class="demo-row"><span class="badge">€160/notte</span></div>
+              </button>
+
+              <button type="button" class="demo-item" data-room="Suite" data-price="240">
+                <h4>Suite</h4>
+                <p>2–4 ospiti · zona living · premium</p>
+                <div class="demo-row"><span class="badge">€240/notte</span></div>
+              </button>
+
+              <button type="button" class="demo-item" data-room="Family" data-price="210">
+                <h4>Family</h4>
+                <p>4 ospiti · spazio extra · kids friendly</p>
+                <div class="demo-row"><span class="badge">€210/notte</span></div>
+              </button>
+            </div>
+          </section>
+
+          <div class="notice">
+            Tipico Hotel: “booking widget” + disponibilità + policy + upsell servizi.
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MODAL HOTEL -->
+  <div id="modal-hotel" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Preventivo hotel">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>Preventivo (demo)</h3>
+        <button class="modal-close" data-close-modal aria-label="Chiudi">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="notice" id="hotel-quote">Seleziona date valide per vedere un preventivo.</div>
+
+        <div class="kpi-row">
+          <div class="kpi">Selezione<small id="hotel-selected-room">Standard · €120/notte (demo)</small></div>
+        </div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="hotel-checkin">Check-in</label>
+            <input id="hotel-checkin" type="date" />
+          </div>
+          <div class="field">
+            <label for="hotel-checkout">Check-out</label>
+            <input id="hotel-checkout" type="date" />
+          </div>
+          <div class="field">
+            <label for="hotel-guests">Ospiti</label>
+            <select id="hotel-guests">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="hotel-email">Email</label>
+            <input id="hotel-email" type="email" placeholder="es. michel@email.com" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="hotel-notes">Richieste (opzionale)</label>
+          <textarea id="hotel-notes" placeholder="es. late check-in, culla, animali..."></textarea>
+        </div>
+      </div>
+
+      <div class="modal-foot">
+        <button class="btn btn-ghost" data-close-modal>Annulla</button>
+        <button class="btn btn-primary" id="hotel-send">Invia richiesta</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
