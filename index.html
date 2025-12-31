@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michel | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <span class="logo">Michel</span>
+
+      <nav class="nav-links">
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Change language">
+          EN
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-wrap">
+
+        <div class="hero-left">
+          <span class="hero-badge" data-i18n="hero_badge">Open to internship · 2026</span>
+
+          <h1 data-i18n="hero_title">Frontend Developer</h1>
+
+          <p data-i18n-html="hero_desc">
+            Creo interfacce web moderne, pulite e responsive.<br />
+            Attualmente focalizzato su HTML, CSS e basi di JavaScript.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn" data-i18n="cta_projects">View projects</a>
+            <a href="#contact" class="btn btn-secondary" data-i18n="cta_contact">Contact</a>
+          </div>
+
+          <div class="chips" aria-label="Tech stack">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">Flexbox</span>
+            <span class="chip">Grid</span>
+            <span class="chip" data-i18n="chip_js">JavaScript (learning)</span>
+          </div>
+        </div>
+
+        <!-- FOTO -->
+        <div class="hero-right" aria-label="Profile photo">
+          <div class="avatar-card">
+            <img class="avatar" src="assets/images/michel.jpg" alt="Foto di Michel" loading="lazy">
+          </div>
+          <p class="avatar-caption" data-i18n="avatar_caption">Ciao 👋 sono Michel</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="projects_title">Projects</h2>
+          <p class="section-subtitle" data-i18n="projects_subtitle">
+            Selezione di lavori front-end con focus su UI e layout.
+          </p>
+        </div>
+
+        <div class="cards">
+
+          <!-- MASONRY GALLERY -->
+          <article class="card">
+            <a class="card-stretch" href="masonry-gallery.html" aria-label="Open Masonry Gallery project"></a>
+
+            <div class="card-image">
+              <img src="assets/images/masonry-thumb.png" alt="Preview Masonry Gallery" loading="lazy">
+            </div>
+
+            <div class="card-content">
+              <h3>Masonry Gallery</h3>
+              <p data-i18n="proj_masonry_desc">
+                Layout tipo Pinterest: griglia masonry, overlay e micro-interazioni (HTML/CSS).
+              </p>
+              <span class="tech">HTML · CSS · Masonry</span>
+              <div class="card-links">
+                <a href="masonry-gallery.html" data-i18n="link_live">Live</a>
+                <a href="#" target="_blank" rel="noopener" data-i18n="link_code">Codice</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CORPORATE WEBSITE -->
+          <article class="card">
+            <a class="card-stretch" href="#" aria-label="Open Corporate Website project"></a>
+            <div class="card-image"></div>
+            <div class="card-content">
+              <h3>Corporate Website</h3>
+              <p data-i18n="proj_corp_desc">Sito aziendale moderno e responsive, pensato per aziende e professionisti.</p>
+              <span class="tech">HTML · CSS · Flexbox</span>
+              <div class="card-links">
+                <a href="#" data-i18n="link_live">Live</a>
+                <a href="#" target="_blank" rel="noopener" data-i18n="link_code">Codice</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- LANDING PAGE -->
+          <article class="card">
+            <a class="card-stretch" href="#" aria-label="Open Landing Page project"></a>
+            <div class="card-image"></div>
+            <div class="card-content">
+              <h3>Landing Page</h3>
+              <p data-i18n="proj_landing_desc">Landing page pulita e orientata alla conversione.</p>
+              <span class="tech">HTML · CSS · Responsive</span>
+              <div class="card-links">
+                <a href="#" data-i18n="link_live">Live</a>
+                <a href="#" target="_blank" rel="noopener" data-i18n="link_code">Codice</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- UI LAYOUT -->
+          <article class="card">
+            <a class="card-stretch" href="#" aria-label="Open UI Layout project"></a>
+            <div class="card-image"></div>
+            <div class="card-content">
+              <h3>UI Layout</h3>
+              <p data-i18n="proj_ui_desc">Layout UI moderno riutilizzabile per prodotti digitali.</p>
+              <span class="tech">HTML · CSS · Grid</span>
+              <div class="card-links">
+                <a href="#" data-i18n="link_live">Live</a>
+                <a href="#" target="_blank" rel="noopener" data-i18n="link_code">Codice</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="skills_title">Skills</h2>
+          <p class="section-subtitle" data-i18n="skills_subtitle">
+            Cosa sto usando e migliorando nel percorso da frontend.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3 data-i18n="skills_layout_title">Layout</h3>
+            <p data-i18n="skills_layout_desc">Flexbox, Grid, componenti riutilizzabili, spacing e gerarchia visiva.</p>
+          </div>
+          <div class="skill-card">
+            <h3 data-i18n="skills_ui_title">UI</h3>
+            <p data-i18n="skills_ui_desc">Card moderne, hover/overlay, micro-interazioni, coerenza grafica.</p>
+          </div>
+          <div class="skill-card">
+            <h3 data-i18n="skills_resp_title">Responsive</h3>
+            <p data-i18n="skills_resp_desc">Approccio mobile-first e adattamento a breakpoints comuni.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT (senza card a destra, tiles allineati a sinistra) -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-head section-head--stack">
+          <h2 data-i18n="about_title">About</h2>
+          <p class="section-subtitle" data-i18n="about_subtitle">Breve presentazione e obiettivo.</p>
+        </div>
+
+        <p class="about-text" data-i18n="about_text">
+          Ho 24 anni e sono uno studente frontend developer.
+          Sto approfondendo HTML, CSS e JavaScript, con attenzione particolare alla struttura,
+          al responsive design e alla qualità del layout.
+        </p>
+
+        <!-- ✅ Tiles dati (allineati a sinistra) -->
+        <div class="facts-row" aria-label="Info rapide">
+          <div class="fact-tile">
+            <span class="fact-label" data-i18n="fact_age_label">Età</span>
+            <span class="fact-value" data-i18n="fact_age_value">24</span>
+          </div>
+
+          <div class="fact-tile">
+            <span class="fact-label" data-i18n="fact_focus_label">Focus</span>
+            <span class="fact-value" data-i18n="fact_focus_value">HTML/CSS · UI</span>
+          </div>
+
+          <div class="fact-tile">
+            <span class="fact-label" data-i18n="fact_now_label">Ora</span>
+            <span class="fact-value" data-i18n="fact_now_value">JavaScript (base)</span>
+          </div>
+
+          <div class="fact-tile">
+            <span class="fact-label" data-i18n="fact_goal_label">Prossimo step</span>
+            <span class="fact-value" data-i18n="fact_goal_value">React</span>
+          </div>
+        </div>
+
+        <ul class="about-list">
+          <li data-i18n="about_li1">Attenzione ai dettagli e pulizia del codice</li>
+          <li data-i18n="about_li2">Focus su UI moderna e leggibile</li>
+          <li data-i18n="about_li3">Obiettivo: crescita su JavaScript e React</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-card">
+          <h2 data-i18n="contact_title">Contact</h2>
+          <p data-i18n="contact_desc">
+            Se vuoi scrivermi per una collaborazione o un’opportunità, contattami qui:
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn" href="mailto:michel.lavoro@gmail.com" data-i18n="contact_email">Email</a>
+            <a class="btn btn-secondary" href="#" target="_blank" rel="noopener" data-i18n="contact_github">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p data-i18n="footer_copy">© 2026 Michel</p>
+      <div class="footer-links">
+        <a href="mailto:michel.lavoro@gmail.com">Email</a>
+        <a href="#" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LANGUAGE TOGGLE (mini JS) -->
+  <script>
+    const dict = {
+      it: {
+        nav_projects: "Projects",
+        nav_skills: "Skills",
+        nav_about: "About",
+        nav_contact: "Contact",
+        hero_badge: "Open to internship · 2026",
+        hero_title: "Frontend Developer",
+        hero_desc: "Creo interfacce web moderne, pulite e responsive.<br />Attualmente focalizzato su HTML, CSS e basi di JavaScript.",
+        cta_projects: "View projects",
+        cta_contact: "Contact",
+        chip_js: "JavaScript (in apprendimento)",
+        avatar_caption: "Ciao 👋 sono Michel",
+
+        projects_title: "Projects",
+        projects_subtitle: "Selezione di lavori front-end con focus su UI e layout.",
+
+        proj_masonry_desc: "Layout tipo Pinterest: griglia masonry, overlay e micro-interazioni (HTML/CSS).",
+        proj_corp_desc: "Sito aziendale moderno e responsive, pensato per aziende e professionisti.",
+        proj_landing_desc: "Landing page pulita e orientata alla conversione.",
+        proj_ui_desc: "Layout UI moderno riutilizzabile per prodotti digitali.",
+
+        link_live: "Live",
+        link_code: "Codice",
+
+        skills_title: "Skills",
+        skills_subtitle: "Cosa sto usando e migliorando nel percorso da frontend.",
+        skills_layout_title: "Layout",
+        skills_layout_desc: "Flexbox, Grid, componenti riutilizzabili, spacing e gerarchia visiva.",
+        skills_ui_title: "UI",
+        skills_ui_desc: "Card moderne, hover/overlay, micro-interazioni, coerenza grafica.",
+        skills_resp_title: "Responsive",
+        skills_resp_desc: "Approccio mobile-first e adattamento a breakpoints comuni.",
+
+        about_title: "About",
+        about_subtitle: "Breve presentazione e obiettivo.",
+        about_text: "Ho 24 anni e sono uno studente frontend developer. Sto approfondendo HTML, CSS e JavaScript, con attenzione particolare alla struttura, al responsive design e alla qualità del layout.",
+        about_li1: "Attenzione ai dettagli e pulizia del codice",
+        about_li2: "Focus su UI moderna e leggibile",
+        about_li3: "Obiettivo: crescita su JavaScript e React",
+
+        fact_age_label: "Età",
+        fact_age_value: "24",
+        fact_focus_label: "Focus",
+        fact_focus_value: "HTML/CSS · UI",
+        fact_now_label: "Ora",
+        fact_now_value: "JavaScript (base)",
+        fact_goal_label: "Prossimo step",
+        fact_goal_value: "React",
+
+        contact_title: "Contact",
+        contact_desc: "Se vuoi scrivermi per una collaborazione o un’opportunità, contattami qui:",
+        contact_email: "Email",
+        contact_github: "GitHub",
+        footer_copy: "© 2026 Michel"
+      },
+      en: {
+        nav_projects: "Projects",
+        nav_skills: "Skills",
+        nav_about: "About",
+        nav_contact: "Contact",
+        hero_badge: "Open to internship · 2026",
+        hero_title: "Frontend Developer",
+        hero_desc: "I build modern, clean and responsive web interfaces.<br />Currently focused on HTML, CSS and JavaScript fundamentals.",
+        cta_projects: "View projects",
+        cta_contact: "Contact",
+        chip_js: "JavaScript (learning)",
+        avatar_caption: "Hi 👋 I'm Michel",
+
+        projects_title: "Projects",
+        projects_subtitle: "Selected front-end work focused on UI and layout.",
+
+        proj_masonry_desc: "Pinterest-style layout: masonry grid, overlays and micro-interactions (HTML/CSS).",
+        proj_corp_desc: "Modern and responsive corporate website concept for companies and professionals.",
+        proj_landing_desc: "Clean landing page designed for conversion.",
+        proj_ui_desc: "Reusable modern UI layout for digital products.",
+
+        link_live: "Live",
+        link_code: "Code",
+
+        skills_title: "Skills",
+        skills_subtitle: "What I'm using and improving as a front-end developer.",
+        skills_layout_title: "Layout",
+        skills_layout_desc: "Flexbox, Grid, reusable components, spacing and visual hierarchy.",
+        skills_ui_title: "UI",
+        skills_ui_desc: "Modern cards, hover/overlays, micro-interactions, visual consistency.",
+        skills_resp_title: "Responsive",
+        skills_resp_desc: "Mobile-first approach and common breakpoint adaptation.",
+
+        about_title: "About",
+        about_subtitle: "Quick intro and goal.",
+        about_text: "I'm 24 and I'm a front-end developer student. I'm learning HTML, CSS and JavaScript, focusing on structure, responsive design and layout quality.",
+        about_li1: "Attention to detail and clean code",
+        about_li2: "Focus on modern, readable UI",
+        about_li3: "Goal: grow in JavaScript and React",
+
+        fact_age_label: "Age",
+        fact_age_value: "24",
+        fact_focus_label: "Focus",
+        fact_focus_value: "HTML/CSS · UI",
+        fact_now_label: "Now",
+        fact_now_value: "JavaScript (basics)",
+        fact_goal_label: "Next step",
+        fact_goal_value: "React",
+
+        contact_title: "Contact",
+        contact_desc: "If you'd like to reach out for collaboration or opportunities, contact me here:",
+        contact_email: "Email",
+        contact_github: "GitHub",
+        footer_copy: "© 2026 Michel"
+      }
+    };
+
+    function applyLang(lang){
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[lang][key]) el.textContent = dict[lang][key];
+      });
+
+      document.querySelectorAll("[data-i18n-html]").forEach(el => {
+        const key = el.getAttribute("data-i18n-html");
+        if (dict[lang][key]) el.innerHTML = dict[lang][key];
+      });
+
+      const btn = document.getElementById("langToggle");
+      btn.textContent = (lang === "it") ? "EN" : "IT";
+      localStorage.setItem("lang", lang);
+    }
+
+    const saved = localStorage.getItem("lang") || "it";
+    applyLang(saved);
+
+    document.getElementById("langToggle").addEventListener("click", () => {
+      const current = localStorage.getItem("lang") || "it";
+      applyLang(current === "it" ? "en" : "it");
+    });
+  </script>
+
+</body>
+</html>
