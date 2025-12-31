@@ -17,7 +17,6 @@
       <div class="nav-right">
         <nav class="menu" aria-label="Navigazione">
           <a href="#projects">Projects</a>
-          <a href="#examples">Esempi</a>
           <a href="#skills">Skills</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
@@ -43,14 +42,78 @@
         </p>
 
         <div class="hero-actions">
-@@ -110,50 +111,130 @@
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact</a>
+        </div>
+
+        <div class="tags" aria-label="Tecnologie">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Flexbox</span>
+          <span class="tag">Grid</span>
+          <span class="tag tag-wide">JavaScript (in apprendimento)</span>
+        </div>
+      </section>
+
+      <aside class="hero-side" aria-label="Foto profilo">
+        <div class="photo-wrap">
+          <img class="photo" src="assets/images/profile.jpg" alt="Foto di Michel" />
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Selezione di progetti front-end (HTML/CSS/JS). Demo live + codice.</p>
+      </div>
+
+      <div class="cards">
+
+        <!-- MASONRY -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/masonry-thumb.jpg" alt="Preview Masonry Gallery" loading="lazy">
+          </div>
+
+          <div class="card-content">
+            <h3>Masonry Gallery</h3>
+            <p>Layout tipo Pinterest con card riutilizzabili e micro-interazioni.</p>
+            <span class="tech">HTML · CSS</span>
+
+            <div class="card-links">
+              <a href="https://michelbranche.github.io/masonry-gallery/">Live</a>
+              <a href="https://github.com/MichelBranche/masonry-gallery">Code</a>
+            </div>
           </div>
         </article>
 
-        <!-- UI LAYOUT (ORA CON THUMBNAIL) -->
+        <!-- LANDING PAGE -->
         <article class="card">
           <div class="card-image">
-            <img src="assets/images/ui-layout.jpg" alt="Preview UI Layout" loading="lazy">
+            <img src="assets/images/landing-thumb.jpg" alt="Preview Landing Page" loading="lazy">
+          </div>
+
+          <div class="card-content">
+            <h3>Landing Page</h3>
+            <p>Landing completa con sezioni (features, pricing, FAQ) e responsive solido.</p>
+            <span class="tech">HTML · CSS</span>
+
+            <div class="card-links">
+              <a href="https://michelbranche.github.io/landing-page/">Live</a>
+              <a href="https://github.com/MichelBranche/landing-page">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- UI LAYOUT -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/ui-layout-thumb.jpg" alt="Preview UI Layout" loading="lazy">
           </div>
 
           <div class="card-content">
@@ -65,86 +128,6 @@
           </div>
         </article>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- EXAMPLES -->
-  <section id="examples" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Esempi pratici per attività ricettive</h2>
-        <p>Idee concrete di layout e contenuti per ristoranti, hotel, B&amp;B e locali.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <div class="card-image card-image--example" aria-hidden="true">
-            <img src="assets/images/ristorante.jpg" alt="" loading="lazy">
-            <span class="example-label">Ristorante</span>
-          </div>
-
-          <div class="card-content">
-            <h3>Menu &amp; prenotazioni</h3>
-            <p>Sezione hero con foto del locale, menu digitale e CTA per prenotare.</p>
-            <ul class="example-list">
-              <li>Specialità e piatti del giorno</li>
-              <li>Moduli per tavoli ed eventi</li>
-              <li>Recensioni e orari</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-image card-image--example" aria-hidden="true">
-            <img src="assets/images/hotel.jpg" alt="" loading="lazy">
-            <span class="example-label">Hotel</span>
-          </div>
-
-          <div class="card-content">
-            <h3>Camere &amp; servizi</h3>
-            <p>Focus su camere, amenities e offerte con layout chiaro e immagini.</p>
-            <ul class="example-list">
-              <li>Gallery e schede camere</li>
-              <li>Pacchetti stagionali</li>
-              <li>Form di richiesta veloce</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-image card-image--example" aria-hidden="true">
-            <img src="assets/images/beb.jpg" alt="" loading="lazy">
-            <span class="example-label">B&amp;B</span>
-          </div>
-
-          <div class="card-content">
-            <h3>Accoglienza locale</h3>
-            <p>Layout caldo e semplice per raccontare l’esperienza e il territorio.</p>
-            <ul class="example-list">
-              <li>Storia e dettagli della struttura</li>
-              <li>Mappe e punti d’interesse</li>
-              <li>Contatti rapidi via WhatsApp</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-image card-image--example" aria-hidden="true">
-            <img src="assets/images/caffe.jpg" alt="" loading="lazy">
-            <span class="example-label">Caffè &amp; Lounge</span>
-          </div>
-
-          <div class="card-content">
-            <h3>Eventi &amp; atmosfera</h3>
-            <p>Presentazione di eventi, aperitivi e playlist per attrarre nuovi clienti.</p>
-            <ul class="example-list">
-              <li>Calendario serate</li>
-              <li>Menu drink e snack</li>
-              <li>Promo social integrate</li>
-            </ul>
-          </div>
-        </article>
       </div>
     </div>
   </section>
@@ -173,3 +156,64 @@
       </div>
     </div>
   </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-alt">
+    <div class="container about-grid">
+      <div class="about-left">
+        <h2>About</h2>
+        <p class="about-sub">Breve presentazione e obiettivo.</p>
+
+        <p class="about-text">
+          Ho 24 anni e sono uno studente frontend developer. Sto approfondendo HTML, CSS e JavaScript,
+          con attenzione particolare alla struttura, al responsive design e alla qualità del layout.
+        </p>
+
+        <ul class="about-list">
+          <li>Attenzione ai dettagli e pulizia del codice</li>
+          <li>Focus su UI moderna e leggibile</li>
+          <li>Obiettivo: crescita su JavaScript e React</li>
+        </ul>
+      </div>
+
+      <div class="about-right" aria-label="Dati rapidi">
+        <div class="facts">
+          <div class="fact"><span class="fact-k">Età</span><span class="fact-v">24</span></div>
+          <div class="fact"><span class="fact-k">Focus</span><span class="fact-v">HTML/CSS · UI</span></div>
+          <div class="fact"><span class="fact-k">Ora</span><span class="fact-v">JavaScript (base)</span></div>
+          <div class="fact"><span class="fact-k">Prossimo step</span><span class="fact-v">React</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-box">
+        <div>
+          <h2>Contact</h2>
+          <p class="contact-sub">Se ti va, scrivimi: rispondo volentieri.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:michel.lavoro@gmail.com">Email</a>
+          <a class="btn btn-ghost" href="https://github.com/MichelBranche">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Michel Branche</p>
+      <div class="footer-links">
+        <a href="mailto:michel.lavoro@gmail.com">Email</a>
+        <a href="https://github.com/MichelBranche">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
