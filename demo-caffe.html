@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo — Caffè / Bar</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="demo.js" defer></script>
+</head>
+
+<body data-page="caffe">
+
+  <header class="page-header">
+    <div class="container">
+      <a class="back-link" href="index.html#biz-demos">← Torna al portfolio</a>
+      <h1 class="page-title">Demo — Caffè / Bar</h1>
+      <p class="page-sub">
+        Feature specifica: <strong>menu filtrabile</strong> + <strong>mini ordine</strong> con carrello (demo).
+      </p>
+
+      <div class="demo-hero">
+        <img src="assets/images/caffe.jpg" alt="Caffè demo hero">
+        <div class="demo-body">
+
+          <div class="cta-row">
+            <button class="btn btn-primary" data-open-modal="modal-caffe">
+              Apri carrello · <span id="caffe-cart-count">0</span>
+            </button>
+            <button class="btn btn-ghost" id="caffe-clear">Svuota</button>
+          </div>
+
+          <div class="panel">
+            <h3>Filtri menu</h3>
+            <div class="tabs" aria-label="Filtri menu">
+              <button class="tab is-active" data-cat="all">Tutto</button>
+              <button class="tab" data-cat="caffe">Caffè</button>
+              <button class="tab" data-cat="dolci">Dolci</button>
+              <button class="tab" data-cat="aperitivi">Aperitivi</button>
+            </div>
+
+            <div class="menu-list" aria-label="Lista prodotti">
+              <div class="menu-line" data-cat="caffe" data-name="Espresso" data-price="1.20">
+                <div><strong>Espresso</strong> <span>· €1,20</span></div>
+                <button class="btn btn-ghost" data-add>Aggiungi</button>
+              </div>
+
+              <div class="menu-line" data-cat="caffe" data-name="Cappuccino" data-price="1.60">
+                <div><strong>Cappuccino</strong> <span>· €1,60</span></div>
+                <button class="btn btn-ghost" data-add>Aggiungi</button>
+              </div>
+
+              <div class="menu-line" data-cat="dolci" data-name="Cornetto" data-price="1.50">
+                <div><strong>Cornetto</strong> <span>· €1,50</span></div>
+                <button class="btn btn-ghost" data-add>Aggiungi</button>
+              </div>
+
+              <div class="menu-line" data-cat="dolci" data-name="Torta del giorno" data-price="3.50">
+                <div><strong>Torta del giorno</strong> <span>· €3,50</span></div>
+                <button class="btn btn-ghost" data-add>Aggiungi</button>
+              </div>
+
+              <div class="menu-line" data-cat="aperitivi" data-name="Spritz" data-price="6.00">
+                <div><strong>Spritz</strong> <span>· €6,00</span></div>
+                <button class="btn btn-ghost" data-add>Aggiungi</button>
+              </div>
+
+              <div class="menu-line" data-cat="aperitivi" data-name="Tagliere" data-price="10.00">
+                <div><strong>Tagliere</strong> <span>· €10,00</span></div>
+                <button class="btn btn-ghost" data-add>Aggiungi</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-panels">
+            <div class="panel">
+              <h3>Funzioni implementabili</h3>
+              <ul>
+                <li>Menu digitale aggiornabile</li>
+                <li>Promo / eventi (CTA)</li>
+                <li>Ordine take-away (pagamento esterno)</li>
+                <li>QR al tavolo</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Perché è utile</h3>
+              <p>Mostra una feature “da business”: conversione (ordine) + UX rapida.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MODAL CAFFÈ -->
+  <div id="modal-caffe" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Carrello ordine">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>Carrello (demo)</h3>
+        <button class="modal-close" data-close-modal aria-label="Chiudi">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="panel">
+          <h3>Riepilogo</h3>
+          <ul id="caffe-cart-list"></ul>
+          <div class="demo-row">
+            <span class="badge">Totale: <span id="caffe-cart-total">€ 0,00</span></span>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="caffe-name">Nome</label>
+            <input id="caffe-name" type="text" placeholder="es. Michel" />
+          </div>
+          <div class="field">
+            <label for="caffe-time">Orario ritiro</label>
+            <input id="caffe-time" type="time" />
+          </div>
+        </div>
+
+        <div class="notice">
+          In un progetto reale: invio ordine su WhatsApp / email / API + pagamento esterno.
+        </div>
+      </div>
+
+      <div class="modal-foot">
+        <button class="btn btn-ghost" data-close-modal>Chiudi</button>
+        <button class="btn btn-primary" data-close-modal>Conferma (demo)</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
