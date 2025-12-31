@@ -9,9 +9,10 @@
 
 <body>
 
+  <!-- HEADER -->
   <header class="header">
     <div class="container nav">
-      <a class="logo" href="#top" aria-label="Home">Michel</a>
+      <a class="logo" href="#top" aria-label="Back to top">Michel</a>
 
       <div class="nav-right">
         <nav class="menu" aria-label="Navigation">
@@ -21,12 +22,13 @@
           <a href="#contact">Contact</a>
         </nav>
 
-        <!-- torna a IT -->
-        <a class="lang" href="index.html" aria-label="Passa a Italiano">IT</a>
+        <!-- Language switch -->
+        <a class="lang" href="index.html" aria-label="Switch to Italian">IT</a>
       </div>
     </div>
   </header>
 
+  <!-- HERO -->
   <main id="top" class="hero">
     <div class="container hero-grid">
 
@@ -37,7 +39,7 @@
 
         <p class="lead">
           I build modern, clean, responsive web interfaces.<br />
-          Currently focused on HTML, CSS and JavaScript fundamentals.
+          Currently focused on HTML, CSS, and JavaScript fundamentals.
         </p>
 
         <div class="hero-actions">
@@ -45,7 +47,7 @@
           <a class="btn btn-ghost" href="#contact">Contact</a>
         </div>
 
-        <div class="tags" aria-label="Tech">
+        <div class="tags" aria-label="Tech stack">
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
           <span class="tag">Flexbox</span>
@@ -63,22 +65,26 @@
     </div>
   </main>
 
+  <!-- PROJECTS -->
   <section id="projects" class="section section-alt">
     <div class="container">
       <div class="section-head">
         <h2>Projects</h2>
-        <p>Selected front-end projects (HTML/CSS). Live demo + code.</p>
+        <p>Selected front-end projects (HTML/CSS). Live demos + source code.</p>
       </div>
 
       <div class="cards">
+        <!-- MASONRY -->
         <article class="card">
           <div class="card-image">
             <img src="assets/images/masonry-thumb.png" alt="Masonry Gallery preview">
           </div>
+
           <div class="card-content">
             <h3>Masonry Gallery</h3>
             <p>Pinterest-style layout with reusable cards and micro-interactions.</p>
             <span class="tech">HTML · CSS</span>
+
             <div class="card-links">
               <a href="https://michelbranche.github.io/masonry-gallery/">Live</a>
               <a href="https://github.com/MichelBranche/masonry-gallery">Code</a>
@@ -86,14 +92,17 @@
           </div>
         </article>
 
+        <!-- LANDING -->
         <article class="card">
           <div class="card-image">
             <img src="assets/images/landing-thumb.jpg" alt="Landing Page preview">
           </div>
+
           <div class="card-content">
             <h3>Landing Page</h3>
-            <p>Complete landing with features, pricing, FAQ and solid responsive layout.</p>
+            <p>Full landing page with features, pricing, FAQ and solid responsive layout.</p>
             <span class="tech">HTML · CSS</span>
+
             <div class="card-links">
               <a href="https://michelbranche.github.io/landing-page/">Live</a>
               <a href="https://github.com/MichelBranche/landing-page">Code</a>
@@ -101,8 +110,9 @@
           </div>
         </article>
 
+        <!-- UI LAYOUT (placeholder until it's ready) -->
         <article class="card">
-          <div class="card-image card-image--placeholder" aria-label="UI Layout placeholder">
+          <div class="card-image card-image--placeholder" aria-label="UI Layout placeholder preview">
             <div class="ph ph-top">
               <span class="ph-dot"></span><span class="ph-dot"></span><span class="ph-dot"></span>
             </div>
@@ -119,6 +129,7 @@
             <h3>UI Layout</h3>
             <p>Reusable UI components and sections for modern layouts.</p>
             <span class="tech">HTML · CSS · Grid</span>
+
             <div class="card-links">
               <span class="link-disabled" aria-disabled="true">Live</span>
               <span class="link-disabled" aria-disabled="true">Code</span>
@@ -130,11 +141,12 @@
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills" class="section">
     <div class="container">
       <div class="section-head">
         <h2>Skills</h2>
-        <p>Clean UI, responsive design and structured code.</p>
+        <p>Clean UI, responsive design, and structured code.</p>
       </div>
 
       <div class="skills-grid">
@@ -154,15 +166,16 @@
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" class="section section-alt">
     <div class="container about-grid">
       <div class="about-left">
         <h2>About</h2>
-        <p class="about-sub">Short intro & goal.</p>
+        <p class="about-sub">Short intro and goal.</p>
 
         <p class="about-text">
-          I'm 24 and I’m a frontend developer student. I’m improving my HTML, CSS and JavaScript,
-          with a strong focus on structure, responsive design and layout quality.
+          I’m 24 and I’m a frontend developer student. I’m improving my HTML, CSS and JavaScript,
+          with a strong focus on structure, responsive design, and layout quality.
         </p>
 
         <ul class="about-list">
@@ -172,7 +185,7 @@
         </ul>
       </div>
 
-      <div class="about-right">
+      <div class="about-right" aria-label="Quick facts">
         <div class="facts">
           <div class="fact"><span class="fact-k">Age</span><span class="fact-v">24</span></div>
           <div class="fact"><span class="fact-k">Focus</span><span class="fact-v">HTML/CSS · UI</span></div>
@@ -183,6 +196,7 @@
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="container">
       <div class="contact-box">
@@ -199,6 +213,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-content">
       <p>© 2026 Michel Branche</p>
