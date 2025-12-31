@@ -15,10 +15,10 @@
       <span class="logo">Michel</span>
 
       <nav class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
 
         <button id="langToggle" class="lang-toggle" type="button" aria-label="Change language">
           EN
@@ -83,17 +83,17 @@
           <!-- MASONRY GALLERY -->
           <article class="card">
 
-            <!-- Immagine cliccabile -->
-            <a href="https://michelbranche.github.io/masonry-gallery/" target="_blank" rel="noopener" aria-label="Open Masonry Gallery (Live)">
+            <!-- Immagine cliccabile (stessa scheda) -->
+            <a href="https://michelbranche.github.io/masonry-gallery/" aria-label="Open Masonry Gallery (Live)">
               <div class="card-image">
-                <img src="assets/images/masonry-thumb.png" alt="Preview Masonry Gallery" loading="lazy">
+                <img src="assets/images/masonry-thumb.jpg" alt="Preview Masonry Gallery" loading="lazy">
               </div>
             </a>
 
             <div class="card-content">
-              <!-- Titolo cliccabile -->
+              <!-- Titolo cliccabile (stessa scheda) -->
               <h3>
-                <a href="https://michelbranche.github.io/masonry-gallery/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">
+                <a href="https://michelbranche.github.io/masonry-gallery/" style="color: inherit; text-decoration: none;">
                   Masonry Gallery
                 </a>
               </h3>
@@ -105,8 +105,8 @@
               <span class="tech">HTML · CSS · Masonry</span>
 
               <div class="card-links">
-                <a href="https://michelbranche.github.io/masonry-gallery/" target="_blank" rel="noopener" data-i18n="link_live">Live</a>
-                <a href="https://github.com/MichelBranche/masonry-gallery" target="_blank" rel="noopener" data-i18n="link_code">Code</a>
+                <a href="https://michelbranche.github.io/masonry-gallery/" data-i18n="link_live">Live</a>
+                <a href="https://github.com/MichelBranche/masonry-gallery" data-i18n="link_code">Code</a>
               </div>
             </div>
           </article>
@@ -120,7 +120,7 @@
               <span class="tech">HTML · CSS · Flexbox</span>
               <div class="card-links">
                 <a href="#" aria-disabled="true" style="opacity:.5; pointer-events:none;">Live</a>
-                <a href="https://github.com/MichelBranche/portfolio" target="_blank" rel="noopener">Code</a>
+                <a href="https://github.com/MichelBranche/portfolio">Code</a>
               </div>
             </div>
           </article>
@@ -133,7 +133,7 @@
               <span class="tech">HTML · CSS · Responsive</span>
               <div class="card-links">
                 <a href="#" aria-disabled="true" style="opacity:.5; pointer-events:none;">Live</a>
-                <a href="https://github.com/MichelBranche/portfolio" target="_blank" rel="noopener">Code</a>
+                <a href="https://github.com/MichelBranche/portfolio">Code</a>
               </div>
             </div>
           </article>
@@ -146,7 +146,7 @@
               <span class="tech">HTML · CSS · Grid</span>
               <div class="card-links">
                 <a href="#" aria-disabled="true" style="opacity:.5; pointer-events:none;">Live</a>
-                <a href="https://github.com/MichelBranche/portfolio" target="_blank" rel="noopener">Code</a>
+                <a href="https://github.com/MichelBranche/portfolio">Code</a>
               </div>
             </div>
           </article>
@@ -234,7 +234,7 @@
 
           <div class="contact-actions">
             <a class="btn" href="mailto:michel.lavoro@gmail.com" data-i18n="contact_email">Email</a>
-            <a class="btn btn-secondary" href="https://github.com/MichelBranche" target="_blank" rel="noopener" data-i18n="contact_github">GitHub</a>
+            <a class="btn btn-secondary" href="https://github.com/MichelBranche" data-i18n="contact_github">GitHub</a>
           </div>
         </div>
       </div>
@@ -248,7 +248,7 @@
       <p data-i18n="footer_copy">© 2026 Michel Branche</p>
       <div class="footer-links">
         <a href="mailto:michel.lavoro@gmail.com">Email</a>
-        <a href="https://github.com/MichelBranche" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/MichelBranche">GitHub</a>
       </div>
     </div>
   </footer>
@@ -257,6 +257,10 @@
   <script>
     const dict = {
       it: {
+        nav_projects: "Projects",
+        nav_skills: "Skills",
+        nav_about: "About",
+        nav_contact: "Contact",
         hero_badge: "Open to internship · 2026",
         hero_title: "Frontend Developer",
         hero_desc: "Creo interfacce web moderne, pulite e responsive.<br />Attualmente focalizzato su HTML, CSS e basi di JavaScript.",
@@ -268,6 +272,7 @@
         projects_title: "Projects",
         projects_subtitle: "Selezione di lavori front-end con focus su UI e layout.",
         proj_masonry_desc: "Layout tipo Pinterest: griglia masonry, overlay e micro-interazioni (HTML/CSS).",
+
         link_live: "Live",
         link_code: "Code",
 
@@ -303,6 +308,10 @@
         footer_copy: "© 2026 Michel Branche"
       },
       en: {
+        nav_projects: "Projects",
+        nav_skills: "Skills",
+        nav_about: "About",
+        nav_contact: "Contact",
         hero_badge: "Open to internship · 2026",
         hero_title: "Frontend Developer",
         hero_desc: "I build modern, clean and responsive web interfaces.<br />Currently focused on HTML, CSS and JavaScript fundamentals.",
@@ -314,6 +323,7 @@
         projects_title: "Projects",
         projects_subtitle: "Selected front-end work focused on UI and layout.",
         proj_masonry_desc: "Pinterest-style layout: masonry grid, overlays and micro-interactions (HTML/CSS).",
+
         link_live: "Live",
         link_code: "Code",
 
