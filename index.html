@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Michel | Frontend Developer</title>
+  <meta name="description" content="Portfolio front-end di Michel Branche: progetti HTML/CSS e layout UI moderni." />
+  <title>Portfolio | Michel Branche</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -11,10 +12,10 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div class="container nav">
-      <span class="logo">Michel</span>
+    <div class="container header-inner">
+      <a class="logo" href="#main" aria-label="Vai alla home">Michel</a>
 
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Navigazione">
         <a href="#projects" data-i18n="nav_projects">Projects</a>
         <a href="#skills" data-i18n="nav_skills">Skills</a>
         <a href="#about" data-i18n="nav_about">About</a>
@@ -31,14 +32,14 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero-wrap">
+      <div class="container hero-grid">
 
         <div class="hero-left">
           <span class="hero-badge" data-i18n="hero_badge">Open to internship · 2026</span>
 
-          <h1 data-i18n="hero_title">Frontend Developer</h1>
+          <h1 class="hero-title" data-i18n="hero_title">Frontend Developer</h1>
 
-          <p data-i18n-html="hero_desc">
+          <p class="hero-desc" data-i18n-html="hero_desc">
             Creo interfacce web moderne, pulite e responsive.<br />
             Attualmente focalizzato su HTML, CSS e basi di JavaScript.
           </p>
@@ -48,7 +49,7 @@
             <a href="#contact" class="btn btn-secondary" data-i18n="cta_contact">Contact</a>
           </div>
 
-          <div class="chips" aria-label="Tech stack">
+          <div class="chips" aria-label="Stack">
             <span class="chip">HTML</span>
             <span class="chip">CSS</span>
             <span class="chip">Flexbox</span>
@@ -57,10 +58,9 @@
           </div>
         </div>
 
-        <!-- FOTO -->
-        <div class="hero-right" aria-label="Profile photo">
+        <div class="hero-right" aria-label="Foto profilo">
           <div class="avatar-card">
-            <img class="avatar" src="assets/images/michel.jpg" alt="Foto di Michel" loading="lazy">
+            <img class="avatar" src="assets/images/michel.jpg" alt="Foto di Michel Branche" loading="lazy" />
           </div>
           <p class="avatar-caption" data-i18n="avatar_caption">Ciao 👋 sono Michel</p>
         </div>
@@ -69,33 +69,33 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="projects">
+    <section id="projects" class="section section-alt">
       <div class="container">
         <div class="section-head">
-          <h2 data-i18n="projects_title">Projects</h2>
-          <p class="section-subtitle" data-i18n="projects_subtitle">
-            Selezione di lavori front-end con focus su UI e layout.
-          </p>
+          <div>
+            <h2 data-i18n="projects_title">Projects</h2>
+            <p class="section-subtitle" data-i18n="projects_subtitle">
+              Selezione di lavori front-end con focus su UI e layout.
+            </p>
+          </div>
         </div>
 
         <div class="cards">
 
-          <!-- MASONRY GALLERY -->
+          <!-- MASONRY -->
           <article class="card">
-            <a href="https://michelbranche.github.io/masonry-gallery/" aria-label="Open Masonry Gallery (Live)">
+            <a class="card-media" href="https://michelbranche.github.io/masonry-gallery/" aria-label="Apri Masonry Gallery (Live)">
               <div class="card-image">
                 <img src="assets/images/masonry-thumb.png" alt="Preview Masonry Gallery" loading="lazy">
               </div>
             </a>
 
             <div class="card-content">
-              <h3>
-                <a href="https://michelbranche.github.io/masonry-gallery/" style="color: inherit; text-decoration: none;">
-                  Masonry Gallery
-                </a>
+              <h3 class="card-title">
+                <a href="https://michelbranche.github.io/masonry-gallery/" class="card-title-link">Masonry Gallery</a>
               </h3>
 
-              <p data-i18n="proj_masonry_desc">
+              <p class="card-desc" data-i18n="proj_masonry_desc">
                 Layout tipo Pinterest: griglia masonry, overlay e micro-interazioni (HTML/CSS).
               </p>
 
@@ -108,22 +108,22 @@
             </div>
           </article>
 
-          <!-- LANDING PAGE (SCREENSHOT) -->
+          <!-- LANDING -->
           <article class="card">
-            <a href="https://michelbranche.github.io/landing-page/" aria-label="Open Landing Page (Live)">
+            <a class="card-media" href="https://michelbranche.github.io/landing-page/" aria-label="Apri Landing Page (Live)">
               <div class="card-image">
                 <img src="assets/images/landing-thumb.jpg" alt="Preview Landing Page" loading="lazy">
               </div>
             </a>
 
             <div class="card-content">
-              <h3>
-                <a href="https://michelbranche.github.io/landing-page/" style="color: inherit; text-decoration: none;">
-                  Landing Page
-                </a>
+              <h3 class="card-title">
+                <a href="https://michelbranche.github.io/landing-page/" class="card-title-link">Landing Page</a>
               </h3>
 
-              <p>Landing page moderna e conversion-focused, con pricing, FAQ e menu mobile.</p>
+              <p class="card-desc" data-i18n="proj_landing_desc">
+                Landing page moderna e conversion-focused, con pricing, FAQ e menu mobile.
+              </p>
 
               <span class="tech">HTML · CSS · Responsive · JS (menu)</span>
 
@@ -134,29 +134,37 @@
             </div>
           </article>
 
-          <!-- Placeholder progetto futuro -->
+          <!-- CORPORATE (placeholder) -->
           <article class="card">
-            <div class="card-image"></div>
+            <a class="card-media" href="#projects" aria-label="Corporate Website (in arrivo)">
+              <div class="card-image card-image--placeholder"></div>
+            </a>
+
             <div class="card-content">
-              <h3>Corporate Website</h3>
-              <p>Sito aziendale moderno e responsive. (In arrivo)</p>
+              <h3 class="card-title">Corporate Website</h3>
+              <p class="card-desc" data-i18n="proj_corporate_desc">Sito aziendale moderno e multi-sezione. (In arrivo)</p>
               <span class="tech">HTML · CSS · Flexbox</span>
+
               <div class="card-links">
-                <a href="#" aria-disabled="true" style="opacity:.5; pointer-events:none;">Live</a>
+                <span class="link-disabled">Live</span>
                 <a href="https://github.com/MichelBranche/portfolio" data-i18n="link_code">Code</a>
               </div>
             </div>
           </article>
 
-          <!-- Placeholder progetto futuro -->
+          <!-- UI LAYOUT (placeholder) -->
           <article class="card">
-            <div class="card-image"></div>
+            <a class="card-media" href="#projects" aria-label="UI Layout (in arrivo)">
+              <div class="card-image card-image--placeholder"></div>
+            </a>
+
             <div class="card-content">
-              <h3>UI Layout</h3>
-              <p>Layout UI moderno riutilizzabile per prodotti digitali. (In arrivo)</p>
+              <h3 class="card-title">UI Layout</h3>
+              <p class="card-desc" data-i18n="proj_ui_desc">Componenti UI riutilizzabili e layout moderni. (In arrivo)</p>
               <span class="tech">HTML · CSS · Grid</span>
+
               <div class="card-links">
-                <a href="#" aria-disabled="true" style="opacity:.5; pointer-events:none;">Live</a>
+                <span class="link-disabled">Live</span>
                 <a href="https://github.com/MichelBranche/portfolio" data-i18n="link_code">Code</a>
               </div>
             </div>
@@ -167,44 +175,49 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="skills">
+    <section id="skills" class="section">
       <div class="container">
         <div class="section-head">
-          <h2 data-i18n="skills_title">Skills</h2>
-          <p class="section-subtitle" data-i18n="skills_subtitle">
-            Cosa sto usando e migliorando nel percorso da frontend.
-          </p>
+          <div>
+            <h2 data-i18n="skills_title">Skills</h2>
+            <p class="section-subtitle" data-i18n="skills_subtitle">
+              Cosa sto usando e migliorando nel percorso da frontend.
+            </p>
+          </div>
         </div>
 
         <div class="skills-grid">
-          <div class="skill-card">
+          <article class="skill-card">
             <h3 data-i18n="skills_layout_title">Layout</h3>
             <p data-i18n="skills_layout_desc">Flexbox, Grid, componenti riutilizzabili, spacing e gerarchia visiva.</p>
-          </div>
-          <div class="skill-card">
+          </article>
+
+          <article class="skill-card">
             <h3 data-i18n="skills_ui_title">UI</h3>
             <p data-i18n="skills_ui_desc">Card moderne, hover/overlay, micro-interazioni, coerenza grafica.</p>
-          </div>
-          <div class="skill-card">
+          </article>
+
+          <article class="skill-card">
             <h3 data-i18n="skills_resp_title">Responsive</h3>
             <p data-i18n="skills_resp_desc">Approccio mobile-first e adattamento a breakpoints comuni.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="about">
+    <section id="about" class="section section-alt">
       <div class="container">
-        <div class="section-head section-head--stack">
-          <h2 data-i18n="about_title">About</h2>
-          <p class="section-subtitle" data-i18n="about_subtitle">Breve presentazione e obiettivo.</p>
+        <div class="section-head">
+          <div>
+            <h2 data-i18n="about_title">About</h2>
+            <p class="section-subtitle" data-i18n="about_subtitle">Breve presentazione e obiettivo.</p>
+          </div>
         </div>
 
         <p class="about-text" data-i18n="about_text">
-          Ho 24 anni e sono uno studente frontend developer.
-          Sto approfondendo HTML, CSS e JavaScript, con attenzione particolare alla struttura,
-          al responsive design e alla qualità del layout.
+          Ho 24 anni e sono uno studente frontend developer. Sto approfondendo HTML, CSS e JavaScript,
+          con attenzione particolare alla struttura, al responsive design e alla qualità del layout.
         </p>
 
         <div class="facts-row" aria-label="Info rapide">
@@ -212,14 +225,17 @@
             <span class="fact-label" data-i18n="fact_age_label">Età</span>
             <span class="fact-value" data-i18n="fact_age_value">24</span>
           </div>
+
           <div class="fact-tile">
             <span class="fact-label" data-i18n="fact_focus_label">Focus</span>
             <span class="fact-value" data-i18n="fact_focus_value">HTML/CSS · UI</span>
           </div>
+
           <div class="fact-tile">
             <span class="fact-label" data-i18n="fact_now_label">Ora</span>
             <span class="fact-value" data-i18n="fact_now_value">JavaScript (base)</span>
           </div>
+
           <div class="fact-tile">
             <span class="fact-label" data-i18n="fact_goal_label">Prossimo step</span>
             <span class="fact-value" data-i18n="fact_goal_value">React</span>
@@ -235,11 +251,11 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section">
       <div class="container">
         <div class="contact-card">
           <h2 data-i18n="contact_title">Contact</h2>
-          <p data-i18n="contact_desc">
+          <p class="section-subtitle" data-i18n="contact_desc">
             Se vuoi scrivermi per una collaborazione o un’opportunità, contattami qui:
           </p>
 
@@ -255,7 +271,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-content">
+    <div class="container footer-inner">
       <p data-i18n="footer_copy">© 2026 Michel Branche</p>
       <div class="footer-links">
         <a href="mailto:michel.lavoro@gmail.com">Email</a>
@@ -264,7 +280,7 @@
     </div>
   </footer>
 
-  <!-- LANGUAGE TOGGLE (mini JS) -->
+  <!-- LANGUAGE TOGGLE -->
   <script>
     const dict = {
       it: {
@@ -272,6 +288,7 @@
         nav_skills: "Skills",
         nav_about: "About",
         nav_contact: "Contact",
+
         hero_badge: "Open to internship · 2026",
         hero_title: "Frontend Developer",
         hero_desc: "Creo interfacce web moderne, pulite e responsive.<br />Attualmente focalizzato su HTML, CSS e basi di JavaScript.",
@@ -283,6 +300,9 @@
         projects_title: "Projects",
         projects_subtitle: "Selezione di lavori front-end con focus su UI e layout.",
         proj_masonry_desc: "Layout tipo Pinterest: griglia masonry, overlay e micro-interazioni (HTML/CSS).",
+        proj_landing_desc: "Landing page moderna e conversion-focused, con pricing, FAQ e menu mobile.",
+        proj_corporate_desc: "Sito aziendale moderno e multi-sezione. (In arrivo)",
+        proj_ui_desc: "Componenti UI riutilizzabili e layout moderni. (In arrivo)",
 
         link_live: "Live",
         link_code: "Code",
@@ -316,6 +336,7 @@
         contact_desc: "Se vuoi scrivermi per una collaborazione o un’opportunità, contattami qui:",
         contact_email: "Email",
         contact_github: "GitHub",
+
         footer_copy: "© 2026 Michel Branche"
       },
       en: {
@@ -323,6 +344,7 @@
         nav_skills: "Skills",
         nav_about: "About",
         nav_contact: "Contact",
+
         hero_badge: "Open to internship · 2026",
         hero_title: "Frontend Developer",
         hero_desc: "I build modern, clean and responsive web interfaces.<br />Currently focused on HTML, CSS and JavaScript fundamentals.",
@@ -334,6 +356,9 @@
         projects_title: "Projects",
         projects_subtitle: "Selected front-end work focused on UI and layout.",
         proj_masonry_desc: "Pinterest-style layout: masonry grid, overlays and micro-interactions (HTML/CSS).",
+        proj_landing_desc: "Modern conversion-focused landing page with pricing, FAQ and mobile menu.",
+        proj_corporate_desc: "Modern multi-section corporate website. (Coming soon)",
+        proj_ui_desc: "Reusable UI components and modern layouts. (Coming soon)",
 
         link_live: "Live",
         link_code: "Code",
@@ -367,6 +392,7 @@
         contact_desc: "If you'd like to reach out for collaboration or opportunities, contact me here:",
         contact_email: "Email",
         contact_github: "GitHub",
+
         footer_copy: "© 2026 Michel Branche"
       }
     };
