@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,37 +9,35 @@
 
 <body>
 
-  <!-- HEADER -->
   <header class="header">
     <div class="container nav">
       <a class="logo" href="#top" aria-label="Home">Michel</a>
 
       <div class="nav-right">
-        <nav class="menu" aria-label="Navigazione">
+        <nav class="menu" aria-label="Navigation">
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
 
-        <!-- lingua: per ora è solo UI (puoi collegarla a index-en.html quando vuoi) -->
-        <a class="lang" href="#" aria-label="Switch language (English)">EN</a>
+        <!-- torna a IT -->
+        <a class="lang" href="index.html" aria-label="Passa a Italiano">IT</a>
       </div>
     </div>
   </header>
 
-  <!-- HERO -->
   <main id="top" class="hero">
     <div class="container hero-grid">
 
-      <section class="hero-content" aria-label="Presentazione">
+      <section class="hero-content">
         <span class="pill">Open to internship · 2026</span>
 
         <h1>Frontend Developer</h1>
 
         <p class="lead">
-          Creo interfacce web moderne, pulite e responsive.<br />
-          Attualmente focalizzato su HTML, CSS e basi di JavaScript.
+          I build modern, clean, responsive web interfaces.<br />
+          Currently focused on HTML, CSS and JavaScript fundamentals.
         </p>
 
         <div class="hero-actions">
@@ -47,45 +45,39 @@
           <a class="btn btn-ghost" href="#contact">Contact</a>
         </div>
 
-        <div class="tags" aria-label="Tecnologie">
+        <div class="tags" aria-label="Tech">
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
           <span class="tag">Flexbox</span>
           <span class="tag">Grid</span>
-          <span class="tag tag-wide">JavaScript (in apprendimento)</span>
+          <span class="tag tag-wide">JavaScript (learning)</span>
         </div>
       </section>
 
-      <aside class="hero-side" aria-label="Foto profilo">
+      <aside class="hero-side" aria-label="Profile photo">
         <div class="photo-wrap">
-          <img
-            class="photo"
-            src="assets/images/michel.jpg"
-            alt="Foto di Michel"
-          />
+          <img class="photo" src="assets/images/michel.jpg" alt="Michel profile photo" />
         </div>
       </aside>
 
     </div>
   </main>
 
-  <!-- PROJECTS -->
   <section id="projects" class="section section-alt">
     <div class="container">
       <div class="section-head">
         <h2>Projects</h2>
-        <p>Selezione di progetti front-end (HTML/CSS). Demo live + codice.</p>
+        <p>Selected front-end projects (HTML/CSS). Live demo + code.</p>
       </div>
 
       <div class="cards">
-        <!-- MASONRY -->
         <article class="card">
           <div class="card-image">
-            <img src="assets/images/masonry-thumb.png" alt="Preview Masonry Gallery">
+            <img src="assets/images/masonry-thumb.png" alt="Masonry Gallery preview">
           </div>
           <div class="card-content">
             <h3>Masonry Gallery</h3>
-            <p>Layout tipo Pinterest con card riutilizzabili e micro-interazioni.</p>
+            <p>Pinterest-style layout with reusable cards and micro-interactions.</p>
             <span class="tech">HTML · CSS</span>
             <div class="card-links">
               <a href="https://michelbranche.github.io/masonry-gallery/">Live</a>
@@ -94,14 +86,13 @@
           </div>
         </article>
 
-        <!-- LANDING -->
         <article class="card">
           <div class="card-image">
-            <img src="assets/images/landing-thumb.jpg" alt="Preview Landing Page">
+            <img src="assets/images/landing-thumb.jpg" alt="Landing Page preview">
           </div>
           <div class="card-content">
             <h3>Landing Page</h3>
-            <p>Landing completa con sezioni (features, pricing, FAQ) e responsive solido.</p>
+            <p>Complete landing with features, pricing, FAQ and solid responsive layout.</p>
             <span class="tech">HTML · CSS</span>
             <div class="card-links">
               <a href="https://michelbranche.github.io/landing-page/">Live</a>
@@ -110,82 +101,105 @@
           </div>
         </article>
 
-        <!-- UI LAYOUT -->
         <article class="card">
-          <div class="card-image">
-            <img src="assets/images/ui-thumb.jpg" alt="Preview UI Layout">
+          <div class="card-image card-image--placeholder" aria-label="UI Layout placeholder">
+            <div class="ph ph-top">
+              <span class="ph-dot"></span><span class="ph-dot"></span><span class="ph-dot"></span>
+            </div>
+            <div class="ph ph-line w80"></div>
+            <div class="ph ph-line w60"></div>
+            <div class="ph ph-blocks">
+              <span class="ph-card"></span>
+              <span class="ph-card"></span>
+              <span class="ph-card"></span>
+            </div>
           </div>
+
           <div class="card-content">
             <h3>UI Layout</h3>
-            <p>Componenti e sezioni UI riutilizzabili per layout moderni.</p>
+            <p>Reusable UI components and sections for modern layouts.</p>
             <span class="tech">HTML · CSS · Grid</span>
             <div class="card-links">
-              <a href="#" aria-label="Live UI Layout (coming soon)">Live</a>
-              <a href="#" aria-label="Code UI Layout (coming soon)">Code</a>
+              <span class="link-disabled" aria-disabled="true">Live</span>
+              <span class="link-disabled" aria-disabled="true">Code</span>
             </div>
           </div>
         </article>
+
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
   <section id="skills" class="section">
     <div class="container">
       <div class="section-head">
         <h2>Skills</h2>
-        <p>Focus su UI pulita, responsive design e struttura ordinata.</p>
+        <p>Clean UI, responsive design and structured code.</p>
       </div>
 
       <div class="skills-grid">
         <div class="skill">
           <h3>Layout</h3>
-          <p>Flexbox, Grid, spacing, gerarchie visive e componenti.</p>
+          <p>Flexbox, Grid, spacing, visual hierarchy and components.</p>
         </div>
         <div class="skill">
           <h3>UI / Styling</h3>
-          <p>Tipografia, contrasto, cards moderne, micro-interazioni.</p>
+          <p>Typography, contrast, modern cards, micro-interactions.</p>
         </div>
         <div class="skill">
           <h3>JavaScript</h3>
-          <p>Basi in corso: DOM, eventi, logica e interazioni.</p>
+          <p>Learning: DOM, events, logic and interactions.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about" class="section section-alt">
     <div class="container about-grid">
       <div class="about-left">
         <h2>About</h2>
-        <p class="about-sub">Breve presentazione e obiettivo.</p>
+        <p class="about-sub">Short intro & goal.</p>
 
         <p class="about-text">
-          Ho 24 anni e sono uno studente frontend developer. Sto approfondendo HTML, CSS e JavaScript,
-          con attenzione particolare alla struttura, al responsive design e alla qualità del layout.
+          I'm 24 and I’m a frontend developer student. I’m improving my HTML, CSS and JavaScript,
+          with a strong focus on structure, responsive design and layout quality.
         </p>
 
         <ul class="about-list">
-          <li>Attenzione ai dettagli e pulizia del codice</li>
-          <li>Focus su UI moderna e leggibile</li>
-          <li>Obiettivo: crescita su JavaScript e React</li>
+          <li>Attention to detail and clean code</li>
+          <li>Focus on modern, readable UI</li>
+          <li>Goal: grow with JavaScript and React</li>
         </ul>
       </div>
 
-      <div class="about-right" aria-label="Dati rapidi">
+      <div class="about-right">
         <div class="facts">
-          <div class="fact"><span class="fact-k">Età</span><span class="fact-v">24</span></div>
+          <div class="fact"><span class="fact-k">Age</span><span class="fact-v">24</span></div>
           <div class="fact"><span class="fact-k">Focus</span><span class="fact-v">HTML/CSS · UI</span></div>
-          <div class="fact"><span class="fact-k">Ora</span><span class="fact-v">JavaScript (base)</span></div>
-          <div class="fact"><span class="fact-k">Prossimo step</span><span class="fact-v">React</span></div>
+          <div class="fact"><span class="fact-k">Now</span><span class="fact-v">JavaScript (basic)</span></div>
+          <div class="fact"><span class="fact-k">Next step</span><span class="fact-v">React</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER / CONTACT -->
-  <footer id="contact" class="footer">
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-box">
+        <div>
+          <h2>Contact</h2>
+          <p class="contact-sub">Feel free to reach out.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:michel.lavoro@gmail.com">Email</a>
+          <a class="btn btn-ghost" href="https://github.com/MichelBranche">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
     <div class="container footer-content">
       <p>© 2026 Michel Branche</p>
       <div class="footer-links">
