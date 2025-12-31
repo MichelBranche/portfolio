@@ -9,18 +9,16 @@
 
 <body>
 
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <!-- HEADER -->
   <header class="header">
     <div class="container nav">
       <span class="logo">Michel</span>
 
       <nav class="nav-links">
-        <a href="#projects" data-i18n="nav_projects">Projects</a>
-        <a href="#skills" data-i18n="nav_skills">Skills</a>
-        <a href="#about" data-i18n="nav_about">About</a>
-        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
 
         <button id="langToggle" class="lang-toggle" type="button" aria-label="Change language">
           EN
@@ -83,79 +81,72 @@
         <div class="cards">
 
           <!-- MASONRY GALLERY -->
-
-          <!-- rende cliccabile tutta la card -->
-        <a class="card-stretch"
-            href="https://michelbranche.github.io/masonry-gallery/"
-            target="_blank" rel="noopener"
-            aria-label="Open Masonry Gallery project"></a>
-
-          <div class="card-links">
-           <a href="https://michelbranche.github.io/masonry-gallery/" target="_blank" rel="noopener">Live</a>
-           <a href="https://github.com/MichelBranche/masonry-gallery" target="_blank" rel="noopener">Code</a>
-         </div>
-
           <article class="card">
-            <a class="card-stretch" href="masonry-gallery.html" aria-label="Open Masonry Gallery project"></a>
 
-            <div class="card-image">
-              <img src="assets/images/masonry-thumb.png" alt="Preview Masonry Gallery" loading="lazy">
-            </div>
+            <!-- Immagine cliccabile -->
+            <a href="https://michelbranche.github.io/masonry-gallery/" target="_blank" rel="noopener" aria-label="Open Masonry Gallery (Live)">
+              <div class="card-image">
+                <img src="assets/images/masonry-thumb.jpg" alt="Preview Masonry Gallery" loading="lazy">
+              </div>
+            </a>
 
             <div class="card-content">
-              <h3>Masonry Gallery</h3>
+              <!-- Titolo cliccabile -->
+              <h3>
+                <a href="https://michelbranche.github.io/masonry-gallery/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">
+                  Masonry Gallery
+                </a>
+              </h3>
+
               <p data-i18n="proj_masonry_desc">
                 Layout tipo Pinterest: griglia masonry, overlay e micro-interazioni (HTML/CSS).
               </p>
+
               <span class="tech">HTML · CSS · Masonry</span>
+
               <div class="card-links">
-                <a href="masonry-gallery.html" data-i18n="link_live">Live</a>
-                <a href="#" target="_blank" rel="noopener" data-i18n="link_code">Codice</a>
+                <a href="https://michelbranche.github.io/masonry-gallery/" target="_blank" rel="noopener" data-i18n="link_live">Live</a>
+                <a href="https://github.com/MichelBranche/masonry-gallery" target="_blank" rel="noopener" data-i18n="link_code">Code</a>
               </div>
             </div>
           </article>
 
-          <!-- CORPORATE WEBSITE -->
+          <!-- Placeholder progetti futuri -->
           <article class="card">
-            <a class="card-stretch" href="#" aria-label="Open Corporate Website project"></a>
             <div class="card-image"></div>
             <div class="card-content">
               <h3>Corporate Website</h3>
-              <p data-i18n="proj_corp_desc">Sito aziendale moderno e responsive, pensato per aziende e professionisti.</p>
+              <p>Sito aziendale moderno e responsive. (In arrivo)</p>
               <span class="tech">HTML · CSS · Flexbox</span>
               <div class="card-links">
-                <a href="#" data-i18n="link_live">Live</a>
-                <a href="#" target="_blank" rel="noopener" data-i18n="link_code">Codice</a>
+                <a href="#" aria-disabled="true" style="opacity:.5; pointer-events:none;">Live</a>
+                <a href="https://github.com/MichelBranche/portfolio" target="_blank" rel="noopener">Code</a>
               </div>
             </div>
           </article>
 
-          <!-- LANDING PAGE -->
           <article class="card">
-            <a class="card-stretch" href="#" aria-label="Open Landing Page project"></a>
             <div class="card-image"></div>
             <div class="card-content">
               <h3>Landing Page</h3>
-              <p data-i18n="proj_landing_desc">Landing page pulita e orientata alla conversione.</p>
+              <p>Landing page pulita e orientata alla conversione. (In arrivo)</p>
               <span class="tech">HTML · CSS · Responsive</span>
               <div class="card-links">
-                <a href="#" data-i18n="link_live">Live</a>
-                <a href="#" target="_blank" rel="noopener" data-i18n="link_code">Codice</a>
+                <a href="#" aria-disabled="true" style="opacity:.5; pointer-events:none;">Live</a>
+                <a href="https://github.com/MichelBranche/portfolio" target="_blank" rel="noopener">Code</a>
               </div>
             </div>
           </article>
 
-          <!-- UI LAYOUT -->
           <article class="card">
-            <a class="card-stretch" href="#" aria-label="Open UI Layout project"></a>
             <div class="card-image"></div>
             <div class="card-content">
               <h3>UI Layout</h3>
-              <p data-i18n="proj_ui_desc">Layout UI moderno riutilizzabile per prodotti digitali.</p>
+              <p>Layout UI moderno riutilizzabile per prodotti digitali. (In arrivo)</p>
               <span class="tech">HTML · CSS · Grid</span>
               <div class="card-links">
-                <a href="#" data-i18n="link_live">Live</a>
-                <a href="#" target="_blank" rel="noopener" data-i18n="link_code">Codice</a>
+                <a href="#" aria-disabled="true" style="opacity:.5; pointer-events:none;">Live</a>
+                <a href="https://github.com/MichelBranche/portfolio" target="_blank" rel="noopener">Code</a>
               </div>
             </div>
           </article>
@@ -191,10 +182,9 @@
       </div>
     </section>
 
-    <!-- ABOUT (senza card a destra, tiles allineati a sinistra) -->
+    <!-- ABOUT -->
     <section id="about" class="about">
       <div class="container">
-
         <div class="section-head section-head--stack">
           <h2 data-i18n="about_title">About</h2>
           <p class="section-subtitle" data-i18n="about_subtitle">Breve presentazione e obiettivo.</p>
@@ -206,23 +196,19 @@
           al responsive design e alla qualità del layout.
         </p>
 
-        <!-- ✅ Tiles dati (allineati a sinistra) -->
         <div class="facts-row" aria-label="Info rapide">
           <div class="fact-tile">
             <span class="fact-label" data-i18n="fact_age_label">Età</span>
             <span class="fact-value" data-i18n="fact_age_value">24</span>
           </div>
-
           <div class="fact-tile">
             <span class="fact-label" data-i18n="fact_focus_label">Focus</span>
             <span class="fact-value" data-i18n="fact_focus_value">HTML/CSS · UI</span>
           </div>
-
           <div class="fact-tile">
             <span class="fact-label" data-i18n="fact_now_label">Ora</span>
             <span class="fact-value" data-i18n="fact_now_value">JavaScript (base)</span>
           </div>
-
           <div class="fact-tile">
             <span class="fact-label" data-i18n="fact_goal_label">Prossimo step</span>
             <span class="fact-value" data-i18n="fact_goal_value">React</span>
@@ -234,7 +220,6 @@
           <li data-i18n="about_li2">Focus su UI moderna e leggibile</li>
           <li data-i18n="about_li3">Obiettivo: crescita su JavaScript e React</li>
         </ul>
-
       </div>
     </section>
 
@@ -249,7 +234,7 @@
 
           <div class="contact-actions">
             <a class="btn" href="mailto:michel.lavoro@gmail.com" data-i18n="contact_email">Email</a>
-            <a class="btn btn-secondary" href="#" target="_blank" rel="noopener" data-i18n="contact_github">GitHub</a>
+            <a class="btn btn-secondary" href="https://github.com/MichelBranche" target="_blank" rel="noopener" data-i18n="contact_github">GitHub</a>
           </div>
         </div>
       </div>
@@ -260,10 +245,10 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-content">
-      <p data-i18n="footer_copy">© 2026 Michel</p>
+      <p data-i18n="footer_copy">© 2026 Michel Branche</p>
       <div class="footer-links">
         <a href="mailto:michel.lavoro@gmail.com">Email</a>
-        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/MichelBranche" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </footer>
@@ -272,10 +257,6 @@
   <script>
     const dict = {
       it: {
-        nav_projects: "Projects",
-        nav_skills: "Skills",
-        nav_about: "About",
-        nav_contact: "Contact",
         hero_badge: "Open to internship · 2026",
         hero_title: "Frontend Developer",
         hero_desc: "Creo interfacce web moderne, pulite e responsive.<br />Attualmente focalizzato su HTML, CSS e basi di JavaScript.",
@@ -286,14 +267,9 @@
 
         projects_title: "Projects",
         projects_subtitle: "Selezione di lavori front-end con focus su UI e layout.",
-
         proj_masonry_desc: "Layout tipo Pinterest: griglia masonry, overlay e micro-interazioni (HTML/CSS).",
-        proj_corp_desc: "Sito aziendale moderno e responsive, pensato per aziende e professionisti.",
-        proj_landing_desc: "Landing page pulita e orientata alla conversione.",
-        proj_ui_desc: "Layout UI moderno riutilizzabile per prodotti digitali.",
-
         link_live: "Live",
-        link_code: "Codice",
+        link_code: "Code",
 
         skills_title: "Skills",
         skills_subtitle: "Cosa sto usando e migliorando nel percorso da frontend.",
@@ -324,13 +300,9 @@
         contact_desc: "Se vuoi scrivermi per una collaborazione o un’opportunità, contattami qui:",
         contact_email: "Email",
         contact_github: "GitHub",
-        footer_copy: "© 2026 Michel"
+        footer_copy: "© 2026 Michel Branche"
       },
       en: {
-        nav_projects: "Projects",
-        nav_skills: "Skills",
-        nav_about: "About",
-        nav_contact: "Contact",
         hero_badge: "Open to internship · 2026",
         hero_title: "Frontend Developer",
         hero_desc: "I build modern, clean and responsive web interfaces.<br />Currently focused on HTML, CSS and JavaScript fundamentals.",
@@ -341,12 +313,7 @@
 
         projects_title: "Projects",
         projects_subtitle: "Selected front-end work focused on UI and layout.",
-
         proj_masonry_desc: "Pinterest-style layout: masonry grid, overlays and micro-interactions (HTML/CSS).",
-        proj_corp_desc: "Modern and responsive corporate website concept for companies and professionals.",
-        proj_landing_desc: "Clean landing page designed for conversion.",
-        proj_ui_desc: "Reusable modern UI layout for digital products.",
-
         link_live: "Live",
         link_code: "Code",
 
@@ -379,7 +346,7 @@
         contact_desc: "If you'd like to reach out for collaboration or opportunities, contact me here:",
         contact_email: "Email",
         contact_github: "GitHub",
-        footer_copy: "© 2026 Michel"
+        footer_copy: "© 2026 Michel Branche"
       }
     };
 
