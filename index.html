@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio front-end di Michel Branche: progetti HTML/CSS e layout UI moderni." />
   <title>Portfolio | Michel Branche</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -12,417 +11,189 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div class="container header-inner">
-      <a class="logo" href="#main" aria-label="Vai alla home">Michel</a>
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="Home">Michel</a>
 
-      <nav class="nav-links" aria-label="Navigazione">
-        <a href="#projects" data-i18n="nav_projects">Projects</a>
-        <a href="#skills" data-i18n="nav_skills">Skills</a>
-        <a href="#about" data-i18n="nav_about">About</a>
-        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      <div class="nav-right">
+        <nav class="menu" aria-label="Navigazione">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-        <button id="langToggle" class="lang-toggle" type="button" aria-label="Change language">
-          EN
-        </button>
-      </nav>
+        <!-- lingua: per ora è solo UI (puoi collegarla a index-en.html quando vuoi) -->
+        <a class="lang" href="#" aria-label="Switch language (English)">EN</a>
+      </div>
     </div>
   </header>
 
-  <main id="main">
+  <!-- HERO -->
+  <main id="top" class="hero">
+    <div class="container hero-grid">
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
+      <section class="hero-content" aria-label="Presentazione">
+        <span class="pill">Open to internship · 2026</span>
 
-        <div class="hero-left">
-          <span class="hero-badge" data-i18n="hero_badge">Open to internship · 2026</span>
+        <h1>Frontend Developer</h1>
 
-          <h1 class="hero-title" data-i18n="hero_title">Frontend Developer</h1>
+        <p class="lead">
+          Creo interfacce web moderne, pulite e responsive.<br />
+          Attualmente focalizzato su HTML, CSS e basi di JavaScript.
+        </p>
 
-          <p class="hero-desc" data-i18n-html="hero_desc">
-            Creo interfacce web moderne, pulite e responsive.<br />
-            Attualmente focalizzato su HTML, CSS e basi di JavaScript.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#projects" class="btn" data-i18n="cta_projects">View projects</a>
-            <a href="#contact" class="btn btn-secondary" data-i18n="cta_contact">Contact</a>
-          </div>
-
-          <div class="chips" aria-label="Stack">
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
-            <span class="chip">Flexbox</span>
-            <span class="chip">Grid</span>
-            <span class="chip" data-i18n="chip_js">JavaScript (learning)</span>
-          </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact</a>
         </div>
 
-        <div class="hero-right" aria-label="Foto profilo">
-          <div class="avatar-card">
-            <img class="avatar" src="assets/images/michel.jpg" alt="Foto di Michel Branche" loading="lazy" />
-          </div>
-          <p class="avatar-caption" data-i18n="avatar_caption">Ciao 👋 sono Michel</p>
+        <div class="tags" aria-label="Tecnologie">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Flexbox</span>
+          <span class="tag">Grid</span>
+          <span class="tag tag-wide">JavaScript (in apprendimento)</span>
         </div>
+      </section>
 
+      <aside class="hero-side" aria-label="Foto profilo">
+        <div class="photo-wrap">
+          <img
+            class="photo"
+            src="assets/images/profile.jpg"
+            alt="Foto di Michel"
+          />
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Selezione di progetti front-end (HTML/CSS). Demo live + codice.</p>
       </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2 data-i18n="projects_title">Projects</h2>
-            <p class="section-subtitle" data-i18n="projects_subtitle">
-              Selezione di lavori front-end con focus su UI e layout.
-            </p>
+      <div class="cards">
+        <!-- MASONRY -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/masonry-thumb.png" alt="Preview Masonry Gallery">
           </div>
+          <div class="card-content">
+            <h3>Masonry Gallery</h3>
+            <p>Layout tipo Pinterest con card riutilizzabili e micro-interazioni.</p>
+            <span class="tech">HTML · CSS</span>
+            <div class="card-links">
+              <a href="https://michelbranche.github.io/masonry-gallery/">Live</a>
+              <a href="https://github.com/MichelBranche/masonry-gallery">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- LANDING -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/landing-thumb.jpg" alt="Preview Landing Page">
+          </div>
+          <div class="card-content">
+            <h3>Landing Page</h3>
+            <p>Landing completa con sezioni (features, pricing, FAQ) e responsive solido.</p>
+            <span class="tech">HTML · CSS</span>
+            <div class="card-links">
+              <a href="https://michelbranche.github.io/landing-page/">Live</a>
+              <a href="https://github.com/MichelBranche/landing-page">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- UI LAYOUT -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/images/ui-thumb.jpg" alt="Preview UI Layout">
+          </div>
+          <div class="card-content">
+            <h3>UI Layout</h3>
+            <p>Componenti e sezioni UI riutilizzabili per layout moderni.</p>
+            <span class="tech">HTML · CSS · Grid</span>
+            <div class="card-links">
+              <a href="#" aria-label="Live UI Layout (coming soon)">Live</a>
+              <a href="#" aria-label="Code UI Layout (coming soon)">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>Focus su UI pulita, responsive design e struttura ordinata.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Layout</h3>
+          <p>Flexbox, Grid, spacing, gerarchie visive e componenti.</p>
         </div>
-
-        <div class="cards">
-
-          <!-- MASONRY -->
-          <article class="card">
-            <a class="card-media" href="https://michelbranche.github.io/masonry-gallery/" aria-label="Apri Masonry Gallery (Live)">
-              <div class="card-image">
-                <img src="assets/images/masonry-thumb.png" alt="Preview Masonry Gallery" loading="lazy">
-              </div>
-            </a>
-
-            <div class="card-content">
-              <h3 class="card-title">
-                <a href="https://michelbranche.github.io/masonry-gallery/" class="card-title-link">Masonry Gallery</a>
-              </h3>
-
-              <p class="card-desc" data-i18n="proj_masonry_desc">
-                Layout tipo Pinterest: griglia masonry, overlay e micro-interazioni (HTML/CSS).
-              </p>
-
-              <span class="tech">HTML · CSS · Masonry</span>
-
-              <div class="card-links">
-                <a href="https://michelbranche.github.io/masonry-gallery/" data-i18n="link_live">Live</a>
-                <a href="https://github.com/MichelBranche/masonry-gallery" data-i18n="link_code">Code</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- LANDING -->
-          <article class="card">
-            <a class="card-media" href="https://michelbranche.github.io/landing-page/" aria-label="Apri Landing Page (Live)">
-              <div class="card-image">
-                <img src="assets/images/landing-thumb.jpg" alt="Preview Landing Page" loading="lazy">
-              </div>
-            </a>
-
-            <div class="card-content">
-              <h3 class="card-title">
-                <a href="https://michelbranche.github.io/landing-page/" class="card-title-link">Landing Page</a>
-              </h3>
-
-              <p class="card-desc" data-i18n="proj_landing_desc">
-                Landing page moderna e conversion-focused, con pricing, FAQ e menu mobile.
-              </p>
-
-              <span class="tech">HTML · CSS · Responsive · JS (menu)</span>
-
-              <div class="card-links">
-                <a href="https://michelbranche.github.io/landing-page/" data-i18n="link_live">Live</a>
-                <a href="https://github.com/MichelBranche/landing-page" data-i18n="link_code">Code</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- CORPORATE (placeholder) -->
-          <article class="card">
-            <a class="card-media" href="#projects" aria-label="Corporate Website (in arrivo)">
-              <div class="card-image card-image--placeholder"></div>
-            </a>
-
-            <div class="card-content">
-              <h3 class="card-title">Corporate Website</h3>
-              <p class="card-desc" data-i18n="proj_corporate_desc">Sito aziendale moderno e multi-sezione. (In arrivo)</p>
-              <span class="tech">HTML · CSS · Flexbox</span>
-
-              <div class="card-links">
-                <span class="link-disabled">Live</span>
-                <a href="https://github.com/MichelBranche/portfolio" data-i18n="link_code">Code</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- UI LAYOUT (placeholder) -->
-          <article class="card">
-            <a class="card-media" href="#projects" aria-label="UI Layout (in arrivo)">
-              <div class="card-image card-image--placeholder"></div>
-            </a>
-
-            <div class="card-content">
-              <h3 class="card-title">UI Layout</h3>
-              <p class="card-desc" data-i18n="proj_ui_desc">Componenti UI riutilizzabili e layout moderni. (In arrivo)</p>
-              <span class="tech">HTML · CSS · Grid</span>
-
-              <div class="card-links">
-                <span class="link-disabled">Live</span>
-                <a href="https://github.com/MichelBranche/portfolio" data-i18n="link_code">Code</a>
-              </div>
-            </div>
-          </article>
-
+        <div class="skill">
+          <h3>UI / Styling</h3>
+          <p>Tipografia, contrasto, cards moderne, micro-interazioni.</p>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <p>Basi in corso: DOM, eventi, logica e interazioni.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2 data-i18n="skills_title">Skills</h2>
-            <p class="section-subtitle" data-i18n="skills_subtitle">
-              Cosa sto usando e migliorando nel percorso da frontend.
-            </p>
-          </div>
-        </div>
+  <!-- ABOUT -->
+  <section id="about" class="section section-alt">
+    <div class="container about-grid">
+      <div class="about-left">
+        <h2>About</h2>
+        <p class="about-sub">Breve presentazione e obiettivo.</p>
 
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h3 data-i18n="skills_layout_title">Layout</h3>
-            <p data-i18n="skills_layout_desc">Flexbox, Grid, componenti riutilizzabili, spacing e gerarchia visiva.</p>
-          </article>
-
-          <article class="skill-card">
-            <h3 data-i18n="skills_ui_title">UI</h3>
-            <p data-i18n="skills_ui_desc">Card moderne, hover/overlay, micro-interazioni, coerenza grafica.</p>
-          </article>
-
-          <article class="skill-card">
-            <h3 data-i18n="skills_resp_title">Responsive</h3>
-            <p data-i18n="skills_resp_desc">Approccio mobile-first e adattamento a breakpoints comuni.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2 data-i18n="about_title">About</h2>
-            <p class="section-subtitle" data-i18n="about_subtitle">Breve presentazione e obiettivo.</p>
-          </div>
-        </div>
-
-        <p class="about-text" data-i18n="about_text">
+        <p class="about-text">
           Ho 24 anni e sono uno studente frontend developer. Sto approfondendo HTML, CSS e JavaScript,
           con attenzione particolare alla struttura, al responsive design e alla qualità del layout.
         </p>
 
-        <div class="facts-row" aria-label="Info rapide">
-          <div class="fact-tile">
-            <span class="fact-label" data-i18n="fact_age_label">Età</span>
-            <span class="fact-value" data-i18n="fact_age_value">24</span>
-          </div>
-
-          <div class="fact-tile">
-            <span class="fact-label" data-i18n="fact_focus_label">Focus</span>
-            <span class="fact-value" data-i18n="fact_focus_value">HTML/CSS · UI</span>
-          </div>
-
-          <div class="fact-tile">
-            <span class="fact-label" data-i18n="fact_now_label">Ora</span>
-            <span class="fact-value" data-i18n="fact_now_value">JavaScript (base)</span>
-          </div>
-
-          <div class="fact-tile">
-            <span class="fact-label" data-i18n="fact_goal_label">Prossimo step</span>
-            <span class="fact-value" data-i18n="fact_goal_value">React</span>
-          </div>
-        </div>
-
         <ul class="about-list">
-          <li data-i18n="about_li1">Attenzione ai dettagli e pulizia del codice</li>
-          <li data-i18n="about_li2">Focus su UI moderna e leggibile</li>
-          <li data-i18n="about_li3">Obiettivo: crescita su JavaScript e React</li>
+          <li>Attenzione ai dettagli e pulizia del codice</li>
+          <li>Focus su UI moderna e leggibile</li>
+          <li>Obiettivo: crescita su JavaScript e React</li>
         </ul>
       </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="contact-card">
-          <h2 data-i18n="contact_title">Contact</h2>
-          <p class="section-subtitle" data-i18n="contact_desc">
-            Se vuoi scrivermi per una collaborazione o un’opportunità, contattami qui:
-          </p>
-
-          <div class="contact-actions">
-            <a class="btn" href="mailto:michel.lavoro@gmail.com" data-i18n="contact_email">Email</a>
-            <a class="btn btn-secondary" href="https://github.com/MichelBranche" data-i18n="contact_github">GitHub</a>
-          </div>
+      <div class="about-right" aria-label="Dati rapidi">
+        <div class="facts">
+          <div class="fact"><span class="fact-k">Età</span><span class="fact-v">24</span></div>
+          <div class="fact"><span class="fact-k">Focus</span><span class="fact-v">HTML/CSS · UI</span></div>
+          <div class="fact"><span class="fact-k">Ora</span><span class="fact-v">JavaScript (base)</span></div>
+          <div class="fact"><span class="fact-k">Prossimo step</span><span class="fact-v">React</span></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p data-i18n="footer_copy">© 2026 Michel Branche</p>
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Michel Branche</p>
       <div class="footer-links">
         <a href="mailto:michel.lavoro@gmail.com">Email</a>
         <a href="https://github.com/MichelBranche">GitHub</a>
       </div>
     </div>
   </footer>
-
-  <!-- LANGUAGE TOGGLE -->
-  <script>
-    const dict = {
-      it: {
-        nav_projects: "Projects",
-        nav_skills: "Skills",
-        nav_about: "About",
-        nav_contact: "Contact",
-
-        hero_badge: "Open to internship · 2026",
-        hero_title: "Frontend Developer",
-        hero_desc: "Creo interfacce web moderne, pulite e responsive.<br />Attualmente focalizzato su HTML, CSS e basi di JavaScript.",
-        cta_projects: "View projects",
-        cta_contact: "Contact",
-        chip_js: "JavaScript (in apprendimento)",
-        avatar_caption: "Ciao 👋 sono Michel",
-
-        projects_title: "Projects",
-        projects_subtitle: "Selezione di lavori front-end con focus su UI e layout.",
-        proj_masonry_desc: "Layout tipo Pinterest: griglia masonry, overlay e micro-interazioni (HTML/CSS).",
-        proj_landing_desc: "Landing page moderna e conversion-focused, con pricing, FAQ e menu mobile.",
-        proj_corporate_desc: "Sito aziendale moderno e multi-sezione. (In arrivo)",
-        proj_ui_desc: "Componenti UI riutilizzabili e layout moderni. (In arrivo)",
-
-        link_live: "Live",
-        link_code: "Code",
-
-        skills_title: "Skills",
-        skills_subtitle: "Cosa sto usando e migliorando nel percorso da frontend.",
-        skills_layout_title: "Layout",
-        skills_layout_desc: "Flexbox, Grid, componenti riutilizzabili, spacing e gerarchia visiva.",
-        skills_ui_title: "UI",
-        skills_ui_desc: "Card moderne, hover/overlay, micro-interazioni, coerenza grafica.",
-        skills_resp_title: "Responsive",
-        skills_resp_desc: "Approccio mobile-first e adattamento a breakpoints comuni.",
-
-        about_title: "About",
-        about_subtitle: "Breve presentazione e obiettivo.",
-        about_text: "Ho 24 anni e sono uno studente frontend developer. Sto approfondendo HTML, CSS e JavaScript, con attenzione particolare alla struttura, al responsive design e alla qualità del layout.",
-        about_li1: "Attenzione ai dettagli e pulizia del codice",
-        about_li2: "Focus su UI moderna e leggibile",
-        about_li3: "Obiettivo: crescita su JavaScript e React",
-
-        fact_age_label: "Età",
-        fact_age_value: "24",
-        fact_focus_label: "Focus",
-        fact_focus_value: "HTML/CSS · UI",
-        fact_now_label: "Ora",
-        fact_now_value: "JavaScript (base)",
-        fact_goal_label: "Prossimo step",
-        fact_goal_value: "React",
-
-        contact_title: "Contact",
-        contact_desc: "Se vuoi scrivermi per una collaborazione o un’opportunità, contattami qui:",
-        contact_email: "Email",
-        contact_github: "GitHub",
-
-        footer_copy: "© 2026 Michel Branche"
-      },
-      en: {
-        nav_projects: "Projects",
-        nav_skills: "Skills",
-        nav_about: "About",
-        nav_contact: "Contact",
-
-        hero_badge: "Open to internship · 2026",
-        hero_title: "Frontend Developer",
-        hero_desc: "I build modern, clean and responsive web interfaces.<br />Currently focused on HTML, CSS and JavaScript fundamentals.",
-        cta_projects: "View projects",
-        cta_contact: "Contact",
-        chip_js: "JavaScript (learning)",
-        avatar_caption: "Hi 👋 I'm Michel",
-
-        projects_title: "Projects",
-        projects_subtitle: "Selected front-end work focused on UI and layout.",
-        proj_masonry_desc: "Pinterest-style layout: masonry grid, overlays and micro-interactions (HTML/CSS).",
-        proj_landing_desc: "Modern conversion-focused landing page with pricing, FAQ and mobile menu.",
-        proj_corporate_desc: "Modern multi-section corporate website. (Coming soon)",
-        proj_ui_desc: "Reusable UI components and modern layouts. (Coming soon)",
-
-        link_live: "Live",
-        link_code: "Code",
-
-        skills_title: "Skills",
-        skills_subtitle: "What I'm using and improving as a front-end developer.",
-        skills_layout_title: "Layout",
-        skills_layout_desc: "Flexbox, Grid, reusable components, spacing and visual hierarchy.",
-        skills_ui_title: "UI",
-        skills_ui_desc: "Modern cards, hover/overlays, micro-interactions, visual consistency.",
-        skills_resp_title: "Responsive",
-        skills_resp_desc: "Mobile-first approach and common breakpoint adaptation.",
-
-        about_title: "About",
-        about_subtitle: "Quick intro and goal.",
-        about_text: "I'm 24 and I'm a front-end developer student. I'm learning HTML, CSS and JavaScript, focusing on structure, responsive design and layout quality.",
-        about_li1: "Attention to detail and clean code",
-        about_li2: "Focus on modern, readable UI",
-        about_li3: "Goal: grow in JavaScript and React",
-
-        fact_age_label: "Age",
-        fact_age_value: "24",
-        fact_focus_label: "Focus",
-        fact_focus_value: "HTML/CSS · UI",
-        fact_now_label: "Now",
-        fact_now_value: "JavaScript (basics)",
-        fact_goal_label: "Next step",
-        fact_goal_value: "React",
-
-        contact_title: "Contact",
-        contact_desc: "If you'd like to reach out for collaboration or opportunities, contact me here:",
-        contact_email: "Email",
-        contact_github: "GitHub",
-
-        footer_copy: "© 2026 Michel Branche"
-      }
-    };
-
-    function applyLang(lang){
-      document.documentElement.lang = lang;
-
-      document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        if (dict[lang][key]) el.textContent = dict[lang][key];
-      });
-
-      document.querySelectorAll("[data-i18n-html]").forEach(el => {
-        const key = el.getAttribute("data-i18n-html");
-        if (dict[lang][key]) el.innerHTML = dict[lang][key];
-      });
-
-      const btn = document.getElementById("langToggle");
-      btn.textContent = (lang === "it") ? "EN" : "IT";
-      localStorage.setItem("lang", lang);
-    }
-
-    const saved = localStorage.getItem("lang") || "it";
-    applyLang(saved);
-
-    document.getElementById("langToggle").addEventListener("click", () => {
-      const current = localStorage.getItem("lang") || "it";
-      applyLang(current === "it" ? "en" : "it");
-    });
-  </script>
 
 </body>
 </html>
