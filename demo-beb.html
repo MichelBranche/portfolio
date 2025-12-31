@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo — B&B / Affittacamere</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="demo.js" defer></script>
+</head>
+
+<body data-page="beb">
+
+  <header class="page-header">
+    <div class="container">
+      <a class="back-link" href="index.html#biz-demos">← Torna al portfolio</a>
+      <h1 class="page-title">Demo — B&B / Affittacamere</h1>
+      <p class="page-sub">
+        Feature specifica: <strong>richiesta disponibilità</strong> con calcolo notti + stima prezzo (demo).
+      </p>
+
+      <div class="demo-hero">
+        <img src="assets/images/beb.jpg" alt="B&B demo hero">
+        <div class="demo-body">
+
+          <div class="cta-row">
+            <button class="btn btn-primary" data-open-modal="modal-beb">Richiedi disponibilità</button>
+            <a class="btn btn-ghost" href="#camere">Vedi camere</a>
+          </div>
+
+          <div class="kpi-row">
+            <div class="kpi">Check-in/check-out<small>Form rapido</small></div>
+            <div class="kpi">Stima prezzo<small>Demo calcolo</small></div>
+            <div class="kpi">CTA contatto<small>Mail/WhatsApp</small></div>
+          </div>
+
+          <div class="demo-panels">
+            <div class="panel" id="camere">
+              <h3>Camere (esempio)</h3>
+              <div class="demo-grid-2">
+                <div class="demo-item">
+                  <h4>Camera Standard</h4>
+                  <p>2 ospiti · bagno privato · wifi</p>
+                  <div class="demo-row">
+                    <span class="badge">da €85/notte</span>
+                    <button class="btn btn-ghost" data-open-modal="modal-beb">Chiedi info</button>
+                  </div>
+                </div>
+                <div class="demo-item">
+                  <h4>Camera Deluxe</h4>
+                  <p>2–3 ospiti · balcone · colazione inclusa</p>
+                  <div class="demo-row">
+                    <span class="badge">da €120/notte</span>
+                    <button class="btn btn-ghost" data-open-modal="modal-beb">Chiedi info</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Personalizzazioni tipiche</h3>
+              <ul>
+                <li>Galleria foto + servizi</li>
+                <li>Sezione “Come arrivare” + mappa</li>
+                <li>Recensioni / social proof</li>
+                <li>Check-in / policy</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MODAL B&B -->
+  <div id="modal-beb" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Richiedi disponibilità">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>Richiedi disponibilità (demo)</h3>
+        <button class="modal-close" data-close-modal aria-label="Chiudi">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="notice" id="beb-result">Seleziona date valide per vedere una stima.</div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="beb-checkin">Check-in</label>
+            <input id="beb-checkin" type="date" />
+          </div>
+          <div class="field">
+            <label for="beb-checkout">Check-out</label>
+            <input id="beb-checkout" type="date" />
+          </div>
+          <div class="field">
+            <label for="beb-guests">Ospiti</label>
+            <select id="beb-guests">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Riepilogo</label>
+            <div class="kpi-row">
+              <div class="kpi">Notti: <span id="beb-nights">—</span><small>calcolo demo</small></div>
+              <div class="kpi">Stima: <span id="beb-price">—</span><small>calcolo demo</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="beb-note">Note (opzionale)</label>
+          <textarea id="beb-note" placeholder="es. arrivo tardi, intolleranze, richieste..."></textarea>
+        </div>
+      </div>
+
+      <div class="modal-foot">
+        <button class="btn btn-ghost" data-close-modal>Annulla</button>
+        <button class="btn btn-primary" id="beb-send">Invia richiesta</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
