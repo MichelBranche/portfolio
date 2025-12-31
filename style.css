@@ -259,9 +259,54 @@ h2{font-size:2rem;}
   object-fit:cover;
 }
 
+.card-image--example{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  background:
+    radial-gradient(220px 120px at 20% 20%, rgba(37,99,235,0.18), transparent 60%),
+    linear-gradient(135deg, #eaf0ff, #f8fafc);
+}
+
+.example-icon{
+  font-size:2.2rem;
+}
+
+.example-label{
+  font-weight:800;
+  color:var(--text-secondary);
+  letter-spacing:-0.01em;
+}
+
 .card-content{padding:18px;}
 .card h3{font-size:1.12rem;margin-bottom:8px;}
 .card p{color:var(--text-secondary);font-size:0.95rem;}
+
+.example-list{
+  margin-top:12px;
+  list-style:none;
+  display:grid;
+  gap:8px;
+}
+
+.example-list li{
+  position:relative;
+  padding-left:16px;
+  color:var(--text-main);
+  font-weight:700;
+  font-size:0.95rem;
+}
+
+.example-list li::before{
+  content:"•";
+  position:absolute;
+  left:0;
+  top:0;
+  color:var(--accent);
+  font-weight:900;
+}
 
 .tech{
   display:block;
