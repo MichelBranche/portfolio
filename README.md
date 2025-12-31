@@ -20,7 +20,9 @@ Focus su **UI moderna**, **responsive design** e componenti riutilizzabili.
 
 ## 📸 Preview
 
-![Portfolio Preview](assets/images/portfolio-preview.png)
+![Portfolio Preview](assets/images/portfolio-preview1.jpg)
+
+![Portfolio Preview2](assets/images/portfolio-preview2.jpg)
 
 
 ## 📂 Struttura
