@@ -8,7 +8,7 @@
 <link href="style.css" rel="stylesheet"/>
 <script defer="" src="theme.js"></script>
 <script defer="" src="device.js"></script>
-<script defer="" src="mobile-carousel.js"></script><script defer src="interactions.js"></script>
+<script defer="" src="mobile-carousel.js"></script><script defer="" src="interactions.js"></script>
 </head>
 <body class="mobile-page">
 <header class="header">
@@ -31,7 +31,7 @@
 <a class="btn btn-primary" href="#projects">Progetti</a>
 <a class="btn btn-ghost" href="#certifications">Certificazioni</a>
 <a class="btn btn-ghost" href="examples-mobile.html">Esempi attività</a>
-<a class="btn btn-ghost" href="#contact">Contatti</a>
+<a aria-label="Scarica CV" class="btn btn-ghost" href="assets/cv/Michel-Branche-CV-IT.pdf" rel="noopener noreferrer" target="_blank">Scarica CV</a><a class="btn btn-ghost" href="#contact">Contatti</a>
 </div>
 <div aria-label="Tech stack" class="mobile-tags">
 <span class="tag">HTML5</span>
@@ -49,9 +49,9 @@
 <div class="section-head" data-reveal="">
 <h2>Progetti</h2>
 <p>Lista completa dei progetti principali.</p>
-</div>
+</div><div aria-label="Filtri progetti" class="filters filters-scroll" role="tablist"><button aria-selected="true" class="chip is-active" data-filter="all" type="button">Tutti</button><button aria-selected="false" class="chip" data-filter="htmlcss" type="button">HTML/CSS</button><button aria-selected="false" class="chip" data-filter="jsdom" type="button">JS/DOM</button><button aria-selected="false" class="chip" data-filter="uiux" type="button">UI/UX</button></div>
 <div aria-label="Progetti scorribili" class="m-carousel" data-carousel="" data-reveal="">
-<article class="card m-card spotlight" data-project="1">
+<article class="card m-card spotlight" data-project="1" data-tags="htmlcss uiux">
 <div class="card-image">
 <img alt="Preview Masonry Gallery" loading="lazy" src="assets/images/masonry-thumb.jpg"/>
 </div>
@@ -65,7 +65,7 @@
 <button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
 </div>
 </article>
-<article class="card m-card spotlight" data-project="1">
+<article class="card m-card spotlight" data-project="1" data-tags="htmlcss uiux">
 <div class="card-image">
 <img alt="Preview Landing Page" loading="lazy" src="assets/images/landing-thumb.jpg"/>
 </div>
@@ -79,7 +79,7 @@
 <button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
 </div>
 </article>
-<article class="card m-card spotlight" data-project="1">
+<article class="card m-card spotlight" data-project="1" data-tags="jsdom uiux">
 <div class="card-image">
 <img alt="Preview UI Layout" loading="lazy" src="assets/images/ui-layout-thumb.jpg"/>
 </div>
@@ -93,7 +93,7 @@
 <button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
 </div>
 </article>
-<article class="card m-card spotlight" data-project="1">
+<article class="card m-card spotlight" data-project="1" data-tags="jsdom uiux">
 <div class="card-image">
 <img alt="Preview Easy Calculator" loading="lazy" src="assets/images/easy-calculator-thumb.jpg"/>
 </div>
@@ -215,5 +215,33 @@
 </div>
 </footer>
 </main>
-<dialog aria-label="Dettagli progetto" class="p-dialog" id="projectDialog"><form class="p-dialog-inner" method="dialog"><button aria-label="Chiudi" class="p-dialog-close" type="submit" value="close">×</button><div class="p-dialog-body"><div class="p-dialog-media"><img alt="" data-pd-img=""/></div><div class="p-dialog-content"><h3 data-pd-title=""></h3><p class="pd-desc" data-pd-desc=""></p><p class="pd-tech" data-pd-tech=""></p><div class="pd-actions"><a class="btn btn-primary" data-pd-live="" href="#" rel="noopener noreferrer" target="_blank">Live</a><a class="btn btn-ghost" data-pd-code="" href="#" rel="noopener noreferrer" target="_blank">Code</a></div></div></div></form></dialog><div aria-live="polite" class="toast" id="toast" role="status"></div></body>
+<dialog aria-label="Dettagli progetto" class="p-dialog" id="projectDialog">
+<form class="p-dialog-inner" method="dialog">
+<button aria-label="Chiudi" class="p-dialog-close" type="submit" value="close">×</button>
+<div class="p-dialog-body">
+<div class="p-dialog-media"><img alt="" data-pd-img=""/></div>
+<div class="p-dialog-content">
+<h3 data-pd-title=""></h3>
+<p class="pd-sub" data-pd-sub=""></p><div class="pd-case"><div class="pd-case-row"><span class="pd-case-k">Problema</span><span class="pd-case-v" data-pd-problem=""></span></div><div class="pd-case-row"><span class="pd-case-k">Soluzione</span><span class="pd-case-v" data-pd-solution=""></span></div><div class="pd-case-row"><span class="pd-case-k">Risultato</span><span class="pd-case-v" data-pd-outcome=""></span></div></div>
+<div class="pd-grid">
+<div class="pd-block">
+<h4>Cosa fa</h4>
+<ul class="pd-list" data-pd-features=""></ul>
+</div>
+<div class="pd-block">
+<h4>Cosa ho imparato</h4>
+<ul class="pd-list" data-pd-learn=""></ul>
+</div>
+</div>
+<p class="pd-tech" data-pd-tech=""></p>
+<p class="pd-note" data-pd-note="" hidden=""></p>
+<div class="pd-actions">
+<a class="btn btn-primary" data-pd-live="" href="#" rel="noopener noreferrer" target="_blank">Live</a>
+<a class="btn btn-ghost" data-pd-code="" href="#" rel="noopener noreferrer" target="_blank">Code</a>
+</div>
+</div>
+</div>
+</form>
+</dialog>
+<div aria-live="polite" class="toast" id="toast" role="status"></div></body>
 </html>

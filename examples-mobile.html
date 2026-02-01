@@ -125,5 +125,35 @@
 </div>
 </footer>
 </main>
-<dialog aria-label="Dettagli progetto" class="p-dialog" id="projectDialog"><form class="p-dialog-inner" method="dialog"><button aria-label="Chiudi" class="p-dialog-close" type="submit" value="close">×</button><div class="p-dialog-body"><div class="p-dialog-media"><img alt="" data-pd-img=""/></div><div class="p-dialog-content"><h3 data-pd-title=""></h3><p class="pd-desc" data-pd-desc=""></p><p class="pd-tech" data-pd-tech=""></p><div class="pd-actions"><a class="btn btn-primary" data-pd-live="" href="#" rel="noopener noreferrer" target="_blank">Live</a><a class="btn btn-ghost" data-pd-code="" href="#" rel="noopener noreferrer" target="_blank">Code</a></div></div></div></form></dialog><div aria-live="polite" class="toast" id="toast" role="status"></div></body>
+<dialog aria-label="Dettagli progetto" class="p-dialog" id="projectDialog">
+  <form class="p-dialog-inner" method="dialog">
+    <button aria-label="Chiudi" class="p-dialog-close" type="submit" value="close">×</button>
+    <div class="p-dialog-body">
+      <div class="p-dialog-media"><img alt="" data-pd-img=""/></div>
+      <div class="p-dialog-content">
+        <h3 data-pd-title=""></h3>
+        <p class="pd-sub" data-pd-sub=""></p>
+
+        <div class="pd-grid">
+          <div class="pd-block">
+            <h4>Cosa fa</h4>
+            <ul class="pd-list" data-pd-features=""></ul>
+          </div>
+          <div class="pd-block">
+            <h4>Cosa ho imparato</h4>
+            <ul class="pd-list" data-pd-learn=""></ul>
+          </div>
+        </div>
+
+        <p class="pd-tech" data-pd-tech=""></p>
+        <p class="pd-note" data-pd-note hidden></p>
+
+        <div class="pd-actions">
+          <a class="btn btn-primary" data-pd-live="" href="#" rel="noopener noreferrer" target="_blank">Live</a>
+          <a class="btn btn-ghost" data-pd-code="" href="#" rel="noopener noreferrer" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+  </form>
+</dialog><div aria-live="polite" class="toast" id="toast" role="status"></div></body>
 </html>
