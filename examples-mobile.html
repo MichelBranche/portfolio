@@ -1,48 +1,42 @@
 <!DOCTYPE html>
-
 <html lang="it" data-theme="dark">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Esempi per attività | Michel Branche</title>
-<link href="style.css" rel="stylesheet"/>
-
-<script src="theme.js" defer></script>
-<script defer src="device.js"></script>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Esempi attività Mobile | Michel Branche</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="theme.js"></script>
+  <script defer src="device.js"></script>
 </head>
-<body>
-<header class="header">
-<div class="container nav">
-<a aria-label="Torna all'inizio" class="logo" href="#top">Michel</a>
-<div class="nav-right">
-<nav aria-label="Navigazione" class="menu">
-<a href="index.html#projects">Progetti</a>
-<a href="index.html#certifications">Certificazioni</a>
-<a aria-current="page" href="examples.html">Esempi attività</a>
-<a href="index.html#skills">Competenze</a>
-<a href="index.html#about">Chi sono</a>
-<a href="index.html#contact">Contatti</a>
-</nav>
-<a class="view-toggle" data-view-toggle="mobile" href="examples-mobile.html" aria-label="Apri versione mobile">Mobile</a>
-<a aria-label="Vai alla versione inglese" class="lang" href="examples-en.html">EN</a>
-<button class="theme-toggle" type="button" data-theme-toggle>Tema</button>
-</div>
-</div>
-</header>
-<main class="page-hero" id="top">
-  <div class="container">
-    <h1>Esempi per attività</h1>
-    <p>
-      Mini-demo pronte per bar, ristoranti e strutture ricettive: layout pulito, CTA chiare,
-      sezioni tipiche e funzioni personalizzabili.
-    </p>
-    <div class="page-actions">
-      <a class="btn btn-primary" href="index.html#projects">Torna ai progetti</a>
-      <a class="btn btn-ghost" href="index.html#contact">Contatti</a>
+<body class="mobile-page">
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="Home">Michel</a>
+      <div class="nav-right">
+        <a class="view-toggle" data-view-toggle="desktop" href="examples.html" aria-label="Apri versione desktop">Desktop</a>
+        <a class="lang" href="examples-en-mobile.html" aria-label="Vai alla versione inglese">EN</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Tema</button>
+      </div>
     </div>
-  </div>
-</main>
-<section class="section" id="biz-demos">
+  </header>
+
+  <main class="mobile-main" id="top">
+    <section class="mobile-hero">
+      <div class="container">
+        <span class="pill">Versione mobile</span>
+        <h1>Esempi per attività</h1>
+        <p class="lead">Mini-demo pronte per bar, ristoranti e strutture ricettive: layout pulito, CTA chiare e funzioni personalizzabili.</p>
+
+        <div class="mobile-actions" aria-label="Azioni rapide">
+          <a class="btn btn-primary" href="mobile.html">Portfolio</a>
+          <a class="btn btn-ghost" href="mobile.html#contact">Contatti</a>
+          <a class="btn btn-ghost" href="#biz-demos">Apri esempi</a>
+          <a class="btn btn-ghost" href="#top">Su</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="biz-demos">
 <div class="container">
 <div class="section-head">
 <h2>Esempi per attività</h2>
@@ -123,7 +117,8 @@
 </div>
 </div>
 </section>
-<footer class="footer">
+
+    <footer class="footer">
 <div class="container footer-content">
 <p>© 2026 Michel Branche</p>
 <div class="footer-links">
@@ -132,5 +127,6 @@
 </div>
 </div>
 </footer>
+  </main>
 </body>
 </html>

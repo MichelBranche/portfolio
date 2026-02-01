@@ -1,65 +1,61 @@
 <!DOCTYPE html>
-
-<html data-theme="dark" lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Portfolio | Michel Branche</title>
-<link href="style.css" rel="stylesheet"/>
-<script defer="" src="theme.js"></script>
-<script defer src="device.js"></script>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Mobile Portfolio | Michel Branche</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="theme.js"></script>
+  <script defer src="device.js"></script>
+  <script defer src="mobile-carousel.js"></script>
 </head>
-<body>
-<header class="header">
-<div class="container nav">
-<a aria-label="Back to top" class="logo" href="#top">Michel</a>
-<div class="nav-right">
-<nav aria-label="Navigation" class="menu">
-<a href="#projects">Projects</a>
-<a href="#certifications">Certifications</a>
-<a href="examples-en.html">Business demos</a>
-<a href="#skills">Skills</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-<a class="view-toggle" data-view-toggle="mobile" href="mobile-en.html" aria-label="Open mobile version">Mobile</a>
-<a aria-label="Switch to Italian" class="lang" href="index.html">IT</a>
-<button class="theme-toggle" data-theme-toggle="" type="button">Theme</button>
-</div>
-</div>
-</header>
-<main class="hero" id="top">
-<div class="container hero-grid">
-<section class="hero-content">
-<span class="pill">Open to internship · 2026</span>
-<h1>Frontend Developer</h1>
-<p class="lead">
-          I build modern, clean, responsive web interfaces.<br/>
-          Currently focused on HTML, CSS, and JavaScript fundamentals.
-        </p>
-<div class="hero-actions">
-<a class="btn btn-primary" href="#projects">View projects</a>
-<a class="btn btn-ghost" href="#contact">Contact</a>
-</div>
-<div aria-label="Tech stack" class="tags">
-<span class="tag">HTML5</span>
+<body class="mobile-page">
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="Home">Michel</a>
+      <div class="nav-right">
+        <a class="view-toggle" data-view-toggle="desktop" href="index-en.html" aria-label="Open desktop version">Desktop</a>
+        <a class="lang" href="mobile.html" aria-label="Switch to Italian">IT</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Tema</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="mobile-main" id="top">
+    <section class="mobile-hero">
+      <div class="container">
+        <span class="pill">Mobile layout</span>
+        <h1>Frontend Developer</h1>
+        <p class="lead">Modern, clean and responsive interfaces. Current focus: HTML, CSS and JavaScript basics.</p>
+
+        <div class="mobile-actions" aria-label="Azioni rapide">
+          <a class="btn btn-primary" href="#projects">Projects</a>
+          <a class="btn btn-ghost" href="#certifications">Certifications</a>
+          <a class="btn btn-ghost" href="examples-en-mobile.html">Business demos</a>
+          <a class="btn btn-ghost" href="#contact">Contact</a>
+        </div>
+
+        <div class="mobile-tags" aria-label="Tech stack">
+          <span class="tag">HTML5</span>
 <span class="tag">CSS3</span>
 <span class="tag">Flexbox</span>
 <span class="tag">Grid</span>
 <span class="tag">Responsive UI</span>
 <span class="tag">Git &amp; GitHub</span>
 <span class="tag tag-wide">JavaScript (ES6, DOM)</span>
-</div>
-</section>
-<aside aria-label="Profile photo" class="hero-side">
-<div class="photo-wrap">
-<img alt="Michel profile photo" class="photo" src="assets/images/profile.jpg"/>
-</div>
-</aside>
-</div>
-</main>
-<section class="section section-alt" id="projects">
-<div class="container"><div class="projects-rail"><div class="rail-meta"><h2>Projects</h2><p>Selected front-end projects (HTML/CSS/JS). Live demos + source code.</p><p class="rail-hint">Scroll horizontally to explore. On desktop: Shift + mouse wheel.</p><a class="btn btn-ghost" href="examples-en.html">Business demos</a></div><div aria-label="Scrollable project list" class="rail"><article class="rail-item card">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Full list of my main projects.</p>
+        </div>
+
+	        <div class="m-carousel" data-carousel aria-label="Scrollable projects">
+	          <article class="card m-card">
 <div class="card-image">
 <img alt="Masonry Gallery preview" loading="lazy" src="assets/images/masonry-thumb.jpg"/>
 </div>
@@ -72,7 +68,8 @@
 <a href="https://github.com/MichelBranche/masonry-gallery" rel="noopener noreferrer" target="_blank">Code</a>
 </div>
 </div>
-</article><article class="rail-item card">
+</article>
+<article class="card m-card">
 <div class="card-image">
 <img alt="Landing Page preview" loading="lazy" src="assets/images/landing-thumb.jpg"/>
 </div>
@@ -85,7 +82,8 @@
 <a href="https://github.com/MichelBranche/landing-page" rel="noopener noreferrer" target="_blank">Code</a>
 </div>
 </div>
-</article><article class="rail-item card">
+</article>
+<article class="card m-card">
 <div class="card-image">
 <img alt="UI Layout preview" loading="lazy" src="assets/images/ui-layout-thumb.jpg"/>
 </div>
@@ -98,7 +96,8 @@
 <a href="https://github.com/MichelBranche/ui-layout" rel="noopener noreferrer" target="_blank">Code</a>
 </div>
 </div>
-</article><article class="rail-item card">
+</article>
+<article class="card m-card">
 <div class="card-image">
 <img alt="Preview Easy Calculator" loading="lazy" src="assets/images/easy-calculator-thumb.jpg"/>
 </div>
@@ -111,10 +110,12 @@
 <a href="https://github.com/MichelBranche/Easy-Calculator" rel="noopener noreferrer" target="_blank">Code</a>
 </div>
 </div>
-</article></div></div></div>
-</section>
-<!-- CERTIFICATIONS -->
-<section class="section" id="certifications">
+</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
 <div class="container">
   <div class="section-head">
     <h2>Certifications</h2>
@@ -150,8 +151,8 @@
   </div>
 </div>
 </section>
-<!-- BUSINESS DEMOS -->
-<section class="section section-alt" id="skills">
+
+    <section class="section section-alt" id="skills">
 <div class="container">
 <div class="section-head">
 <h2>Skills</h2>
@@ -173,7 +174,8 @@
 </div>
 </div>
 </section>
-<section class="section" id="about">
+
+    <section class="section" id="about">
 <div class="container about-grid">
 <div class="about-left">
 <h2>About</h2>
@@ -198,7 +200,8 @@
 </div>
 </div>
 </section>
-<section class="section section-alt" id="contact">
+
+    <section class="section section-alt" id="contact">
 <div class="container">
 <div class="contact-box">
 <div>
@@ -212,7 +215,8 @@
 </div>
 </div>
 </section>
-<footer class="footer">
+
+    <footer class="footer">
 <div class="container footer-content">
 <p>© 2026 Michel Branche</p>
 <div class="footer-links">
@@ -221,5 +225,6 @@
 </div>
 </div>
 </footer>
+  </main>
 </body>
 </html>

@@ -133,6 +133,24 @@ a { color: inherit; text-decoration: none; }
 }
 .lang:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
 
+.view-toggle{
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 8px 12px;
+  border: 1px solid rgba(var(--accent-rgb), 0.35);
+  border-radius: 999px;
+  background: rgba(var(--accent-rgb), 0.12);
+  color: var(--text);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+}
+.view-toggle:hover{
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+  background: rgba(var(--accent-rgb), 0.16);
+  border-color: rgba(var(--accent-rgb), 0.55);
+}
+
+
 /* =========================
    HERO
 ========================= */
@@ -1037,3 +1055,124 @@ border-color: var(--border);
   border-color: rgba(var(--accent-rgb), 0.35);
 }
 
+
+
+/* =========================
+   MOBILE VERSION PAGES
+   Dedicated layouts for mobile.html + examples-mobile.html
+========================= */
+.mobile-page .menu{ display: none; }
+.mobile-page .nav-right{ gap: 10px; }
+
+.mobile-main{
+  padding: 26px 0 18px;
+  background:
+    radial-gradient(900px 360px at 18% 12%, rgba(var(--accent-rgb), 0.16), transparent 60%),
+    var(--bg);
+}
+
+.mobile-hero{
+  padding: 10px 0 18px;
+}
+
+.mobile-hero h1{
+  font-size: clamp(1.9rem, 6.6vw, 2.4rem);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.mobile-hero .lead{
+  margin-top: 10px;
+  color: var(--muted);
+  max-width: 56ch;
+}
+
+.mobile-actions{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.mobile-actions .btn{
+  justify-content: center;
+  padding: 12px 14px;
+}
+
+.mobile-tags{
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+.mobile-tags::-webkit-scrollbar{ height: 8px; }
+.mobile-tags::-webkit-scrollbar-thumb{ background: rgba(var(--accent-rgb), 0.45); border-radius: 999px; }
+.mobile-tags .tag{ white-space: nowrap; }
+
+.mobile-stack{
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+/* Mobile projects carousel (touch-first)
+   - No hover on phones, so we animate the "active" card instead.
+   - Active state comes from:
+     1) JS (IntersectionObserver) => .is-active
+     2) Keyboard/tap focus => :focus-within
+*/
+.m-carousel{
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 6px 4px 16px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.m-carousel::-webkit-scrollbar{ display: none; }
+
+.m-carousel .m-card{
+  flex: 0 0 84%;
+  scroll-snap-align: center;
+  overflow: hidden;
+  transform: translateY(0) rotate(0deg) scale(0.975);
+  opacity: 0.76;
+  filter: saturate(0.94);
+  transition:
+    transform 220ms ease,
+    opacity 220ms ease,
+    filter 220ms ease,
+    box-shadow 220ms ease;
+  will-change: transform;
+}
+
+.m-carousel .m-card.is-active,
+.m-carousel .m-card:focus-within{
+  transform: translateY(-10px) rotate(-1.25deg) scale(1.02);
+  opacity: 1;
+  filter: none;
+  box-shadow: var(--shadow-md);
+}
+
+.m-carousel .m-card:active{
+  transform: translateY(-8px) rotate(-0.85deg) scale(1.01);
+}
+
+.m-carousel .card-content{
+  padding: 14px 16px 16px;
+}
+
+.m-carousel .card-image{ height: 160px; }
+
+@media (max-width: 420px){
+  .mobile-actions{ grid-template-columns: 1fr; }
+  .m-carousel .card-image{ height: 140px; }
+  .m-carousel .m-card{ flex-basis: 88%; }
+}
+
+.mobile-page .demo-grid{ grid-template-columns: 1fr; }
