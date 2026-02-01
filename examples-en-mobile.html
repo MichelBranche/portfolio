@@ -1,51 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+
+<html data-theme="dark" lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Business demos Mobile | Michel Branche</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="theme.js"></script>
-  <script defer src="device.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Business demos Mobile | Michel Branche</title>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="theme.js"></script>
+<script defer="" src="device.js"></script><script defer src="interactions.js"></script>
 </head>
 <body class="mobile-page">
-  <header class="header">
-    <div class="container nav">
-      <a class="logo" href="#top" aria-label="Home">Michel</a>
-      <div class="nav-right">
-        <a class="view-toggle" data-view-toggle="desktop" href="examples-en.html" aria-label="Open desktop version">Desktop</a>
-        <a class="lang" href="examples-mobile.html" aria-label="Switch to Italian">IT</a>
-        <button class="theme-toggle" type="button" data-theme-toggle>Tema</button>
-      </div>
-    </div>
-  </header>
-
-  <main class="mobile-main" id="top">
-    <section class="mobile-hero">
-      <div class="container">
-        <span class="pill">Mobile layout</span>
-        <h1>Business demos</h1>
-        <p class="lead">Ready-to-use mini demos for cafés, restaurants and hospitality: clean layout, clear CTAs and custom features.</p>
-
-        <div class="mobile-actions" aria-label="Azioni rapide">
-          <a class="btn btn-primary" href="mobile-en.html">Portfolio</a>
-          <a class="btn btn-ghost" href="mobile-en.html#contact">Contact</a>
-          <a class="btn btn-ghost" href="#biz-demos">Open demos</a>
-          <a class="btn btn-ghost" href="#top">Top</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="biz-demos">
+<header class="header">
+<div class="container nav">
+<a aria-label="Home" class="logo" href="#top">Michel</a>
+<div class="nav-right">
+<a aria-label="Open desktop version" class="view-toggle" data-view-toggle="desktop" href="examples-en.html">Desktop</a>
+<a aria-label="Switch to Italian" class="lang" href="examples-mobile.html">IT</a>
+<button class="theme-toggle" data-theme-toggle="" type="button">Tema</button>
+</div>
+</div>
+</header>
+<main class="mobile-main" id="top">
+<section class="mobile-hero">
 <div class="container">
-<div class="section-head">
+<span class="pill">Mobile layout</span>
+<h1>Business demos</h1>
+<p class="lead">Ready-to-use mini demos for cafés, restaurants and hospitality: clean layout, clear CTAs and custom features.</p>
+<div aria-label="Azioni rapide" class="mobile-actions" data-reveal="">
+<a class="btn btn-primary" href="mobile-en.html">Portfolio</a>
+<a class="btn btn-ghost" href="mobile-en.html#contact">Contact</a>
+<a class="btn btn-ghost" href="#biz-demos">Open demos</a>
+<a class="btn btn-ghost" href="#top">Top</a>
+</div>
+</div>
+</section>
+<section class="section" id="biz-demos">
+<div class="container">
+<div class="section-head" data-reveal="">
 <h2>Business examples</h2>
 <p>
           Small ready-to-use demos for cafés, restaurants and hospitality businesses:
           clean layout, clear CTAs and customizable sections.
         </p>
 </div>
-<div class="demo-grid">
+<div class="demo-grid" data-reveal="">
 <a aria-label="Open B&amp;B demo" class="demo-card" href="demo-beb.html">
 <div class="demo-image">
 <img alt="B&amp;B demo" loading="lazy" src="assets/images/beb.jpg"/>
@@ -113,8 +111,7 @@
 </div>
 </div>
 </section>
-
-    <footer class="footer">
+<footer class="footer">
 <div class="container footer-content">
 <p>© 2026 Michel Branche</p>
 <div class="footer-links">
@@ -123,6 +120,6 @@
 </div>
 </div>
 </footer>
-  </main>
-</body>
+</main>
+<dialog aria-label="Project details" class="p-dialog" id="projectDialog"><form class="p-dialog-inner" method="dialog"><button aria-label="Close" class="p-dialog-close" type="submit" value="close">×</button><div class="p-dialog-body"><div class="p-dialog-media"><img alt="" data-pd-img=""/></div><div class="p-dialog-content"><h3 data-pd-title=""></h3><p class="pd-desc" data-pd-desc=""></p><p class="pd-tech" data-pd-tech=""></p><div class="pd-actions"><a class="btn btn-primary" data-pd-live="" href="#" rel="noopener noreferrer" target="_blank">Live</a><a class="btn btn-ghost" data-pd-code="" href="#" rel="noopener noreferrer" target="_blank">Code</a></div></div></div></form></dialog><div aria-live="polite" class="toast" id="toast" role="status"></div></body>
 </html>

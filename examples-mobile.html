@@ -1,51 +1,49 @@
 <!DOCTYPE html>
-<html lang="it" data-theme="dark">
+
+<html data-theme="dark" lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Esempi attività Mobile | Michel Branche</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="theme.js"></script>
-  <script defer src="device.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Esempi attività Mobile | Michel Branche</title>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="theme.js"></script>
+<script defer="" src="device.js"></script><script defer src="interactions.js"></script>
 </head>
 <body class="mobile-page">
-  <header class="header">
-    <div class="container nav">
-      <a class="logo" href="#top" aria-label="Home">Michel</a>
-      <div class="nav-right">
-        <a class="view-toggle" data-view-toggle="desktop" href="examples.html" aria-label="Apri versione desktop">Desktop</a>
-        <a class="lang" href="examples-en-mobile.html" aria-label="Vai alla versione inglese">EN</a>
-        <button class="theme-toggle" type="button" data-theme-toggle>Tema</button>
-      </div>
-    </div>
-  </header>
-
-  <main class="mobile-main" id="top">
-    <section class="mobile-hero">
-      <div class="container">
-        <span class="pill">Versione mobile</span>
-        <h1>Esempi per attività</h1>
-        <p class="lead">Mini-demo pronte per bar, ristoranti e strutture ricettive: layout pulito, CTA chiare e funzioni personalizzabili.</p>
-
-        <div class="mobile-actions" aria-label="Azioni rapide">
-          <a class="btn btn-primary" href="mobile.html">Portfolio</a>
-          <a class="btn btn-ghost" href="mobile.html#contact">Contatti</a>
-          <a class="btn btn-ghost" href="#biz-demos">Apri esempi</a>
-          <a class="btn btn-ghost" href="#top">Su</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="biz-demos">
+<header class="header">
+<div class="container nav">
+<a aria-label="Home" class="logo" href="#top">Michel</a>
+<div class="nav-right">
+<a aria-label="Apri versione desktop" class="view-toggle" data-view-toggle="desktop" href="examples.html">Desktop</a>
+<a aria-label="Vai alla versione inglese" class="lang" href="examples-en-mobile.html">EN</a>
+<button class="theme-toggle" data-theme-toggle="" type="button">Tema</button>
+</div>
+</div>
+</header>
+<main class="mobile-main" id="top">
+<section class="mobile-hero">
 <div class="container">
-<div class="section-head">
+<span class="pill">Versione mobile</span>
+<h1>Esempi per attività</h1>
+<p class="lead">Mini-demo pronte per bar, ristoranti e strutture ricettive: layout pulito, CTA chiare e funzioni personalizzabili.</p>
+<div aria-label="Azioni rapide" class="mobile-actions" data-reveal="">
+<a class="btn btn-primary" href="mobile.html">Portfolio</a>
+<a class="btn btn-ghost" href="mobile.html#contact">Contatti</a>
+<a class="btn btn-ghost" href="#biz-demos">Apri esempi</a>
+<a class="btn btn-ghost" href="#top">Su</a>
+</div>
+</div>
+</section>
+<section class="section" id="biz-demos">
+<div class="container">
+<div class="section-head" data-reveal="">
 <h2>Esempi per attività</h2>
 <p>
           Mini-demo “pronte” per bar, ristoranti e strutture ricettive: layout pulito, CTA chiare,
           sezioni tipiche e funzioni personalizzabili.
         </p>
 </div>
-<div class="demo-grid">
+<div class="demo-grid" data-reveal="">
 <!-- B&B -->
 <a aria-label="Apri demo B&amp;B / Affittacamere" class="demo-card" href="demo-beb.html">
 <div class="demo-image">
@@ -117,8 +115,7 @@
 </div>
 </div>
 </section>
-
-    <footer class="footer">
+<footer class="footer">
 <div class="container footer-content">
 <p>© 2026 Michel Branche</p>
 <div class="footer-links">
@@ -127,6 +124,6 @@
 </div>
 </div>
 </footer>
-  </main>
-</body>
+</main>
+<dialog aria-label="Dettagli progetto" class="p-dialog" id="projectDialog"><form class="p-dialog-inner" method="dialog"><button aria-label="Chiudi" class="p-dialog-close" type="submit" value="close">×</button><div class="p-dialog-body"><div class="p-dialog-media"><img alt="" data-pd-img=""/></div><div class="p-dialog-content"><h3 data-pd-title=""></h3><p class="pd-desc" data-pd-desc=""></p><p class="pd-tech" data-pd-tech=""></p><div class="pd-actions"><a class="btn btn-primary" data-pd-live="" href="#" rel="noopener noreferrer" target="_blank">Live</a><a class="btn btn-ghost" data-pd-code="" href="#" rel="noopener noreferrer" target="_blank">Code</a></div></div></div></form></dialog><div aria-live="polite" class="toast" id="toast" role="status"></div></body>
 </html>

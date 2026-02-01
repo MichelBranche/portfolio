@@ -7,7 +7,7 @@
 <title>Portfolio | Michel Branche</title>
 <link href="style.css" rel="stylesheet"/>
 <script defer="" src="theme.js"></script>
-<script defer src="device.js"></script>
+<script defer="" src="device.js"></script><script defer src="interactions.js"></script>
 </head>
 <body>
 <header class="header">
@@ -22,7 +22,7 @@
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
-<a class="view-toggle" data-view-toggle="mobile" href="mobile-en.html" aria-label="Open mobile version">Mobile</a>
+<a aria-label="Open mobile version" class="view-toggle" data-view-toggle="mobile" href="mobile-en.html">Mobile</a>
 <a aria-label="Switch to Italian" class="lang" href="index.html">IT</a>
 <button class="theme-toggle" data-theme-toggle="" type="button">Theme</button>
 </div>
@@ -30,7 +30,7 @@
 </header>
 <main class="hero" id="top">
 <div class="container hero-grid">
-<section class="hero-content">
+<section class="hero-content" data-reveal="">
 <span class="pill">Open to internship · 2026</span>
 <h1>Frontend Developer</h1>
 <p class="lead">
@@ -51,7 +51,7 @@
 <span class="tag tag-wide">JavaScript (ES6, DOM)</span>
 </div>
 </section>
-<aside aria-label="Profile photo" class="hero-side">
+<aside aria-label="Profile photo" class="hero-side" data-reveal="">
 <div class="photo-wrap">
 <img alt="Michel profile photo" class="photo" src="assets/images/profile.jpg"/>
 </div>
@@ -59,7 +59,7 @@
 </div>
 </main>
 <section class="section section-alt" id="projects">
-<div class="container"><div class="projects-rail"><div class="rail-meta"><h2>Projects</h2><p>Selected front-end projects (HTML/CSS/JS). Live demos + source code.</p><p class="rail-hint">Scroll horizontally to explore. On desktop: Shift + mouse wheel.</p><a class="btn btn-ghost" href="examples-en.html">Business demos</a></div><div aria-label="Scrollable project list" class="rail"><article class="rail-item card">
+<div class="container"><div class="projects-rail"><div class="rail-meta" data-reveal=""><h2>Projects</h2><p>Selected front-end projects (HTML/CSS/JS). Live demos + source code.</p><p class="rail-hint">Scroll horizontally to explore. On desktop: Shift + mouse wheel.</p><a class="btn btn-ghost" href="examples-en.html">Business demos</a></div><div aria-label="Scrollable project list" class="rail" data-reveal=""><article class="rail-item card spotlight" data-project="1">
 <div class="card-image">
 <img alt="Masonry Gallery preview" loading="lazy" src="assets/images/masonry-thumb.jpg"/>
 </div>
@@ -70,9 +70,9 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/masonry-gallery/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/masonry-gallery" rel="noopener noreferrer" target="_blank">Code</a>
+<button class="qv-btn" data-quickview="" type="button">Details</button></div>
 </div>
-</div>
-</article><article class="rail-item card">
+</article><article class="rail-item card spotlight" data-project="1">
 <div class="card-image">
 <img alt="Landing Page preview" loading="lazy" src="assets/images/landing-thumb.jpg"/>
 </div>
@@ -83,9 +83,9 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/landing-page/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/landing-page" rel="noopener noreferrer" target="_blank">Code</a>
+<button class="qv-btn" data-quickview="" type="button">Details</button></div>
 </div>
-</div>
-</article><article class="rail-item card">
+</article><article class="rail-item card spotlight" data-project="1">
 <div class="card-image">
 <img alt="UI Layout preview" loading="lazy" src="assets/images/ui-layout-thumb.jpg"/>
 </div>
@@ -96,9 +96,9 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/ui-layout/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/ui-layout" rel="noopener noreferrer" target="_blank">Code</a>
+<button class="qv-btn" data-quickview="" type="button">Details</button></div>
 </div>
-</div>
-</article><article class="rail-item card">
+</article><article class="rail-item card spotlight" data-project="1">
 <div class="card-image">
 <img alt="Preview Easy Calculator" loading="lazy" src="assets/images/easy-calculator-thumb.jpg"/>
 </div>
@@ -109,55 +109,53 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/Easy-Calculator/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/Easy-Calculator" rel="noopener noreferrer" target="_blank">Code</a>
-</div>
+<button class="qv-btn" data-quickview="" type="button">Details</button></div>
 </div>
 </article></div></div></div>
 </section>
 <!-- CERTIFICATIONS -->
 <section class="section" id="certifications">
 <div class="container">
-  <div class="section-head">
-    <h2>Certifications</h2>
-    <p>Epicode certificates completed during my Web Developer track.</p>
-  </div>
-
-  <div class="cert-grid" aria-label="Certifications list">
-    <article class="cert-card">
-      <a class="cert-media" href="assets/certs/epicode-m1.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Epicode M1 certificate PDF">
-        <img src="assets/certs/epicode-m1.webp" loading="lazy" alt="Epicode M1 certificate preview - VS Code, HTML5, CSS" />
-      </a>
-      <div class="cert-body">
-        <h3>Epicode - Module M1</h3>
-        <p class="cert-meta">VS Code · HTML5 · CSS | Issued on 19/12/2025</p>
-        <div class="cert-actions">
-          <a href="assets/certs/epicode-m1.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="cert-card">
-      <a class="cert-media" href="assets/certs/epicode-m2.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Epicode M2 certificate PDF">
-        <img src="assets/certs/epicode-m2.webp" loading="lazy" alt="Epicode M2 certificate preview - Git, DOM, JavaScript" />
-      </a>
-      <div class="cert-body">
-        <h3>Epicode - Module M2</h3>
-        <p class="cert-meta">Git · DOM · JavaScript | Issued on 31/01/2026</p>
-        <div class="cert-actions">
-          <a href="assets/certs/epicode-m2.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
-        </div>
-      </div>
-    </article>
-  </div>
+<div class="section-head" data-reveal="">
+<h2>Certifications</h2>
+<p>Epicode certificates completed during my Web Developer track.</p>
+</div>
+<div aria-label="Certifications list" class="cert-grid" data-reveal="">
+<article class="cert-card" data-reveal="">
+<a aria-label="Open Epicode M1 certificate PDF" class="cert-media" href="assets/certs/epicode-m1.pdf" rel="noopener noreferrer" target="_blank">
+<img alt="Epicode M1 certificate preview - VS Code, HTML5, CSS" loading="lazy" src="assets/certs/epicode-m1.webp"/>
+</a>
+<div class="cert-body">
+<h3>Epicode - Module M1</h3>
+<p class="cert-meta">VS Code · HTML5 · CSS | Issued on 19/12/2025</p>
+<div class="cert-actions">
+<a href="assets/certs/epicode-m1.pdf" rel="noopener noreferrer" target="_blank">Open PDF</a>
+</div>
+</div>
+</article>
+<article class="cert-card" data-reveal="">
+<a aria-label="Open Epicode M2 certificate PDF" class="cert-media" href="assets/certs/epicode-m2.pdf" rel="noopener noreferrer" target="_blank">
+<img alt="Epicode M2 certificate preview - Git, DOM, JavaScript" loading="lazy" src="assets/certs/epicode-m2.webp"/>
+</a>
+<div class="cert-body">
+<h3>Epicode - Module M2</h3>
+<p class="cert-meta">Git · DOM · JavaScript | Issued on 31/01/2026</p>
+<div class="cert-actions">
+<a href="assets/certs/epicode-m2.pdf" rel="noopener noreferrer" target="_blank">Open PDF</a>
+</div>
+</div>
+</article>
+</div>
 </div>
 </section>
 <!-- BUSINESS DEMOS -->
 <section class="section section-alt" id="skills">
 <div class="container">
-<div class="section-head">
+<div class="section-head" data-reveal="">
 <h2>Skills</h2>
 <p>Clean UI, responsive design, and structured code.</p>
 </div>
-<div class="skills-grid">
+<div class="skills-grid" data-reveal="">
 <div class="skill">
 <h3>Layout</h3>
 <p>Flexbox, Grid, spacing, visual hierarchy and components.</p>
@@ -174,7 +172,7 @@
 </div>
 </section>
 <section class="section" id="about">
-<div class="container about-grid">
+<div class="container about-grid" data-reveal="">
 <div class="about-left">
 <h2>About</h2>
 <p class="about-sub">Short intro and goal.</p>
@@ -200,13 +198,13 @@
 </section>
 <section class="section section-alt" id="contact">
 <div class="container">
-<div class="contact-box">
+<div class="contact-box" data-reveal="">
 <div>
 <h2>Contact</h2>
 <p class="contact-sub">Feel free to reach out.</p>
 </div>
 <div class="contact-actions">
-<a class="btn btn-primary" href="mailto:michel.lavoro@gmail.com">Email</a>
+<a class="btn btn-primary" href="mailto:michel.lavoro@gmail.com">Email</a><button class="btn btn-ghost" data-copy-email="michel.lavoro@gmail.com" type="button">Copy email</button>
 <a class="btn btn-ghost" href="https://github.com/MichelBranche">GitHub</a>
 </div>
 </div>
@@ -221,5 +219,5 @@
 </div>
 </div>
 </footer>
-</body>
+<dialog aria-label="Project details" class="p-dialog" id="projectDialog"><form class="p-dialog-inner" method="dialog"><button aria-label="Close" class="p-dialog-close" type="submit" value="close">×</button><div class="p-dialog-body"><div class="p-dialog-media"><img alt="" data-pd-img=""/></div><div class="p-dialog-content"><h3 data-pd-title=""></h3><p class="pd-desc" data-pd-desc=""></p><p class="pd-tech" data-pd-tech=""></p><div class="pd-actions"><a class="btn btn-primary" data-pd-live="" href="#" rel="noopener noreferrer" target="_blank">Live</a><a class="btn btn-ghost" data-pd-code="" href="#" rel="noopener noreferrer" target="_blank">Code</a></div></div></div></form></dialog><div aria-live="polite" class="toast" id="toast" role="status"></div></body>
 </html>

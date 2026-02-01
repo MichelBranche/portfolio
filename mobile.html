@@ -1,61 +1,57 @@
 <!DOCTYPE html>
-<html lang="it" data-theme="dark">
+
+<html data-theme="dark" lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Portfolio Mobile | Michel Branche</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="theme.js"></script>
-  <script defer src="device.js"></script>
-  <script defer src="mobile-carousel.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio Mobile | Michel Branche</title>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="theme.js"></script>
+<script defer="" src="device.js"></script>
+<script defer="" src="mobile-carousel.js"></script><script defer src="interactions.js"></script>
 </head>
 <body class="mobile-page">
-  <header class="header">
-    <div class="container nav">
-      <a class="logo" href="#top" aria-label="Home">Michel</a>
-      <div class="nav-right">
-        <a class="view-toggle" data-view-toggle="desktop" href="index.html" aria-label="Apri versione desktop">Desktop</a>
-        <a class="lang" href="mobile-en.html" aria-label="Vai alla versione inglese">EN</a>
-        <button class="theme-toggle" type="button" data-theme-toggle>Tema</button>
-      </div>
-    </div>
-  </header>
-
-  <main class="mobile-main" id="top">
-    <section class="mobile-hero">
-      <div class="container">
-        <span class="pill">Versione mobile</span>
-        <h1>Frontend Developer</h1>
-        <p class="lead">Interfacce web moderne e leggibili, con focus su HTML, CSS e basi di JavaScript.</p>
-
-        <div class="mobile-actions" aria-label="Azioni rapide">
-          <a class="btn btn-primary" href="#projects">Progetti</a>
-          <a class="btn btn-ghost" href="#certifications">Certificazioni</a>
-          <a class="btn btn-ghost" href="examples-mobile.html">Esempi attività</a>
-          <a class="btn btn-ghost" href="#contact">Contatti</a>
-        </div>
-
-        <div class="mobile-tags" aria-label="Tech stack">
-          <span class="tag">HTML5</span>
+<header class="header">
+<div class="container nav">
+<a aria-label="Home" class="logo" href="#top">Michel</a>
+<div class="nav-right">
+<a aria-label="Apri versione desktop" class="view-toggle" data-view-toggle="desktop" href="index.html">Desktop</a>
+<a aria-label="Vai alla versione inglese" class="lang" href="mobile-en.html">EN</a>
+<button class="theme-toggle" data-theme-toggle="" type="button">Tema</button>
+</div>
+</div>
+</header>
+<main class="mobile-main" id="top">
+<section class="mobile-hero">
+<div class="container">
+<span class="pill">Versione mobile</span>
+<h1>Frontend Developer</h1>
+<p class="lead">Interfacce web moderne e leggibili, con focus su HTML, CSS e basi di JavaScript.</p>
+<div aria-label="Azioni rapide" class="mobile-actions" data-reveal="">
+<a class="btn btn-primary" href="#projects">Progetti</a>
+<a class="btn btn-ghost" href="#certifications">Certificazioni</a>
+<a class="btn btn-ghost" href="examples-mobile.html">Esempi attività</a>
+<a class="btn btn-ghost" href="#contact">Contatti</a>
+</div>
+<div aria-label="Tech stack" class="mobile-tags">
+<span class="tag">HTML5</span>
 <span class="tag">CSS3</span>
 <span class="tag">Flexbox</span>
 <span class="tag">Grid</span>
 <span class="tag">Responsive UI</span>
 <span class="tag">Git &amp; GitHub</span>
 <span class="tag tag-wide">JavaScript (ES6, DOM)</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="projects">
-      <div class="container">
-        <div class="section-head">
-          <h2>Progetti</h2>
-          <p>Lista completa dei progetti principali.</p>
-        </div>
-
-	        <div class="m-carousel" data-carousel aria-label="Progetti scorribili">
-	          <article class="card m-card">
+</div>
+</div>
+</section>
+<section class="section section-alt" id="projects">
+<div class="container">
+<div class="section-head" data-reveal="">
+<h2>Progetti</h2>
+<p>Lista completa dei progetti principali.</p>
+</div>
+<div aria-label="Progetti scorribili" class="m-carousel" data-carousel="" data-reveal="">
+<article class="card m-card spotlight" data-project="1">
 <div class="card-image">
 <img alt="Preview Masonry Gallery" loading="lazy" src="assets/images/masonry-thumb.jpg"/>
 </div>
@@ -66,10 +62,10 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/masonry-gallery/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/masonry-gallery" rel="noopener noreferrer" target="_blank">Code</a>
-</div>
+<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
 </div>
 </article>
-<article class="card m-card">
+<article class="card m-card spotlight" data-project="1">
 <div class="card-image">
 <img alt="Preview Landing Page" loading="lazy" src="assets/images/landing-thumb.jpg"/>
 </div>
@@ -80,10 +76,10 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/landing-page/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/landing-page" rel="noopener noreferrer" target="_blank">Code</a>
-</div>
+<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
 </div>
 </article>
-<article class="card m-card">
+<article class="card m-card spotlight" data-project="1">
 <div class="card-image">
 <img alt="Preview UI Layout" loading="lazy" src="assets/images/ui-layout-thumb.jpg"/>
 </div>
@@ -94,10 +90,10 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/ui-layout/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/ui-layout" rel="noopener noreferrer" target="_blank">Code</a>
-</div>
+<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
 </div>
 </article>
-<article class="card m-card">
+<article class="card m-card spotlight" data-project="1">
 <div class="card-image">
 <img alt="Preview Easy Calculator" loading="lazy" src="assets/images/easy-calculator-thumb.jpg"/>
 </div>
@@ -108,21 +104,20 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/Easy-Calculator/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/Easy-Calculator" rel="noopener noreferrer" target="_blank">Code</a>
-</div>
+<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
 </div>
 </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="certifications">
+</div>
+</div>
+</section>
+<section class="section" id="certifications">
 <div class="container">
-<div class="section-head">
+<div class="section-head" data-reveal="">
 <h2>Certificazioni</h2>
 <p>Attestati Epicode completati durante il percorso Web Developer.</p>
 </div>
-<div aria-label="Elenco certificazioni" class="cert-grid">
-<article class="cert-card">
+<div aria-label="Elenco certificazioni" class="cert-grid" data-reveal="">
+<article class="cert-card" data-reveal="">
 <a aria-label="Apri certificato Epicode M1 in PDF" class="cert-media" href="assets/certs/epicode-m1.pdf" rel="noopener noreferrer" target="_blank">
 <img alt="Certificato Epicode M1 - VSCode, HTML5, CSS" loading="lazy" src="assets/certs/epicode-m1.webp"/>
 </a>
@@ -134,7 +129,7 @@
 </div>
 </div>
 </article>
-<article class="cert-card">
+<article class="cert-card" data-reveal="">
 <a aria-label="Apri certificato Epicode M2 in PDF" class="cert-media" href="assets/certs/epicode-m2.pdf" rel="noopener noreferrer" target="_blank">
 <img alt="Certificato Epicode M2 - Git, DOM, JavaScript" loading="lazy" src="assets/certs/epicode-m2.webp"/>
 </a>
@@ -149,14 +144,13 @@
 </div>
 </div>
 </section>
-
-    <section class="section section-alt" id="skills">
+<section class="section section-alt" id="skills">
 <div class="container">
-<div class="section-head">
+<div class="section-head" data-reveal="">
 <h2>Competenze</h2>
 <p>Focus su UI pulita, responsive design e struttura ordinata.</p>
 </div>
-<div class="skills-grid">
+<div class="skills-grid" data-reveal="">
 <div class="skill">
 <h3>Layout</h3>
 <p>Flexbox, Grid, spacing, gerarchie visive e componenti.</p>
@@ -172,9 +166,8 @@
 </div>
 </div>
 </section>
-
-    <section class="section" id="about">
-<div class="container about-grid">
+<section class="section" id="about">
+<div class="container about-grid" data-reveal="">
 <div class="about-left">
 <h2>Chi sono</h2>
 <p class="about-sub">Breve presentazione e obiettivo.</p>
@@ -198,23 +191,21 @@
 </div>
 </div>
 </section>
-
-    <section class="section section-alt" id="contact">
+<section class="section section-alt" id="contact">
 <div class="container">
-<div class="contact-box">
+<div class="contact-box" data-reveal="">
 <div>
 <h2>Contatti</h2>
 <p class="contact-sub">Se ti va, scrivimi: rispondo volentieri.</p>
 </div>
 <div class="contact-actions">
-<a class="btn btn-primary" href="mailto:michel.lavoro@gmail.com">Email</a>
+<a class="btn btn-primary" href="mailto:michel.lavoro@gmail.com">Email</a><button class="btn btn-ghost" data-copy-email="michel.lavoro@gmail.com" type="button">Copia email</button>
 <a class="btn btn-ghost" href="https://github.com/MichelBranche">GitHub</a>
 </div>
 </div>
 </div>
 </section>
-
-    <footer class="footer">
+<footer class="footer">
 <div class="container footer-content">
 <p>© 2026 Michel Branche</p>
 <div class="footer-links">
@@ -223,6 +214,6 @@
 </div>
 </div>
 </footer>
-  </main>
-</body>
+</main>
+<dialog aria-label="Dettagli progetto" class="p-dialog" id="projectDialog"><form class="p-dialog-inner" method="dialog"><button aria-label="Chiudi" class="p-dialog-close" type="submit" value="close">×</button><div class="p-dialog-body"><div class="p-dialog-media"><img alt="" data-pd-img=""/></div><div class="p-dialog-content"><h3 data-pd-title=""></h3><p class="pd-desc" data-pd-desc=""></p><p class="pd-tech" data-pd-tech=""></p><div class="pd-actions"><a class="btn btn-primary" data-pd-live="" href="#" rel="noopener noreferrer" target="_blank">Live</a><a class="btn btn-ghost" data-pd-code="" href="#" rel="noopener noreferrer" target="_blank">Code</a></div></div></div></form></dialog><div aria-live="polite" class="toast" id="toast" role="status"></div></body>
 </html>

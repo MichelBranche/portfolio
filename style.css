@@ -1176,3 +1176,205 @@ border-color: var(--border);
 }
 
 .mobile-page .demo-grid{ grid-template-columns: 1fr; }
+
+
+
+/* =========================
+   MICRO INTERACTIONS
+   - Reveal on scroll
+   - Quick view dialog
+   - Copy email toast
+   - Spotlight on cards
+========================= */
+
+/* Reveal on scroll */
+[data-reveal]{
+  opacity: 1;
+  transform: none;
+}
+.reveal-init[data-reveal]{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 420ms ease, transform 420ms ease;
+  will-change: transform, opacity;
+}
+.reveal-init[data-reveal].is-in{
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .reveal-init[data-reveal]{
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Quick view button in card links */
+.card-links .qv-btn{
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--text);
+  position: relative;
+  cursor: pointer;
+}
+.card-links .qv-btn::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0%;
+  background: var(--accent);
+  transition: width .2s ease;
+}
+.card-links .qv-btn:hover::after{ width: 100%; }
+.card-links .qv-btn:focus-visible{
+  outline: 2px solid rgba(var(--accent-rgb), 0.70);
+  outline-offset: 6px;
+  border-radius: 8px;
+}
+
+/* Dialog */
+.p-dialog{
+  width: min(920px, calc(100vw - 28px));
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 6px);
+  background: var(--surface-solid);
+  color: var(--text);
+  padding: 0;
+  box-shadow: var(--shadow-md);
+}
+.p-dialog::backdrop{
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.p-dialog-inner{
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 18px;
+}
+
+.p-dialog-close{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+}
+.p-dialog-close:hover{ background: var(--hover-bg); }
+.p-dialog-close:focus-visible{
+  outline: 2px solid rgba(var(--accent-rgb), 0.70);
+  outline-offset: 3px;
+}
+
+.p-dialog-body{
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.p-dialog-media{
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+}
+.p-dialog-media img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-dialog-content h3{
+  margin: 4px 0 8px;
+  font-size: 1.25rem;
+}
+.p-dialog-content .pd-desc{
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+.p-dialog-content .pd-tech{
+  margin: 0 0 14px;
+  font-weight: 800;
+  color: var(--text);
+  opacity: 0.92;
+}
+
+.p-dialog-content .pd-actions{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 780px){
+  .p-dialog-body{ grid-template-columns: 1fr; }
+  .p-dialog-inner{ padding: 16px; }
+}
+
+/* Toast */
+.toast{
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%) translateY(10px);
+  background: var(--surface-solid);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+  z-index: 9999;
+}
+.toast.is-show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Spotlight */
+.spotlight{
+  position: relative;
+  isolation: isolate;
+}
+.spotlight::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 220ms ease;
+  background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 38%),
+    rgba(var(--accent-rgb), 0.18),
+    rgba(var(--accent-rgb), 0.06) 35%,
+    transparent 62%);
+  mix-blend-mode: screen;
+}
+.spotlight.spotlight-on::before{ opacity: 1; }
+
+/* Mobile: spotlight shows on active card */
+.m-card.is-active.spotlight::before{ opacity: 1; }
+
+@media (prefers-reduced-motion: reduce){
+  .spotlight::before{ transition: none; }
+}

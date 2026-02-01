@@ -7,7 +7,7 @@
 <title>Portfolio | Michel Branche</title>
 <link href="style.css" rel="stylesheet"/>
 <script defer="" src="theme.js"></script>
-<script defer src="device.js"></script>
+<script defer="" src="device.js"></script><script defer src="interactions.js"></script>
 </head>
 <body>
 <!-- HEADER -->
@@ -23,7 +23,7 @@
 <a href="#about">Chi sono</a>
 <a href="#contact">Contatti</a>
 </nav>
-<a class="view-toggle" data-view-toggle="mobile" href="mobile.html" aria-label="Apri versione mobile">Mobile</a>
+<a aria-label="Apri versione mobile" class="view-toggle" data-view-toggle="mobile" href="mobile.html">Mobile</a>
 <a aria-label="Vai alla versione inglese" class="lang" href="index-en.html">EN</a>
 <button class="theme-toggle" data-theme-toggle="" type="button">Tema</button>
 </div>
@@ -32,7 +32,7 @@
 <!-- HERO -->
 <main class="hero" id="top">
 <div class="container hero-grid">
-<section class="hero-content">
+<section class="hero-content" data-reveal="">
 <span class="pill">Open to internship · 2026</span>
 <h1>Frontend Developer</h1>
 <p class="lead">
@@ -53,7 +53,7 @@
 <span class="tag tag-wide">JavaScript (ES6, DOM)</span>
 </div>
 </section>
-<aside aria-label="Foto profilo" class="hero-side">
+<aside aria-label="Foto profilo" class="hero-side" data-reveal="">
 <div class="photo-wrap">
 <img alt="Foto di Michel" class="photo" src="assets/images/profile.jpg"/>
 </div>
@@ -62,7 +62,7 @@
 </main>
 <!-- PROJECTS -->
 <section class="section section-alt" id="projects">
-<div class="container"><div class="projects-rail"><div class="rail-meta"><h2>Progetti</h2><p>Selezione di progetti front-end (HTML/CSS/JS). Demo live + codice.</p><p class="rail-hint">Scorri orizzontalmente per vedere tutti i progetti. Su desktop: Shift + rotellina.</p><a class="btn btn-ghost" href="examples.html">Esempi per attività</a></div><div aria-label="Elenco progetti scorribile" class="rail"><article class="rail-item card">
+<div class="container"><div class="projects-rail"><div class="rail-meta" data-reveal=""><h2>Progetti</h2><p>Selezione di progetti front-end (HTML/CSS/JS). Demo live + codice.</p><p class="rail-hint">Scorri orizzontalmente per vedere tutti i progetti. Su desktop: Shift + rotellina.</p><a class="btn btn-ghost" href="examples.html">Esempi per attività</a></div><div aria-label="Elenco progetti scorribile" class="rail" data-reveal=""><article class="rail-item card spotlight" data-project="1">
 <div class="card-image">
 <img alt="Preview Masonry Gallery" loading="lazy" src="assets/images/masonry-thumb.jpg"/>
 </div>
@@ -73,9 +73,9 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/masonry-gallery/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/masonry-gallery" rel="noopener noreferrer" target="_blank">Code</a>
+<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
 </div>
-</div>
-</article><article class="rail-item card">
+</article><article class="rail-item card spotlight" data-project="1">
 <div class="card-image">
 <img alt="Preview Landing Page" loading="lazy" src="assets/images/landing-thumb.jpg"/>
 </div>
@@ -86,9 +86,9 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/landing-page/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/landing-page" rel="noopener noreferrer" target="_blank">Code</a>
+<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
 </div>
-</div>
-</article><article class="rail-item card">
+</article><article class="rail-item card spotlight" data-project="1">
 <div class="card-image">
 <img alt="Preview UI Layout" loading="lazy" src="assets/images/ui-layout-thumb.jpg"/>
 </div>
@@ -99,9 +99,9 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/ui-layout/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/ui-layout" rel="noopener noreferrer" target="_blank">Code</a>
+<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
 </div>
-</div>
-</article><article class="rail-item card">
+</article><article class="rail-item card spotlight" data-project="1">
 <div class="card-image">
 <img alt="Preview Easy Calculator" loading="lazy" src="assets/images/easy-calculator-thumb.jpg"/>
 </div>
@@ -112,7 +112,7 @@
 <div class="card-links">
 <a href="https://michelbranche.github.io/Easy-Calculator/" rel="noopener noreferrer" target="_blank">Live</a>
 <a href="https://github.com/MichelBranche/Easy-Calculator" rel="noopener noreferrer" target="_blank">Code</a>
-</div>
+<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
 </div>
 </article></div></div></div>
 </section>
@@ -120,12 +120,12 @@
 <!-- CERTIFICATIONS -->
 <section class="section" id="certifications">
 <div class="container">
-<div class="section-head">
+<div class="section-head" data-reveal="">
 <h2>Certificazioni</h2>
 <p>Attestati Epicode completati durante il percorso Web Developer.</p>
 </div>
-<div aria-label="Elenco certificazioni" class="cert-grid">
-<article class="cert-card">
+<div aria-label="Elenco certificazioni" class="cert-grid" data-reveal="">
+<article class="cert-card" data-reveal="">
 <a aria-label="Apri certificato Epicode M1 in PDF" class="cert-media" href="assets/certs/epicode-m1.pdf" rel="noopener noreferrer" target="_blank">
 <img alt="Certificato Epicode M1 - VSCode, HTML5, CSS" loading="lazy" src="assets/certs/epicode-m1.webp"/>
 </a>
@@ -137,7 +137,7 @@
 </div>
 </div>
 </article>
-<article class="cert-card">
+<article class="cert-card" data-reveal="">
 <a aria-label="Apri certificato Epicode M2 in PDF" class="cert-media" href="assets/certs/epicode-m2.pdf" rel="noopener noreferrer" target="_blank">
 <img alt="Certificato Epicode M2 - Git, DOM, JavaScript" loading="lazy" src="assets/certs/epicode-m2.webp"/>
 </a>
@@ -155,11 +155,11 @@
 <!-- SKILLS -->
 <section class="section section-alt" id="skills">
 <div class="container">
-<div class="section-head">
+<div class="section-head" data-reveal="">
 <h2>Competenze</h2>
 <p>Focus su UI pulita, responsive design e struttura ordinata.</p>
 </div>
-<div class="skills-grid">
+<div class="skills-grid" data-reveal="">
 <div class="skill">
 <h3>Layout</h3>
 <p>Flexbox, Grid, spacing, gerarchie visive e componenti.</p>
@@ -177,7 +177,7 @@
 </section>
 <!-- ABOUT -->
 <section class="section" id="about">
-<div class="container about-grid">
+<div class="container about-grid" data-reveal="">
 <div class="about-left">
 <h2>Chi sono</h2>
 <p class="about-sub">Breve presentazione e obiettivo.</p>
@@ -204,13 +204,13 @@
 <!-- CONTACT -->
 <section class="section section-alt" id="contact">
 <div class="container">
-<div class="contact-box">
+<div class="contact-box" data-reveal="">
 <div>
 <h2>Contatti</h2>
 <p class="contact-sub">Se ti va, scrivimi: rispondo volentieri.</p>
 </div>
 <div class="contact-actions">
-<a class="btn btn-primary" href="mailto:michel.lavoro@gmail.com">Email</a>
+<a class="btn btn-primary" href="mailto:michel.lavoro@gmail.com">Email</a><button class="btn btn-ghost" data-copy-email="michel.lavoro@gmail.com" type="button">Copia email</button>
 <a class="btn btn-ghost" href="https://github.com/MichelBranche">GitHub</a>
 </div>
 </div>
@@ -226,5 +226,5 @@
 </div>
 </div>
 </footer>
-</body>
+<dialog aria-label="Dettagli progetto" class="p-dialog" id="projectDialog"><form class="p-dialog-inner" method="dialog"><button aria-label="Chiudi" class="p-dialog-close" type="submit" value="close">×</button><div class="p-dialog-body"><div class="p-dialog-media"><img alt="" data-pd-img=""/></div><div class="p-dialog-content"><h3 data-pd-title=""></h3><p class="pd-desc" data-pd-desc=""></p><p class="pd-tech" data-pd-tech=""></p><div class="pd-actions"><a class="btn btn-primary" data-pd-live="" href="#" rel="noopener noreferrer" target="_blank">Live</a><a class="btn btn-ghost" data-pd-code="" href="#" rel="noopener noreferrer" target="_blank">Code</a></div></div></div></form></dialog><div aria-live="polite" class="toast" id="toast" role="status"></div></body>
 </html>

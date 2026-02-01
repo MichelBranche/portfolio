@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="en" data-theme="dark">
+<html data-theme="dark" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Business demos | Michel Branche</title>
 <link href="style.css" rel="stylesheet"/>
-
-<script src="theme.js" defer></script>
-<script defer src="device.js"></script>
+<script defer="" src="theme.js"></script>
+<script defer="" src="device.js"></script><script defer src="interactions.js"></script>
 </head>
 <body>
 <header class="header">
@@ -23,35 +22,35 @@
 <a href="index-en.html#about">About</a>
 <a href="index-en.html#contact">Contact</a>
 </nav>
-<a class="view-toggle" data-view-toggle="mobile" href="examples-en-mobile.html" aria-label="Open mobile version">Mobile</a>
+<a aria-label="Open mobile version" class="view-toggle" data-view-toggle="mobile" href="examples-en-mobile.html">Mobile</a>
 <a aria-label="Switch to Italian" class="lang" href="examples.html">IT</a>
-<button class="theme-toggle" type="button" data-theme-toggle>Theme</button>
+<button class="theme-toggle" data-theme-toggle="" type="button">Theme</button>
 </div>
 </div>
 </header>
 <main class="page-hero" id="top">
-  <div class="container">
-    <h1>Business demos</h1>
-    <p>
+<div class="container">
+<h1>Business demos</h1>
+<p>
       Ready-to-show mini demos for cafés, restaurants and hospitality: clean layout, clear CTAs,
       common sections and customizable interactions.
     </p>
-    <div class="page-actions">
-      <a class="btn btn-primary" href="index-en.html#projects">Back to projects</a>
-      <a class="btn btn-ghost" href="index-en.html#contact">Contact</a>
-    </div>
-  </div>
+<div class="page-actions">
+<a class="btn btn-primary" href="index-en.html#projects">Back to projects</a>
+<a class="btn btn-ghost" href="index-en.html#contact">Contact</a>
+</div>
+</div>
 </main>
 <section class="section" id="biz-demos">
 <div class="container">
-<div class="section-head">
+<div class="section-head" data-reveal="">
 <h2>Business examples</h2>
 <p>
           Small ready-to-use demos for cafés, restaurants and hospitality businesses:
           clean layout, clear CTAs and customizable sections.
         </p>
 </div>
-<div class="demo-grid">
+<div class="demo-grid" data-reveal="">
 <a aria-label="Open B&amp;B demo" class="demo-card" href="demo-beb.html">
 <div class="demo-image">
 <img alt="B&amp;B demo" loading="lazy" src="assets/images/beb.jpg"/>
@@ -128,5 +127,5 @@
 </div>
 </div>
 </footer>
-</body>
+<dialog aria-label="Project details" class="p-dialog" id="projectDialog"><form class="p-dialog-inner" method="dialog"><button aria-label="Close" class="p-dialog-close" type="submit" value="close">×</button><div class="p-dialog-body"><div class="p-dialog-media"><img alt="" data-pd-img=""/></div><div class="p-dialog-content"><h3 data-pd-title=""></h3><p class="pd-desc" data-pd-desc=""></p><p class="pd-tech" data-pd-tech=""></p><div class="pd-actions"><a class="btn btn-primary" data-pd-live="" href="#" rel="noopener noreferrer" target="_blank">Live</a><a class="btn btn-ghost" data-pd-code="" href="#" rel="noopener noreferrer" target="_blank">Code</a></div></div></div></form></dialog><div aria-live="polite" class="toast" id="toast" role="status"></div></body>
 </html>
