@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demo — Ristorante</title>
+  <title>Demo  -  Ristorante</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="demo.js" defer></script>
+  <script src="theme.js" defer></script>
+<script src="demo.js" defer></script>
 </head>
 
 <body data-page="ristorante">
 
   <header class="page-header">
     <div class="container">
-      <a class="back-link" href="index.html#biz-demos">← Torna al portfolio</a>
-      <h1 class="page-title">Demo — Ristorante</h1>
+      <div class="page-topbar">
+        <a class="back-link" href="examples.html">← Torna agli esempi attività</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Tema</button>
+      </div>
+      <h1 class="page-title">Demo  -  Ristorante</h1>
       <p class="page-sub">
         Feature specifica: <strong>prenota tavolo</strong> con preferenze/allergeni + conferma in modale (demo).
       </p>
@@ -32,10 +36,10 @@
             <section class="panel" id="menu">
               <h3>Mini menu (esempio)</h3>
               <ul>
-                <li><strong>Antipasti</strong> — tagliere, tartare, verdure</li>
-                <li><strong>Primi</strong> — pasta fresca, risotto</li>
-                <li><strong>Secondi</strong> — carne/pesce</li>
-                <li><strong>Dolci</strong> — dessert del giorno</li>
+                <li><strong>Antipasti</strong>  -  tagliere, tartare, verdure</li>
+                <li><strong>Primi</strong>  -  pasta fresca, risotto</li>
+                <li><strong>Secondi</strong>  -  carne/pesce</li>
+                <li><strong>Dolci</strong>  -  dessert del giorno</li>
               </ul>
               <div class="notice" style="margin-top: 12px;">
                 Tipico ristorante: prenota + gestione preferenze, orari, eventi, recensioni.
@@ -67,7 +71,7 @@
       </div>
 
       <div class="modal-body">
-        <div class="notice" id="rist-confirm">Prenotazione (demo): 2 persone · — · —</div>
+        <div class="notice" id="rist-confirm">Prenotazione (demo): 2 persone ·  -  ·  - </div>
 
         <div class="form-grid">
           <div class="field">

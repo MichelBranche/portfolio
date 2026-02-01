@@ -52,9 +52,9 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeAnyOpenModal();
 });
 
-/* =========================
-   B&B — calcolo notti/prezzo
-========================= */
+  /* =========================
+     B&B - calcolo notti/prezzo
+  ========================= */
 function initBeb() {
   const inEl = qs("#beb-checkin");
   const outEl = qs("#beb-checkout");
@@ -78,8 +78,8 @@ function initBeb() {
     const guests = Number(guestsEl.value || 2);
 
     if (!checkIn || !checkOut || !(checkOut > checkIn)) {
-      nightsEl.textContent = "—";
-      priceEl.textContent = "—";
+      nightsEl.textContent = "-";
+      priceEl.textContent = "-";
       resultEl.textContent = "Seleziona date valide per vedere una stima.";
       return;
     }
@@ -108,9 +108,9 @@ function initBeb() {
   console.log("[BEB] init ✅");
 }
 
-/* =========================
-   CAFFÈ — filtri + carrello
-========================= */
+  /* =========================
+     CAFFÈ - filtri + carrello
+  ========================= */
 function initCaffe() {
   const tabs = qsa(".tab");
   const items = qsa(".menu-line");
@@ -137,7 +137,7 @@ function initCaffe() {
       } else {
         cart.forEach((it) => {
           const li = document.createElement("li");
-          li.textContent = `${it.name} — € ${it.price.toFixed(2)}`;
+          li.textContent = `${it.name} - € ${it.price.toFixed(2)}`;
           cartList.appendChild(li);
         });
       }
@@ -180,9 +180,9 @@ function initCaffe() {
   console.log("[CAFFE] init ✅");
 }
 
-/* =========================
-   HOTEL — selezione + preventivo
-========================= */
+  /* =========================
+     HOTEL - selezione + preventivo
+  ========================= */
 function initHotel() {
   const roomCards = qsa("[data-room]");
   const pickedEl = qs("#hotel-picked");             // testo fuori modale
@@ -255,9 +255,9 @@ function initHotel() {
 }
 
 
-/* =========================
-   RISTORANTE — prenotazione + note
-========================= */
+  /* =========================
+     RISTORANTE - prenotazione + note
+  ========================= */
 function initRistorante() {
   const peopleEl = qs("#rist-people");
   const dateEl = qs("#rist-date");
@@ -273,8 +273,8 @@ function initRistorante() {
 
   function preview() {
     const p = peopleEl.value || "2";
-    const d = dateEl.value || "—";
-    const t = timeEl.value || "—";
+    const d = dateEl.value || "-";
+    const t = timeEl.value || "-";
     outEl.textContent = `Prenotazione (demo): ${p} persone · ${d} · ${t}`;
   }
 

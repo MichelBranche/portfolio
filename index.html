@@ -1,309 +1,228 @@
 <!DOCTYPE html>
-<html lang="it">
+
+<html data-theme="dark" lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Michel Branche</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio | Michel Branche</title>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="theme.js"></script>
 </head>
-
 <body>
-
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container nav">
-      <a class="logo" href="#top" aria-label="Torna all'inizio">Michel</a>
-
-      <div class="nav-right">
-        <nav class="menu" aria-label="Navigazione">
-          <a href="#projects">Projects</a>
-          <a href="#biz-demos">Esempi</a>
-          <a href="#skills">Skills</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <a class="lang" href="index-en.html" aria-label="Vai alla versione inglese">EN</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <main id="top" class="hero">
-    <div class="container hero-grid">
-
-      <section class="hero-content">
-        <span class="pill">Open to internship · 2026</span>
-
-        <h1>Frontend Developer</h1>
-
-        <p class="lead">
-          Creo interfacce web moderne, pulite e responsive.<br />
+<!-- HEADER -->
+<header class="header">
+<div class="container nav">
+<a aria-label="Torna all'inizio" class="logo" href="#top">Michel</a>
+<div class="nav-right">
+<nav aria-label="Navigazione" class="menu">
+<a href="#projects">Progetti</a>
+<a href="#certifications">Certificazioni</a>
+<a href="examples.html">Esempi attività</a>
+<a href="#skills">Competenze</a>
+<a href="#about">Chi sono</a>
+<a href="#contact">Contatti</a>
+</nav>
+<a aria-label="Vai alla versione inglese" class="lang" href="index-en.html">EN</a>
+<button class="theme-toggle" data-theme-toggle="" type="button">Tema</button>
+</div>
+</div>
+</header>
+<!-- HERO -->
+<main class="hero" id="top">
+<div class="container hero-grid">
+<section class="hero-content">
+<span class="pill">Open to internship · 2026</span>
+<h1>Frontend Developer</h1>
+<p class="lead">
+          Creo interfacce web moderne, pulite e responsive.<br/>
           Attualmente focalizzato su HTML, CSS e basi di JavaScript.
         </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View projects</a>
-          <a class="btn btn-ghost" href="#contact">Contact</a>
-        </div>
-
-        <div class="tags" aria-label="Tecnologie">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">Flexbox</span>
-          <span class="tag">Grid</span>
-          <span class="tag tag-wide">JavaScript (in apprendimento)</span>
-        </div>
-      </section>
-
-      <aside class="hero-side" aria-label="Foto profilo">
-        <div class="photo-wrap">
-          <img class="photo" src="assets/images/profile.jpg" alt="Foto di Michel" />
-        </div>
-      </aside>
-
-    </div>
-  </main>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p>Selezione di progetti front-end (HTML/CSS/JS). Demo live + codice.</p>
-      </div>
-
-      <div class="cards">
-
-        <!-- MASONRY -->
-        <article class="card">
-          <div class="card-image">
-            <img src="assets/images/masonry-thumb.jpg" alt="Preview Masonry Gallery" loading="lazy">
-          </div>
-
-          <div class="card-content">
-            <h3>Masonry Gallery</h3>
-            <p>Layout tipo Pinterest con card riutilizzabili e micro-interazioni.</p>
-            <span class="tech">HTML · CSS</span>
-
-            <div class="card-links">
-              <a href="https://michelbranche.github.io/masonry-gallery/">Live</a>
-              <a href="https://github.com/MichelBranche/masonry-gallery">Code</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- LANDING PAGE -->
-        <article class="card">
-          <div class="card-image">
-            <img src="assets/images/landing-thumb.jpg" alt="Preview Landing Page" loading="lazy">
-          </div>
-
-          <div class="card-content">
-            <h3>Landing Page</h3>
-            <p>Landing completa con sezioni (features, pricing, FAQ) e responsive solido.</p>
-            <span class="tech">HTML · CSS</span>
-
-            <div class="card-links">
-              <a href="https://michelbranche.github.io/landing-page/">Live</a>
-              <a href="https://github.com/MichelBranche/landing-page">Code</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- UI LAYOUT -->
-        <article class="card">
-          <div class="card-image">
-            <img src="assets/images/ui-layout-thumb.jpg" alt="Preview UI Layout" loading="lazy">
-          </div>
-
-          <div class="card-content">
-            <h3>UI Layout</h3>
-            <p>Dashboard UI mock con JS: filtro tabella, modal e feedback “toast”.</p>
-            <span class="tech">HTML · CSS · JS (DOM)</span>
-
-            <div class="card-links">
-              <a href="https://michelbranche.github.io/ui-layout/">Live</a>
-              <a href="https://github.com/MichelBranche/ui-layout">Code</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- BUSINESS DEMOS (NUOVA SEZIONE) -->
-  <section id="biz-demos" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Esempi per attività</h2>
-        <p>
-          Mini-demo “pronte” per bar, ristoranti e strutture ricettive: layout pulito, CTA chiare,
-          sezioni tipiche e funzioni personalizzabili.
-        </p>
-      </div>
-
-      <div class="demo-grid">
-
-        <!-- B&B -->
-        <a class="demo-card" href="demo-beb.html" aria-label="Apri demo B&B / Affittacamere">
-          <div class="demo-image">
-            <img src="assets/images/beb.jpg" alt="Demo B&B / Affittacamere" loading="lazy">
-          </div>
-          <div class="demo-content">
-            <h3>B&B / Affittacamere</h3>
-            <p>Presentazione camere, servizi e prenotazioni in modo chiaro.</p>
-            <ul class="demo-features">
-              <li>Camere + gallery</li>
-              <li>Disponibilità / contatto</li>
-              <li>Servizi (wifi, parcheggio, colazione)</li>
-              <li>Mappa + indicazioni</li>
-            </ul>
-            <span class="demo-cta">Apri esempio →</span>
-          </div>
-        </a>
-
-        <!-- CAFFÈ / BAR -->
-        <a class="demo-card" href="demo-caffe.html" aria-label="Apri demo Caffè / Bar">
-          <div class="demo-image">
-            <img src="assets/images/caffe.jpg" alt="Demo Caffè / Bar" loading="lazy">
-          </div>
-          <div class="demo-content">
-            <h3>Caffè / Bar</h3>
-            <p>Menu rapido, orari e promozioni: tutto “a colpo d’occhio”.</p>
-            <ul class="demo-features">
-              <li>Menu / lista prodotti</li>
-              <li>Orari + contatti</li>
-              <li>Promo / eventi</li>
-              <li>Call-to-action WhatsApp</li>
-            </ul>
-            <span class="demo-cta">Apri esempio →</span>
-          </div>
-        </a>
-
-        <!-- HOTEL -->
-        <a class="demo-card" href="demo-hotel.html" aria-label="Apri demo Hotel">
-          <div class="demo-image">
-            <img src="assets/images/hotel.jpg" alt="Demo Hotel" loading="lazy">
-          </div>
-          <div class="demo-content">
-            <h3>Hotel</h3>
-            <p>Struttura completa: camere, servizi e “prenota ora” evidenziato.</p>
-            <ul class="demo-features">
-              <li>Camere + prezzi indicativi</li>
-              <li>Servizi + highlights</li>
-              <li>FAQ / policy</li>
-              <li>Pulsante “Prenota” sempre visibile</li>
-            </ul>
-            <span class="demo-cta">Apri esempio →</span>
-          </div>
-        </a>
-
-        <!-- RISTORANTE -->
-        <a class="demo-card" href="demo-ristorante.html" aria-label="Apri demo Ristorante">
-          <div class="demo-image">
-            <img src="assets/images/ristorante.jpg" alt="Demo Ristorante" loading="lazy">
-          </div>
-          <div class="demo-content">
-            <h3>Ristorante</h3>
-            <p>Menu elegante + prenotazioni: stile moderno e leggibile.</p>
-            <ul class="demo-features">
-              <li>Menu (antipasti/primi/secondi)</li>
-              <li>Prenota tavolo (CTA)</li>
-              <li>Allergeni / info utili</li>
-              <li>Recensioni / social link</li>
-            </ul>
-            <span class="demo-cta">Apri esempio →</span>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <h2>Skills</h2>
-        <p>Focus su UI pulita, responsive design e struttura ordinata.</p>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill">
-          <h3>Layout</h3>
-          <p>Flexbox, Grid, spacing, gerarchie visive e componenti.</p>
-        </div>
-        <div class="skill">
-          <h3>UI / Styling</h3>
-          <p>Tipografia, contrasto, cards moderne, micro-interazioni.</p>
-        </div>
-        <div class="skill">
-          <h3>JavaScript</h3>
-          <p>DOM, eventi, logica, interazioni base (in progress).</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container about-grid">
-      <div class="about-left">
-        <h2>About</h2>
-        <p class="about-sub">Breve presentazione e obiettivo.</p>
-
-        <p class="about-text">
+<div class="hero-actions">
+<a class="btn btn-primary" href="#projects">Vedi progetti</a>
+<a class="btn btn-ghost" href="#contact">Contatti</a>
+</div>
+<div aria-label="Tecnologie" class="tags">
+<span class="tag">HTML5</span>
+<span class="tag">CSS3</span>
+<span class="tag">Flexbox</span>
+<span class="tag">Grid</span>
+<span class="tag">Responsive UI</span>
+<span class="tag">Git &amp; GitHub</span>
+<span class="tag tag-wide">JavaScript (ES6, DOM)</span>
+</div>
+</section>
+<aside aria-label="Foto profilo" class="hero-side">
+<div class="photo-wrap">
+<img alt="Foto di Michel" class="photo" src="assets/images/profile.jpg"/>
+</div>
+</aside>
+</div>
+</main>
+<!-- PROJECTS -->
+<section class="section section-alt" id="projects">
+<div class="container"><div class="projects-rail"><div class="rail-meta"><h2>Progetti</h2><p>Selezione di progetti front-end (HTML/CSS/JS). Demo live + codice.</p><p class="rail-hint">Scorri orizzontalmente per vedere tutti i progetti. Su desktop: Shift + rotellina.</p><a class="btn btn-ghost" href="examples.html">Esempi per attività</a></div><div aria-label="Elenco progetti scorribile" class="rail"><article class="rail-item card">
+<div class="card-image">
+<img alt="Preview Masonry Gallery" loading="lazy" src="assets/images/masonry-thumb.jpg"/>
+</div>
+<div class="card-content">
+<h3>Masonry Gallery</h3>
+<p>Layout tipo Pinterest con card riutilizzabili e micro-interazioni.</p>
+<span class="tech">HTML · CSS</span>
+<div class="card-links">
+<a href="https://michelbranche.github.io/masonry-gallery/" rel="noopener noreferrer" target="_blank">Live</a>
+<a href="https://github.com/MichelBranche/masonry-gallery" rel="noopener noreferrer" target="_blank">Code</a>
+</div>
+</div>
+</article><article class="rail-item card">
+<div class="card-image">
+<img alt="Preview Landing Page" loading="lazy" src="assets/images/landing-thumb.jpg"/>
+</div>
+<div class="card-content">
+<h3>Landing Page</h3>
+<p>Landing completa con sezioni (features, pricing, FAQ) e responsive solido.</p>
+<span class="tech">HTML · CSS</span>
+<div class="card-links">
+<a href="https://michelbranche.github.io/landing-page/" rel="noopener noreferrer" target="_blank">Live</a>
+<a href="https://github.com/MichelBranche/landing-page" rel="noopener noreferrer" target="_blank">Code</a>
+</div>
+</div>
+</article><article class="rail-item card">
+<div class="card-image">
+<img alt="Preview UI Layout" loading="lazy" src="assets/images/ui-layout-thumb.jpg"/>
+</div>
+<div class="card-content">
+<h3>UI Layout</h3>
+<p>Dashboard UI mock con JS: filtro tabella, modal e feedback “toast”.</p>
+<span class="tech">HTML · CSS · JS (DOM)</span>
+<div class="card-links">
+<a href="https://michelbranche.github.io/ui-layout/" rel="noopener noreferrer" target="_blank">Live</a>
+<a href="https://github.com/MichelBranche/ui-layout" rel="noopener noreferrer" target="_blank">Code</a>
+</div>
+</div>
+</article><article class="rail-item card">
+<div class="card-image">
+<img alt="Preview Easy Calculator" loading="lazy" src="assets/images/easy-calculator-thumb.jpg"/>
+</div>
+<div class="card-content">
+<h3>Easy Calculator</h3>
+<p>Calcolatrice minimale con supporto tastiera e tema Light/Dark con persistenza.</p>
+<span class="tech">HTML · CSS · JS (DOM)</span>
+<div class="card-links">
+<a href="https://michelbranche.github.io/Easy-Calculator/" rel="noopener noreferrer" target="_blank">Live</a>
+<a href="https://github.com/MichelBranche/Easy-Calculator" rel="noopener noreferrer" target="_blank">Code</a>
+</div>
+</div>
+</article></div></div></div>
+</section>
+<!-- BUSINESS DEMOS (NUOVA SEZIONE) -->
+<!-- CERTIFICATIONS -->
+<section class="section" id="certifications">
+<div class="container">
+<div class="section-head">
+<h2>Certificazioni</h2>
+<p>Attestati Epicode completati durante il percorso Web Developer.</p>
+</div>
+<div aria-label="Elenco certificazioni" class="cert-grid">
+<article class="cert-card">
+<a aria-label="Apri certificato Epicode M1 in PDF" class="cert-media" href="assets/certs/epicode-m1.pdf" rel="noopener noreferrer" target="_blank">
+<img alt="Certificato Epicode M1 - VSCode, HTML5, CSS" loading="lazy" src="assets/certs/epicode-m1.webp"/>
+</a>
+<div class="cert-body">
+<h3>Epicode - Module M1</h3>
+<p class="cert-meta">VSCode · HTML5 · CSS | Rilasciato il 19/12/2025</p>
+<div class="cert-actions">
+<a href="assets/certs/epicode-m1.pdf" rel="noopener noreferrer" target="_blank">Apri PDF</a>
+</div>
+</div>
+</article>
+<article class="cert-card">
+<a aria-label="Apri certificato Epicode M2 in PDF" class="cert-media" href="assets/certs/epicode-m2.pdf" rel="noopener noreferrer" target="_blank">
+<img alt="Certificato Epicode M2 - Git, DOM, JavaScript" loading="lazy" src="assets/certs/epicode-m2.webp"/>
+</a>
+<div class="cert-body">
+<h3>Epicode - Module M2</h3>
+<p class="cert-meta">Git · DOM · JavaScript | Rilasciato il 31/01/2026</p>
+<div class="cert-actions">
+<a href="assets/certs/epicode-m2.pdf" rel="noopener noreferrer" target="_blank">Apri PDF</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- SKILLS -->
+<section class="section section-alt" id="skills">
+<div class="container">
+<div class="section-head">
+<h2>Competenze</h2>
+<p>Focus su UI pulita, responsive design e struttura ordinata.</p>
+</div>
+<div class="skills-grid">
+<div class="skill">
+<h3>Layout</h3>
+<p>Flexbox, Grid, spacing, gerarchie visive e componenti.</p>
+</div>
+<div class="skill">
+<h3>UI / Styling</h3>
+<p>Tipografia, contrasto, cards moderne, micro-interazioni.</p>
+</div>
+<div class="skill">
+<h3>JavaScript</h3>
+<p>DOM, eventi, logica, interazioni base (in progress).</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT -->
+<section class="section" id="about">
+<div class="container about-grid">
+<div class="about-left">
+<h2>Chi sono</h2>
+<p class="about-sub">Breve presentazione e obiettivo.</p>
+<p class="about-text">
           Ho 24 anni e sono uno studente frontend developer. Sto approfondendo HTML, CSS e JavaScript,
           con attenzione particolare alla struttura, al responsive design e alla qualità del layout.
         </p>
-
-        <ul class="about-list">
-          <li>Attenzione ai dettagli e pulizia del codice</li>
-          <li>Focus su UI moderna e leggibile</li>
-          <li>Obiettivo: crescita su JavaScript e React</li>
-        </ul>
-      </div>
-
-      <div class="about-right" aria-label="Dati rapidi">
-        <div class="facts">
-          <div class="fact"><span class="fact-k">Età</span><span class="fact-v">24</span></div>
-          <div class="fact"><span class="fact-k">Focus</span><span class="fact-v">HTML/CSS · UI</span></div>
-          <div class="fact"><span class="fact-k">Ora</span><span class="fact-v">JavaScript (base)</span></div>
-          <div class="fact"><span class="fact-k">Prossimo step</span><span class="fact-v">React</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section section-alt">
-    <div class="container">
-      <div class="contact-box">
-        <div>
-          <h2>Contact</h2>
-          <p class="contact-sub">Se ti va, scrivimi: rispondo volentieri.</p>
-        </div>
-
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:michel.lavoro@gmail.com">Email</a>
-          <a class="btn btn-ghost" href="https://github.com/MichelBranche">GitHub</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Michel Branche</p>
-      <div class="footer-links">
-        <a href="mailto:michel.lavoro@gmail.com">Email</a>
-        <a href="https://github.com/MichelBranche">GitHub</a>
-      </div>
-    </div>
-  </footer>
-
+<ul class="about-list">
+<li>Attenzione ai dettagli e pulizia del codice</li>
+<li>Focus su UI moderna e leggibile</li>
+<li>Obiettivo: crescita su JavaScript e React</li>
+</ul>
+</div>
+<div aria-label="Dati rapidi" class="about-right">
+<div class="facts">
+<div class="fact"><span class="fact-k">Età</span><span class="fact-v">24</span></div>
+<div class="fact"><span class="fact-k">Focus</span><span class="fact-v">HTML/CSS · UI</span></div>
+<div class="fact"><span class="fact-k">Ora</span><span class="fact-v">JavaScript (base)</span></div>
+<div class="fact"><span class="fact-k">Prossimo step</span><span class="fact-v">React</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+<div class="container">
+<div class="contact-box">
+<div>
+<h2>Contatti</h2>
+<p class="contact-sub">Se ti va, scrivimi: rispondo volentieri.</p>
+</div>
+<div class="contact-actions">
+<a class="btn btn-primary" href="mailto:michel.lavoro@gmail.com">Email</a>
+<a class="btn btn-ghost" href="https://github.com/MichelBranche">GitHub</a>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container footer-content">
+<p>© 2026 Michel Branche</p>
+<div class="footer-links">
+<a href="mailto:michel.lavoro@gmail.com">Email</a>
+<a href="https://github.com/MichelBranche">GitHub</a>
+</div>
+</div>
+</footer>
 </body>
 </html>

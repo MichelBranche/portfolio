@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demo — B&B / Affittacamere</title>
+  <title>Demo  -  B&B / Affittacamere</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="demo.js" defer></script>
+  <script src="theme.js" defer></script>
+<script src="demo.js" defer></script>
 </head>
 
 <body data-page="beb">
 
   <header class="page-header">
     <div class="container">
-      <a class="back-link" href="index.html#biz-demos">← Torna al portfolio</a>
-      <h1 class="page-title">Demo — B&B / Affittacamere</h1>
+      <div class="page-topbar">
+        <a class="back-link" href="examples.html">← Torna agli esempi attività</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Tema</button>
+      </div>
+      <h1 class="page-title">Demo  -  B&B / Affittacamere</h1>
       <p class="page-sub">
         Feature specifica: <strong>richiesta disponibilità</strong> con calcolo notti + stima prezzo (demo).
       </p>
@@ -104,8 +108,8 @@
           <div class="field">
             <label>Riepilogo</label>
             <div class="kpi-row">
-              <div class="kpi">Notti: <span id="beb-nights">—</span><small>calcolo demo</small></div>
-              <div class="kpi">Stima: <span id="beb-price">—</span><small>calcolo demo</small></div>
+              <div class="kpi">Notti: <span id="beb-nights"> - </span><small>calcolo demo</small></div>
+              <div class="kpi">Stima: <span id="beb-price"> - </span><small>calcolo demo</small></div>
             </div>
           </div>
         </div>
