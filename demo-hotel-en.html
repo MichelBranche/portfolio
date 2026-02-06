@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hotel demo layout with rooms, services and quick contacts."/>
+  <meta name="theme-color" content="#0d1016"/>
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32"/>
+  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16"/>
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
+  <link rel="manifest" href="site.webmanifest"/>
+
+  <link rel="canonical" href="https://michelbranche.github.io/portfolio/demo-hotel-en.html"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Hotel demo | Michel Branche"/>
+  <meta property="og:description" content="Hotel demo layout with rooms, services and quick contacts."/>
+  <meta property="og:image" content="https://michelbranche.github.io/portfolio/assets/og/portfolio-og.png"/>
+  <meta property="og:url" content="https://michelbranche.github.io/portfolio/demo-hotel-en.html"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Hotel demo | Michel Branche"/>
+  <meta name="twitter:description" content="Hotel demo layout with rooms, services and quick contacts."/>
+  <meta name="twitter:image" content="https://michelbranche.github.io/portfolio/assets/og/portfolio-og.png"/>
+
+  <title>Hotel demo | Michel Branche</title>
+  <link rel="stylesheet" href="assets/demos/demo-ui.css">
+  <link rel="stylesheet" href="assets/demos/demo-hotel.css">
+  <script defer src="assets/demos/demo-ui.js"></script>
+</head>
+<body class="demo-site" data-demo="hotel">
+  <div class="demo-banner">
+    <strong>Demo UI</strong>
+    <span>Layout vetrina. Funzioni reali su richiesta.</span>
+    <a href="business-en.html#examples">Back</a>
+  </div>
+
+  <div class="demo-top">
+    <header class="demo-nav">
+      <div class="container demo-nav-inner">
+        <a class="brand" href="#top" aria-label="Go top">
+          <span class="brand-badge" aria-hidden="true"></span>
+          Montblanc
+        </a>
+
+        <nav class="nav-links" aria-label="Sections">
+          <a href="#rooms">Rooms</a>
+<a href="#amenities">Amenities</a>
+<a href="#experiences">Experiences</a>
+<a href="#offers">Offers</a>
+<a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn secondary" href="demo-hotel.html">IT</a>
+          <a class="btn" href="#top" data-demo-action="Check availability">Book</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="kicker">Hotel and resort UI demo</div>
+            <h1 class="h1">Montblanc Hotel</h1>
+            <p class="lead">An editorial homepage with a hero booking bar, featured rooms and offers. Built for 4-5 star hotels that want more inquiries and bookings.</p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#top" data-demo-action="Check availability">Check availability</a>
+              <a class="btn secondary" href="#rooms">View rooms</a>
+              <a class="btn secondary" href="business-en.html#examples">Business version</a>
+            </div>
+
+            <div style="margin-top:16px; color: var(--muted); font-weight:800;">UI demo: in production it can connect to a channel manager, PMS or advanced form.</div>
+          </div>
+
+          <aside class="card" aria-label="Booking bar">
+            <div class="card-pad">
+              <h3 style="margin:0; letter-spacing:-0.02em;">Availability</h3>
+              <p style="margin:8px 0 0; color: var(--muted);">Pick dates and guests</p>
+
+              <form class="booking-bar" data-demo-submit="Check availability">
+                <div class="field" style="margin-top:0;">
+                  <label>Check-in</label>
+                  <input type="date" required>
+                </div>
+                <div class="field" style="margin-top:0;">
+                  <label>Check-out</label>
+                  <input type="date" required>
+                </div>
+                <div class="field" style="margin-top:0;">
+                  <label>Guests</label>
+                  <select><option>2</option><option>3</option><option>4</option></select>
+                </div>
+                <button class="btn" type="submit">Check availability</button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="rooms">
+        <div class="container">
+          <div class="section-head">
+            <h2>Rooms</h2>
+            <p>Three sample cards. In production: optimized photos and details.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="mini"><h3>Panorama Suite</h3><p>Mountain view, 1-2 guests, breakfast included.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn secondary" href="#" data-demo-action="Dettagli camera">Details</a><a class="btn" href="#contact" data-demo-action="Check availability">Book</a></div></div>
+<div class="mini"><h3>Deluxe King</h3><p>Spacious room, premium bathroom, weekend ready.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn secondary" href="#" data-demo-action="Dettagli camera">Details</a><a class="btn" href="#contact" data-demo-action="Check availability">Book</a></div></div>
+<div class="mini"><h3>Family Retreat</h3><p>Two areas, ideal for families and longer stays.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn secondary" href="#" data-demo-action="Dettagli camera">Details</a><a class="btn" href="#contact" data-demo-action="Check availability">Book</a></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="amenities">
+        <div class="container">
+          <div class="section-head">
+            <h2>Amenities</h2>
+            <p>Quick, readable blocks, mobile-friendly.</p>
+          </div>
+
+          <div class="icon-row">
+            <div class="icon-card"><strong>Spa</strong><span>Wellness path and massages.</span></div>
+            <div class="icon-card"><strong>Restaurant</strong><span>Breakfast and dinner on site.</span></div>
+            <div class="icon-card"><strong>Shuttle</strong><span>Transfers on request.</span></div>
+            <div class="icon-card"><strong>Wi-Fi</strong><span>Fast connection.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experiences">
+        <div class="container">
+          <div class="section-head">
+            <h2>Experiences</h2>
+            <p>Great to differentiate and improve conversion.</p>
+          </div>
+
+          <div class="split">
+            <div class="card"><div class="card-pad">
+              <h3 style="margin:0;">Guided hikes</h3>
+              <p style="margin:10px 0 0; color: var(--muted);">Routes and booking on request.</p>
+              <div class="hero-actions" style="margin-top:12px;">
+                <a class="btn secondary" href="#" data-demo-action="Dettagli esperienza">Details</a>
+                <a class="btn" href="#contact" data-demo-action="Check availability">Request</a>
+              </div>
+            </div></div>
+
+            <div class="card"><div class="card-pad">
+              <h3 style="margin:0;">Tastings</h3>
+              <p style="margin:10px 0 0; color: var(--muted);">Seasonal events and packages.</p>
+              <div class="hero-actions" style="margin-top:12px;">
+                <a class="btn secondary" href="#" data-demo-action="Dettagli esperienza">Details</a>
+                <a class="btn" href="#contact" data-demo-action="Check availability">Request</a>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="offers">
+        <div class="container">
+          <div class="section-head">
+            <h2>Offers</h2>
+            <p>Clean cards for packages and promotions.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="mini"><h3>Spa weekend</h3><p>1 night, spa, breakfast.</p></div>
+            <div class="mini"><h3>Workation</h3><p>Long stays, discounts.</p></div>
+            <div class="mini"><h3>Romantic</h3><p>Dinner and late checkout.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p>Demo form: in production email or CRM integration.</p>
+          </div>
+
+          <div class="split">
+            <form class="card" data-demo-submit="Request">
+              <div class="card-pad">
+                <div class="field"><label>Name</label><input type="text" required></div>
+                <div class="field"><label>Email</label><input type="email" required></div>
+                <div class="field"><label>Message</label><textarea placeholder="I would like info..."></textarea></div>
+                <div class="hero-actions">
+                  <button class="btn" type="submit">Send request</button>
+                  <a class="btn secondary" href="#" data-demo-action="WhatsApp">WhatsApp</a>
+                </div>
+              </div>
+            </form>
+
+            <div class="card">
+              <div class="card-pad">
+                <h3 style="margin:0;">Notes</h3>
+                <p style="margin:10px 0 0; color: var(--muted);">A hero booking bar is a common modern hotel pattern.</p>
+                <p style="margin:10px 0 0; color: var(--muted);">Possible integrations: channel manager, payments, reviews.</p>
+                <div class="hero-actions" style="margin-top:12px;">
+                  <a class="btn secondary" href="business-en.html#examples">Business version</a>
+                  <a class="btn" href="#top" data-demo-action="Check availability">Check availability</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <p style="margin:0;">UI demo. Booking and room management are available on request.</p>
+          <p style="margin:10px 0 0;"><a href="business-en.html#examples">Back to Business version</a></p>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

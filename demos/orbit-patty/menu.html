@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B0B10" />
+
+  <title>Menu | Nebula Bites</title>
+  <meta name="description" content="Menu completo Nebula Bites. Filtri per categoria e ricerca: burger, fries, drink e dolci." />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Nebula Bites, home">
+        <img class="brand-logo" src="assets/logo.svg" width="40" height="40" alt="" />
+        <span class="brand-text">Nebula Bites</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-nav-toggle>
+        <span class="nav-toggle-lines" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="sr-only">Apri menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Principale" data-nav>
+        <a href="index.html#menu">Home</a>
+        <a class="is-active" href="menu.html" aria-current="page">Menu</a>
+        <a href="index.html#locations">Dove siamo</a>
+        <a class="nav-cta" href="#ordina">Ordina ora</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="overlay" data-overlay hidden></div>
+
+  <main id="main">
+    <section class="page-hero" aria-label="Menu">
+      <div class="container">
+        <p class="eyebrow"><span class="chip">Menu</span> filtri e ricerca in tempo reale</p>
+        <h1 class="display">Scegli la tua rotta.</h1>
+        <p class="lead">Le card sono generate da JavaScript da un unico array di dati, così aggiungere nuovi items è rapidissimo.</p>
+
+        <div class="page-hero-actions">
+          <a class="btn btn-ghost" href="index.html">Torna home</a>
+          <a class="btn btn-primary" href="#filtri">Vai ai filtri</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="filtri" aria-label="Filtri menu">
+      <div class="container">
+        <div class="filters">
+          <div class="filters-top">
+            <label class="search" for="q">
+              <span class="sr-only">Cerca nel menu</span>
+              <span class="search-icon" aria-hidden="true">🔎</span>
+              <input id="q" name="q" type="search" placeholder="Cerca: smash, veggie, spicy..." autocomplete="off" data-menu-search />
+            </label>
+
+            <div class="count" aria-live="polite">
+              <span data-menu-count></span>
+            </div>
+          </div>
+
+          <div class="chips" role="tablist" aria-label="Categorie" data-menu-chips></div>
+        </div>
+
+        <div class="menu-grid" data-menu-grid></div>
+
+        <div class="disclaimer">
+          <p class="small"><strong>Nota:</strong> prezzi e ingredienti sono demo. Per un cliente reale aggiungi allergeni e info legali reali.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ordina" aria-label="Ordina">
+      <div class="container">
+        <div class="order-card">
+          <div>
+            <h2 class="section-title">Ordina in 30 secondi</h2>
+            <p class="section-subtitle">CTA chiare e partner fittizi per una demo pulita.</p>
+          </div>
+          <div class="order-actions">
+            <a class="btn btn-primary" href="#">Delivery partner (demo)</a>
+            <a class="btn btn-ghost" href="#">Ritiro in store (demo)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" width="36" height="36" alt="" />
+        <div>
+          <div class="footer-title">Nebula Bites</div>
+          <div class="footer-sub">Portfolio fastfood website</div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="#filtri">Filtri</a>
+        <a href="#ordina">Ordina</a>
+        <a href="index.html#faq">FAQ</a>
+      </div>
+
+      <div class="footer-legal">
+        <p class="small">© <span data-year></span> Nebula Bites. Concept fittizio per portfolio.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

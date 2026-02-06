@@ -1,133 +1,179 @@
-<!DOCTYPE html>
-<html lang="it" data-theme="dark">
+<!doctype html>
+<html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demo  -  B&B / Affittacamere</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="theme.js" defer></script>
-<script defer src="device.js"></script>
-<script src="demo.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo B&B: layout vetrina con disponibilità, servizi e contatti."/>
+  <meta name="theme-color" content="#0d1016"/>
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32"/>
+  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16"/>
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
+  <link rel="manifest" href="site.webmanifest"/>
+
+  <link rel="canonical" href="https://michelbranche.github.io/portfolio/demo-beb.html"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Demo B&B | Michel Branche"/>
+  <meta property="og:description" content="Demo B&B: layout vetrina con disponibilità, servizi e contatti."/>
+  <meta property="og:image" content="https://michelbranche.github.io/portfolio/assets/og/portfolio-og.png"/>
+  <meta property="og:url" content="https://michelbranche.github.io/portfolio/demo-beb.html"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Demo B&B | Michel Branche"/>
+  <meta name="twitter:description" content="Demo B&B: layout vetrina con disponibilità, servizi e contatti."/>
+  <meta name="twitter:image" content="https://michelbranche.github.io/portfolio/assets/og/portfolio-og.png"/>
+
+  <title>Demo B&B | Michel Branche</title>
+  <link rel="stylesheet" href="assets/demos/demo-ui.css">
+  <link rel="stylesheet" href="assets/demos/demo-beb.css">
+  <script defer src="assets/demos/demo-ui.js"></script>
 </head>
-
-<body data-page="beb">
-
-  <header class="page-header">
-    <div class="container">
-      <div class="page-topbar">
-        <a class="back-link" href="examples.html">← Torna agli esempi attività</a>
-        <a class="view-toggle" data-view-toggle="mobile" href="mobile.html" aria-label="Apri versione mobile">Mobile</a>
-        <button class="theme-toggle" type="button" data-theme-toggle>Tema</button>
-      </div>
-      <h1 class="page-title">Demo  -  B&B / Affittacamere</h1>
-      <p class="page-sub">
-        Feature specifica: <strong>richiesta disponibilità</strong> con calcolo notti + stima prezzo (demo).
-      </p>
-
-      <div class="demo-hero">
-        <img src="assets/images/beb.jpg" alt="B&B demo hero">
-        <div class="demo-body">
-
-          <div class="cta-row">
-            <button class="btn btn-primary" data-open-modal="modal-beb">Richiedi disponibilità</button>
-            <a class="btn btn-ghost" href="#camere">Vedi camere</a>
-          </div>
-
-          <div class="kpi-row">
-            <div class="kpi">Check-in/check-out<small>Form rapido</small></div>
-            <div class="kpi">Stima prezzo<small>Demo calcolo</small></div>
-            <div class="kpi">CTA contatto<small>Mail/WhatsApp</small></div>
-          </div>
-
-          <div class="demo-panels">
-            <div class="panel" id="camere">
-              <h3>Camere (esempio)</h3>
-              <div class="demo-grid-2">
-                <div class="demo-item">
-                  <h4>Camera Standard</h4>
-                  <p>2 ospiti · bagno privato · wifi</p>
-                  <div class="demo-row">
-                    <span class="badge">da €85/notte</span>
-                    <button class="btn btn-ghost" data-open-modal="modal-beb">Chiedi info</button>
-                  </div>
-                </div>
-                <div class="demo-item">
-                  <h4>Camera Deluxe</h4>
-                  <p>2–3 ospiti · balcone · colazione inclusa</p>
-                  <div class="demo-row">
-                    <span class="badge">da €120/notte</span>
-                    <button class="btn btn-ghost" data-open-modal="modal-beb">Chiedi info</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="panel">
-              <h3>Personalizzazioni tipiche</h3>
-              <ul>
-                <li>Galleria foto + servizi</li>
-                <li>Sezione “Come arrivare” + mappa</li>
-                <li>Recensioni / social proof</li>
-                <li>Check-in / policy</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- MODAL B&B -->
-  <div id="modal-beb" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Richiedi disponibilità">
-    <div class="modal">
-      <div class="modal-head">
-        <h3>Richiedi disponibilità (demo)</h3>
-        <button class="modal-close" data-close-modal aria-label="Chiudi">✕</button>
-      </div>
-
-      <div class="modal-body">
-        <div class="notice" id="beb-result">Seleziona date valide per vedere una stima.</div>
-
-        <div class="form-grid">
-          <div class="field">
-            <label for="beb-checkin">Check-in</label>
-            <input id="beb-checkin" type="date" />
-          </div>
-          <div class="field">
-            <label for="beb-checkout">Check-out</label>
-            <input id="beb-checkout" type="date" />
-          </div>
-          <div class="field">
-            <label for="beb-guests">Ospiti</label>
-            <select id="beb-guests">
-              <option value="1">1</option>
-              <option value="2" selected>2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>Riepilogo</label>
-            <div class="kpi-row">
-              <div class="kpi">Notti: <span id="beb-nights"> - </span><small>calcolo demo</small></div>
-              <div class="kpi">Stima: <span id="beb-price"> - </span><small>calcolo demo</small></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="field">
-          <label for="beb-note">Note (opzionale)</label>
-          <textarea id="beb-note" placeholder="es. arrivo tardi, intolleranze, richieste..."></textarea>
-        </div>
-      </div>
-
-      <div class="modal-foot">
-        <button class="btn btn-ghost" data-close-modal>Annulla</button>
-        <button class="btn btn-primary" id="beb-send">Invia richiesta</button>
-      </div>
-    </div>
+<body class="demo-site" data-demo="beb">
+  <div class="demo-banner">
+    <strong>Demo UI</strong>
+    <span>Layout vetrina. Funzioni reali su richiesta.</span>
+    <a href="business.html#examples">Torna indietro</a>
   </div>
 
+  <div class="demo-top">
+    <header class="demo-nav">
+      <div class="container demo-nav-inner">
+        <a class="brand" href="#top" aria-label="Go top"><span class="brand-badge" aria-hidden="true"></span>Casa Verde</a>
+
+        <nav class="nav-links" aria-label="Sections">
+          <a href="#rooms">Camere</a>
+          <a href="#services">Servizi</a>
+          <a href="#reviews">Recensioni</a>
+          <a href="#contact">Contatti</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn secondary" href="demo-beb-en.html">EN</a>
+          <a class="btn" href="#contact" data-demo-action="Richiedi disponibilità">Richiedi disponibilità</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="kicker">Demo UI per B&B e case vacanza</div>
+            <h1 class="h1">Casa Verde Boutique B&B</h1>
+            <p class="lead">Un look caldo e naturale, perfetto per strutture piccole che vogliono sembrare curate. Camere, servizi, recensioni e contatti in modo semplice.</p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#contact" data-demo-action="Richiedi disponibilità">Richiedi disponibilità</a>
+              <a class="btn secondary" href="#rooms">Vedi camere</a>
+              <a class="btn secondary" href="business.html#examples">Per attività</a>
+            </div>
+          </div>
+
+          <aside class="card" aria-label="Quick info">
+            <div class="card-pad">
+              <h3 style="margin:0; letter-spacing:-0.02em;">Info rapide</h3>
+              <p style="margin:10px 0 0; color: var(--muted);">
+                Check-in 15:00<br>
+                Check-out 11:00<br>
+                Colazione inclusa
+              </p>
+              <div class="hero-actions" style="margin-top:14px;">
+                <a class="btn secondary" href="#" data-demo-action="Apri mappa">Apri mappa</a>
+                <a class="btn secondary" href="#" data-demo-action="WhatsApp">WhatsApp</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="rooms">
+        <div class="container">
+          <div class="section-head">
+            <h2>Camere</h2>
+            <p>Card pulite. In produzione: foto e disponibilità reale.</p>
+          </div>
+
+          <div class="room-grid">
+            <div class="room"><h3>Camera Bosco</h3><p>Letto matrimoniale, bagno privato, vista giardino.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn secondary" href="#" data-demo-action="Dettagli">Dettagli</a><a class="btn" href="#contact" data-demo-action="Richiedi disponibilità">Richiedi</a></div></div>
+<div class="room"><h3>Suite Verde</h3><p>Spazio extra, angolo lettura, set tè.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn secondary" href="#" data-demo-action="Dettagli">Dettagli</a><a class="btn" href="#contact" data-demo-action="Richiedi disponibilità">Richiedi</a></div></div>
+<div class="room"><h3>Stanza Alba</h3><p>Luminosa, perfetta per 1-2 ospiti.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn secondary" href="#" data-demo-action="Dettagli">Dettagli</a><a class="btn" href="#contact" data-demo-action="Richiedi disponibilità">Richiedi</a></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-head">
+            <h2>Servizi</h2>
+            <p>Pochi punti chiari, leggibili anche da mobile.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="mini"><h3>Wi-Fi</h3><p>Connessione veloce.</p></div>
+            <div class="mini"><h3>Parcheggio</h3><p>Posto auto su richiesta.</p></div>
+            <div class="mini"><h3>Consigli locali</h3><p>Itinerari e suggerimenti.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reviews">
+        <div class="container">
+          <div class="section-head">
+            <h2>Recensioni</h2>
+            <p>In produzione: widget Google Reviews o import automatico.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="review"><div class="stars">★★★★★</div><p style="margin:10px 0 0; color: var(--muted);">Pulito, accogliente, ottima colazione. Torneremo.</p></div>
+<div class="review"><div class="stars">★★★★★</div><p style="margin:10px 0 0; color: var(--muted);">Posizione comoda e host gentilissimo.</p></div>
+<div class="review"><div class="stars">★★★★★</div><p style="margin:10px 0 0; color: var(--muted);">Camera super e atmosfera rilassante.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contatti</h2>
+            <p>Form demo. Invio reale su richiesta.</p>
+          </div>
+
+          <div class="split">
+            <form class="card" data-demo-submit="Richiedi disponibilità">
+              <div class="card-pad">
+                <div class="field"><label>Nome</label><input type="text" required></div>
+                <div class="field"><label>Email</label><input type="email" required></div>
+                <div class="field"><label>Messaggio</label><textarea placeholder="Vorrei sapere disponibilità per..."></textarea></div>
+                <div class="hero-actions">
+                  <button class="btn" type="submit">Invia</button>
+                  <a class="btn secondary" href="#" data-demo-action="WhatsApp">WhatsApp</a>
+                </div>
+              </div>
+            </form>
+
+            <div class="card"><div class="card-pad">
+              <h3 style="margin:0;">Note</h3>
+              <p style="margin:10px 0 0; color: var(--muted);">Look naturale, perfetto per trasmettere cura e tranquillità.</p>
+              <p style="margin:10px 0 0; color: var(--muted);">Se vuoi: calendario disponibilità, pagamenti, automazioni email.</p>
+              <div class="hero-actions" style="margin-top:12px;">
+                <a class="btn secondary" href="business.html#examples">Per attività</a>
+                <a class="btn" href="#top" data-demo-action="Richiedi disponibilità">Richiedi disponibilità</a>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <p style="margin:0;">Demo UI. Funzioni reali su richiesta.</p>
+          <p style="margin:10px 0 0;"><a href="business.html#examples">Torna alla versione Per attività</a></p>
+        </div>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>

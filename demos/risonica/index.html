@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Risonica | Ristorante</title>
+    <meta name="description" content="Risonica: cucina contemporanea, carta vini, esperienze e prenotazioni." />
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+
+    <!-- fonts: serif headline + clean sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="side">
+        <a class="sideTop" href="#top" data-scroll>
+          <div class="mark" aria-hidden="true"></div>
+          <div class="brand">
+            <div class="brandName">Risonica</div>
+            <div class="brandSub">Ristorante sulle colline</div>
+          </div>
+        </a>
+
+        <a class="sideCta" href="#prenota" data-scroll>Prenota un tavolo</a>
+
+        <nav class="sideNav" aria-label="Navigazione">
+          <a class="navRow isActive" href="#menu" data-scroll>
+            <img
+              class="thumb"
+              src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=200&h=200&q=70"
+              alt=""
+              loading="lazy"
+            />
+            <div class="navTxt">
+              <div class="navNum">01</div>
+              <div class="navLabel">Menù</div>
+            </div>
+          </a>
+
+          <a class="navRow" href="#vini" data-scroll>
+            <img
+              class="thumb"
+              src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d?auto=format&fit=crop&w=200&h=200&q=70"
+              alt=""
+              loading="lazy"
+            />
+            <div class="navTxt">
+              <div class="navNum">02</div>
+              <div class="navLabel">Vini</div>
+            </div>
+          </a>
+
+          <a class="navRow" href="#esperienze" data-scroll>
+            <img
+              class="thumb"
+              src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=200&h=200&q=70"
+              alt=""
+              loading="lazy"
+            />
+            <div class="navTxt">
+              <div class="navNum">03</div>
+              <div class="navLabel">Esperienze</div>
+            </div>
+          </a>
+
+          <a class="navRow" href="#filosofia" data-scroll>
+            <img
+              class="thumb"
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=200&h=200&q=70"
+              alt=""
+              loading="lazy"
+            />
+            <div class="navTxt">
+              <div class="navNum">04</div>
+              <div class="navLabel">Filosofia</div>
+            </div>
+          </a>
+
+          <a class="navRow" href="#tuttoqui" data-scroll>
+            <img
+              class="thumb"
+              src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=200&h=200&q=70"
+              alt=""
+              loading="lazy"
+            />
+            <div class="navTxt">
+              <div class="navNum">05</div>
+              <div class="navLabel">È tutto qui</div>
+            </div>
+          </a>
+
+          <a class="navRow" href="#prenota" data-scroll>
+            <img
+              class="thumb"
+              src="https://images.unsplash.com/photo-1529694157872-4e0c0f1a9c02?auto=format&fit=crop&w=200&h=200&q=70"
+              alt=""
+              loading="lazy"
+            />
+            <div class="navTxt">
+              <div class="navNum">06</div>
+              <div class="navLabel">Prenota</div>
+            </div>
+          </a>
+        </nav>
+
+        <div class="sideInfo">
+          <div class="infoBlock">
+            <div class="infoK">Orari</div>
+            <div class="infoV">12:30-14:00 | 19:30-21:00</div>
+            <div class="infoV muted">Mar e Mer: chiuso</div>
+          </div>
+
+          <div class="infoBlock">
+            <div class="infoK">Dove</div>
+            <div class="infoV">Aosta</div>
+            <div class="infoV muted">Valle d'Aosta, Italy</div>
+            <div class="infoV">(+39) 000 000 0000</div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main" id="top">
+        <!-- HERO -->
+        <section class="hero" data-observe id="home">
+          <a class="topCta" href="#prenota" data-scroll>Prenota un tavolo</a>
+
+          <div class="heroMedia">
+            <img
+              src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=2200&q=80"
+              alt="Interno ristorante"
+              loading="eager"
+            />
+          </div>
+
+          <div class="heroTitleWrap">
+            <h1 class="heroTitle">Materia Presente</h1>
+          </div>
+
+          <div class="heroLinks">
+            <a class="heroLink" href="#menu" data-scroll>
+              <div class="heroLinkT">Menù</div>
+              <div class="heroLinkS">I percorsi</div>
+            </a>
+
+            <a class="heroLink" href="#filosofia" data-scroll>
+              <div class="heroLinkT">Baricentro</div>
+              <div class="heroLinkS">Filosofia</div>
+            </a>
+
+            <a class="heroLink" href="#esperienze" data-scroll>
+              <div class="heroLinkT">Regala un'esperienza</div>
+              <div class="heroLinkS">Degustazioni</div>
+            </a>
+          </div>
+
+          <a class="heroPill" href="#esperienze" data-scroll>Degustazioni</a>
+        </section>
+
+        <!-- QUOTE IMAGE -->
+        <section class="wideImage" aria-label="Sezione immagine e frase">
+          <img
+            src="https://images.unsplash.com/photo-1551241217-81b8430a1b05?auto=format&fit=crop&w=2200&q=80"
+            alt="Piatto e atmosfera"
+            loading="lazy"
+          />
+          <div class="wideCaption">
+            La nostra cucina nasce, come noi, tra roccia e bosco.
+          </div>
+        </section>
+
+        <!-- MENU -->
+        <section class="section" id="menu" data-observe>
+          <div class="sectionHead">
+            <div class="secNum">01</div>
+            <h2 class="secTitle">Menù</h2>
+          </div>
+
+          <div class="cards">
+            <a class="card" href="#prenota" data-scroll>
+              <div class="cardT">I percorsi</div>
+              <div class="cardS">Tre idee, una direzione</div>
+            </a>
+
+            <a class="card" href="#tuttoqui" data-scroll>
+              <div class="cardT">A pranzo volo</div>
+              <div class="cardS">A pranzo in settimana</div>
+            </a>
+          </div>
+        </section>
+
+        <!-- VINI -->
+        <section class="section" id="vini" data-observe>
+          <div class="sectionHead">
+            <div class="secNum">02</div>
+            <h2 class="secTitle">Vini</h2>
+          </div>
+
+          <div class="miniBlock">
+            <p class="miniP">
+              Carta essenziale, produttori piccoli, qualche grande classico. Anche pairing analcolico.
+            </p>
+            <a class="miniBtn" href="#prenota" data-scroll>Chiedi un pairing</a>
+          </div>
+        </section>
+
+        <!-- ESPERIENZE -->
+        <section class="section" id="esperienze" data-observe>
+          <div class="sectionHead">
+            <div class="secNum">03</div>
+            <h2 class="secTitle">Esperienze</h2>
+          </div>
+
+          <div class="coupon">
+            <div class="couponT">Linea Continua</div>
+            <div class="couponS">Percorso degustazione 8 portate</div>
+            <p class="couponP">
+              Un percorso che rappresenta la nostra idea di cucina: equilibrio su materia, gesti e visione.
+            </p>
+            <button class="miniBtn" type="button">Acquista</button>
+          </div>
+        </section>
+
+        <!-- FILOSOFIA -->
+        <section class="section" id="filosofia" data-observe>
+          <div class="sectionHead">
+            <div class="secNum">04</div>
+            <h2 class="secTitle">Filosofia</h2>
+          </div>
+
+          <div class="miniBlock">
+            <p class="miniP">
+              Connessione viva e profonda: intensità sensoriale, tecnica affilata, radici. Sostenibilità operativa, non estetica.
+            </p>
+            <a class="miniBtn" href="#prenota" data-scroll>Prenota</a>
+          </div>
+        </section>
+
+        <!-- TUTTO QUI -->
+        <section class="section" id="tuttoqui" data-observe>
+          <div class="sectionHead">
+            <div class="secNum">05</div>
+            <h2 class="secTitle">È tutto qui</h2>
+          </div>
+
+          <div class="three">
+            <div class="tile">
+              <div class="tileT">A pranzo volo</div>
+              <div class="tileS">A pranzo in settimana</div>
+            </div>
+
+            <div class="tile">
+              <div class="tileT">Sabato al mercato</div>
+              <div class="tileS">Diverso ogni sabato</div>
+            </div>
+
+            <div class="tile">
+              <div class="tileT">Dove siamo</div>
+              <div class="tileS">Sulle colline, ai piedi delle montagne</div>
+            </div>
+          </div>
+
+          <div class="newsletter">
+            <div class="newsletterT">Newsletter</div>
+            <div class="newsletterS">Iscriviti</div>
+            <form class="newsForm" onsubmit="return false;">
+              <input type="email" placeholder="email@esempio.it" />
+              <button class="miniBtn" type="submit">Iscriviti</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- PRENOTA -->
+        <section class="section" id="prenota" data-observe>
+          <div class="sectionHead">
+            <div class="secNum">06</div>
+            <h2 class="secTitle">Prenota</h2>
+          </div>
+
+          <div class="formWrap">
+            <p class="miniP">
+              Questa è una richiesta di prenotazione (demo). Ti ricontatteremo a breve per la conferma.
+            </p>
+
+            <form id="bookForm" class="bookForm" novalidate>
+              <div class="row">
+                <label>
+                  <span>Persone</span>
+                  <input type="number" min="1" max="10" value="2" required />
+                </label>
+                <label>
+                  <span>Data</span>
+                  <input type="date" required />
+                </label>
+              </div>
+
+              <div class="row">
+                <label>
+                  <span>Nome</span>
+                  <input type="text" placeholder="Nome" required />
+                </label>
+                <label>
+                  <span>Cognome</span>
+                  <input type="text" placeholder="Cognome" required />
+                </label>
+              </div>
+
+              <label>
+                <span>Email</span>
+                <input type="email" placeholder="email@esempio.it" required />
+              </label>
+
+              <label>
+                <span>Note</span>
+                <textarea rows="4" placeholder="Intolleranze, richieste particolari, occasione speciale"></textarea>
+              </label>
+
+              <div class="actions">
+                <button class="miniBtn" type="submit">Invia richiesta</button>
+                <div class="msg" id="msg" role="status" aria-live="polite"></div>
+              </div>
+            </form>
+          </div>
+
+          <footer class="foot">
+            <div class="footRow">
+              <div class="footK">Orari:</div>
+              <div class="footV">12:30-14:00, 19:30-21:00</div>
+            </div>
+            <div class="footRow">
+              <div class="footK">Contatti:</div>
+              <div class="footV">Tel (+39) 000 000 0000 - info@risonica.example</div>
+            </div>
+            <div class="footSmall">
+              © <span id="year"></span> Risonica
+            </div>
+          </footer>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

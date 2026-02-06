@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Playfair+Display:wght@600;700;800&display=swap');
+:root{
+  --bg: #0a0b0f;
+  --surface: rgba(255,255,255,.06);
+  --text: rgba(255,245,228,.95);
+  --muted: rgba(255,236,210,.70);
+  --border: rgba(255,236,210,.14);
+  --accent: #e0a456;
+}
+body{ background: radial-gradient(1200px 600px at 78% 12%, rgba(224,164,86,.18), transparent 55%),
+                 radial-gradient(900px 500px at 18% 88%, rgba(255,255,255,.05), transparent 60%),
+                 linear-gradient(180deg, #07080b 0%, #0a0b0f 45%, #0b0c10 100%);
+      color: var(--text);
+}
+.h1{ font-family: "Playfair Display", serif; }
+.section-head h2{ font-family: "Playfair Display", serif; }
+.card{ background: rgba(255,255,255,.05); }
+.menu-grid{ display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 900px){ .menu-grid{ grid-template-columns: 1fr; } }
+.menu-item{
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.04);
+}
+.menu-item h3{ margin:0; font-size: 1.05rem; letter-spacing: -0.02em; }
+.menu-item p{ margin: 8px 0 0; color: var(--muted); font-size: 0.95rem; }
+.price{ margin-top: 10px; font-weight: 900; color: rgba(255,245,228,.92); }
+.gallery{ display:grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 900px){ .gallery{ grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.gbox{
+  height: 120px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(300px 140px at 20% 20%, rgba(224,164,86,.35), transparent 55%),
+    radial-gradient(320px 160px at 80% 70%, rgba(255,255,255,.10), transparent 60%),
+    linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+}
+.badge-legend{
+  display:inline-flex;
+  gap: 10px;
+  align-items:center;
+  margin-top: 12px;
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 0.92rem;
+}
+.badge-dot{
+  width: 10px; height: 10px; border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 0 7px rgba(224,164,86,.16);
+}

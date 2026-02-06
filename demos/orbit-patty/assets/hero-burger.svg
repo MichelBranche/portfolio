@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="560" viewBox="0 0 820 560" fill="none" role="img" aria-label="Illustrazione burger nello spazio">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(410 280) rotate(90) scale(320 460)">
+      <stop stop-color="#1B2335"/>
+      <stop offset="1" stop-color="#080A10"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="160" y1="70" x2="660" y2="490" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="0.45" stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="820" height="560" rx="40" fill="url(#bg)"/>
+
+  <!-- stars -->
+  <g opacity=".9">
+    <circle cx="120" cy="120" r="2" fill="#FFFFFF"/>
+    <circle cx="200" cy="80" r="1.5" fill="#FFFFFF"/>
+    <circle cx="710" cy="140" r="1.7" fill="#FFFFFF"/>
+    <circle cx="650" cy="70" r="1.2" fill="#FFFFFF"/>
+    <circle cx="560" cy="180" r="1.4" fill="#FFFFFF"/>
+    <circle cx="140" cy="220" r="1.2" fill="#FFFFFF"/>
+    <circle cx="260" cy="190" r="1.1" fill="#FFFFFF"/>
+    <circle cx="740" cy="240" r="1.1" fill="#FFFFFF"/>
+    <circle cx="600" cy="260" r="1.0" fill="#FFFFFF"/>
+    <circle cx="110" cy="330" r="1.4" fill="#FFFFFF"/>
+    <circle cx="260" cy="380" r="1.2" fill="#FFFFFF"/>
+    <circle cx="720" cy="380" r="1.6" fill="#FFFFFF"/>
+    <circle cx="650" cy="440" r="1.3" fill="#FFFFFF"/>
+  </g>
+
+  <!-- planet ring -->
+  <g opacity=".85">
+    <ellipse cx="410" cy="285" rx="290" ry="155" fill="none" stroke="url(#ring)" stroke-width="10"/>
+    <ellipse cx="410" cy="285" rx="290" ry="155" fill="none" stroke="#FFFFFF" stroke-opacity=".12" stroke-width="22"/>
+  </g>
+
+  <!-- burger -->
+  <g>
+    <ellipse cx="410" cy="390" rx="170" ry="32" fill="#000000" opacity=".35" filter="url(#soft)"/>
+
+    <path d="M260 250c22-74 110-118 150-122 52-6 150 33 170 122 6 28-20 46-44 46H304c-24 0-50-18-44-46z" fill="#F6B35E" stroke="#0B0D12" stroke-width="6"/>
+
+    <g opacity=".9">
+      <ellipse cx="340" cy="200" rx="10" ry="4" fill="#FFE7B8"/>
+      <ellipse cx="380" cy="175" rx="10" ry="4" fill="#FFE7B8"/>
+      <ellipse cx="430" cy="185" rx="10" ry="4" fill="#FFE7B8"/>
+      <ellipse cx="470" cy="170" rx="10" ry="4" fill="#FFE7B8"/>
+      <ellipse cx="520" cy="205" rx="10" ry="4" fill="#FFE7B8"/>
+      <ellipse cx="560" cy="220" rx="10" ry="4" fill="#FFE7B8"/>
+      <ellipse cx="305" cy="225" rx="10" ry="4" fill="#FFE7B8"/>
+    </g>
+
+    <path d="M292 272c35 18 80 10 108 0 32-12 68 10 98 0 28-10 77 20 110 0 16-10 28 4 28 18 0 18-18 36-44 36H308c-26 0-44-18-44-36 0-14 14-28 28-18z" fill="#F43F5E" opacity=".9" stroke="#0B0D12" stroke-width="6"/>
+
+    <path d="M282 316c28 8 42-18 62-8 18 9 28-10 48-2 22 8 34-12 52-4 24 11 40-14 58-4 22 12 34-10 56-2 26 9 46-10 68 6 12 8 12 30-10 36H290c-22 0-28-14-8-22z" fill="#22C55E" stroke="#0B0D12" stroke-width="6"/>
+
+    <path d="M300 334h240v34c-36 24-70 20-116 8-46-12-84-10-124-4V334z" fill="#FBBF24" stroke="#0B0D12" stroke-width="6"/>
+
+    <rect x="282" y="342" width="256" height="54" rx="24" fill="#7C2D12" stroke="#0B0D12" stroke-width="6"/>
+    <path d="M304 366c26 10 66 16 106 16 48 0 90-8 118-18" stroke="#0B0D12" stroke-opacity=".35" stroke-width="6" stroke-linecap="round"/>
+
+    <path d="M304 396h232c24 0 46 18 40 40-10 36-54 56-156 56S274 472 264 436c-6-22 16-40 40-40z" fill="#E89B3D" stroke="#0B0D12" stroke-width="6"/>
+  </g>
+
+  <!-- satellite -->
+  <g transform="translate(620 360) rotate(-18)">
+    <rect x="0" y="0" width="86" height="44" rx="14" fill="#111827" stroke="#FFFFFF" stroke-opacity=".25" stroke-width="3"/>
+    <rect x="14" y="14" width="22" height="16" rx="5" fill="#22C55E" opacity=".8"/>
+    <rect x="44" y="14" width="28" height="16" rx="5" fill="#7C3AED" opacity=".8"/>
+    <path d="M-30 10h26M-30 34h26M86 10h26M86 34h26" stroke="#C7CBD6" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

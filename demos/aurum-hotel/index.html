@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aurum Canal House Amsterdam | Hotel sul canale</title>
+    <meta name="description" content="Aurum Canal House: hotel boutique sul canale, nel cuore di Amsterdam. Camere con vista, rooftop, spa e dining." />
+
+    <!-- Favicon (inline SVG) -->
+    <link rel="icon" type="image/svg+xml"
+      href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%230B0F14"/><path d="M14 40c10-10 26-10 36 0" fill="none" stroke="%23E9D8A6" stroke-width="4" stroke-linecap="round"/><path d="M20 26h24" stroke="%23E9D8A6" stroke-width="4" stroke-linecap="round"/><circle cx="32" cy="20" r="4" fill="%23E9D8A6"/></svg>' />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Salta al contenuto</a>
+
+    <!-- Top bar -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <span class="pill">Amsterdam Centrum</span>
+          <span class="dot">•</span>
+          <span class="muted">Check-in 15:00, Check-out 11:00</span>
+        </div>
+        <div class="topbar__right">
+          <a class="topbar__link" href="#location" aria-label="Vai alla sezione location">Mappa</a>
+          <span class="dot">•</span>
+          <a class="topbar__link" href="#offers" aria-label="Vai alla sezione offerte">Offerte</a>
+          <span class="dot">•</span>
+          <button class="topbar__btn" id="openNewsletter" type="button">Newsletter</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a class="brand" href="#" aria-label="Aurum Canal House - Home">
+          <span class="brand__mark" aria-hidden="true">
+            <!-- Inline logo -->
+            <svg width="34" height="34" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="56" height="56" rx="14" fill="currentColor"/>
+              <path d="M14 40c10-10 26-10 36 0" stroke="#0B0F14" stroke-width="4" stroke-linecap="round"/>
+              <path d="M20 26h24" stroke="#0B0F14" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="32" cy="20" r="4" fill="#0B0F14"/>
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">Aurum Canal House</span>
+            <span class="brand__sub">Amsterdam</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navigazione principale">
+          <a href="#stay">Soggiorno</a>
+          <a href="#dine">Dining</a>
+          <a href="#experiences">Esperienze</a>
+          <a href="#offers">Offerte</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#location">Location</a>
+          <a href="#contact">Contatti</a>
+        </nav>
+
+        <div class="header__actions">
+          <button class="iconbtn" id="menuBtn" type="button" aria-label="Apri menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <button class="btn btn--ghost" id="openBooking" type="button">Verifica disponibilità</button>
+          <button class="btn" id="scrollToBooking" type="button">Prenota</button>
+        </div>
+      </div>
+
+      <!-- Mobile drawer -->
+      <div class="drawer" id="drawer" aria-hidden="true">
+        <div class="drawer__panel">
+          <div class="drawer__head">
+            <strong>Menu</strong>
+            <button class="iconbtn" id="closeDrawer" type="button" aria-label="Chiudi menu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+          <div class="drawer__links">
+            <a href="#stay">Soggiorno</a>
+            <a href="#dine">Dining</a>
+            <a href="#experiences">Esperienze</a>
+            <a href="#offers">Offerte</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#location">Location</a>
+            <a href="#contact">Contatti</a>
+          </div>
+          <div class="drawer__cta">
+            <button class="btn btn--wide" id="drawerBook" type="button">Prenota ora</button>
+            <p class="muted small">Demo front-end, senza backend.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" aria-label="Sezione principale">
+        <div class="hero__bg" role="img" aria-label="Case sul canale di notte ad Amsterdam"></div>
+        <div class="hero__overlay"></div>
+
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow">Hotel boutique sul canale</p>
+            <h1>Una pausa luminosa nel cuore di Amsterdam</h1>
+            <p class="lead">
+              Camere con vista, rooftop tra i tetti, spa essenziale e un dining che sa di serata lunga.
+              A due passi dalle piazze e dai musei, ma con la calma dell’acqua sotto.
+            </p>
+
+            <div class="hero__badges" aria-label="Punti di forza">
+              <div class="badge">
+                <span class="badge__k">4.8</span>
+                <span class="badge__t">Valutazione media</span>
+              </div>
+              <div class="badge">
+                <span class="badge__k">Canal View</span>
+                <span class="badge__t">Selezione camere</span>
+              </div>
+              <div class="badge">
+                <span class="badge__k">Rooftop</span>
+                <span class="badge__t">Cocktail e tramonto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Booking card -->
+          <form class="booking" id="bookingForm" aria-label="Modulo prenotazione">
+            <div class="booking__head">
+              <strong>Controlla disponibilità</strong>
+              <span class="muted small">Prezzi e camere</span>
+            </div>
+
+            <div class="booking__grid">
+              <label class="field">
+                <span>Check-in</span>
+                <input type="date" name="checkin" required />
+              </label>
+
+              <label class="field">
+                <span>Check-out</span>
+                <input type="date" name="checkout" required />
+              </label>
+
+              <label class="field">
+                <span>Ospiti</span>
+                <select name="guests" required>
+                  <option value="1">1 ospite</option>
+                  <option value="2" selected>2 ospiti</option>
+                  <option value="3">3 ospiti</option>
+                  <option value="4">4 ospiti</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>Codice promo</span>
+                <input type="text" name="promo" placeholder="FACOLTATIVO" />
+              </label>
+            </div>
+
+            <button class="btn btn--wide" type="submit">Cerca</button>
+
+            <p class="muted small booking__note">
+              Nessun addebito in questa demo. Il bottone mostra solo una conferma.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Intro split -->
+      <section class="section">
+        <div class="container split">
+          <div class="split__media" aria-hidden="true">
+            <img
+              src="https://images.unsplash.com/photo-1741290606668-c367b34d3d4a?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="split__content">
+            <h2>Dentro la città, fuori dal rumore</h2>
+            <p class="muted">
+              Tra facciate storiche, ponti e biciclette, Aurum è un rifugio compatto: materiali caldi,
+              luce morbida, e spazi pensati per rallentare.
+            </p>
+
+            <div class="features">
+              <div class="feature">
+                <strong>Posizione centrale</strong>
+                <span class="muted">Canali, musei, quartieri a piedi</span>
+              </div>
+              <div class="feature">
+                <strong>Design sobrio</strong>
+                <span class="muted">Dettagli moderni, anima locale</span>
+              </div>
+              <div class="feature">
+                <strong>Esperienze curate</strong>
+                <span class="muted">Passeggiate, barche, tasting</span>
+              </div>
+            </div>
+
+            <div class="ctaRow">
+              <a class="btn" href="#stay">Scopri le camere</a>
+              <a class="btn btn--ghost" href="#experiences">Vedi esperienze</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STAY (tabs + cards) -->
+      <section class="section section--alt" id="stay">
+        <div class="container">
+          <div class="sectionHead">
+            <div>
+              <p class="eyebrow">Soggiorno</p>
+              <h2>Camere e suite</h2>
+            </div>
+            <p class="muted">
+              Tre categorie, un solo obiettivo: farti dormire bene e svegliarti con voglia di esplorare.
+            </p>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Categorie camere">
+            <button class="tab is-active" type="button" role="tab" aria-selected="true" data-tab="rooms">Camere</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-tab="suites">Suite</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-tab="canal">Canal View</button>
+          </div>
+
+          <div class="cards" id="stayCards" aria-live="polite">
+            <!-- JS inject -->
+          </div>
+        </div>
+      </section>
+
+      <!-- DINE -->
+      <section class="section" id="dine">
+        <div class="container">
+          <div class="sectionHead">
+            <div>
+              <p class="eyebrow">Dining</p>
+              <h2>Un tavolo che vale la serata</h2>
+            </div>
+            <p class="muted">
+              Cucina contemporanea, cocktail puliti, e una sala che invita a restare.
+            </p>
+          </div>
+
+          <div class="grid2">
+            <article class="panel">
+              <img
+                src="https://images.unsplash.com/photo-1650618026273-339d8af73569?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+                alt="Sala ristorante elegante"
+                loading="lazy"
+              />
+              <div class="panel__body">
+                <h3>Brass & Candle</h3>
+                <p class="muted">Cena lenta, ingredienti locali, atmosfera da “ancora un bicchiere”.</p>
+                <a class="link" href="#contact">Prenota un tavolo</a>
+              </div>
+            </article>
+
+            <article class="panel">
+              <img
+                src="https://images.unsplash.com/photo-1747269843290-1e9c6447b938?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+                alt="Rooftop con area lounge"
+                loading="lazy"
+              />
+              <div class="panel__body">
+                <h3>Rooftop Aurum</h3>
+                <p class="muted">Tramonto, skyline, e playlist giusta. Se piove, ci pensa il lounge.</p>
+                <a class="link" href="#offers">Scopri i pacchetti</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCES (slider) -->
+      <section class="section section--alt" id="experiences">
+        <div class="container">
+          <div class="sectionHead">
+            <div>
+              <p class="eyebrow">Esperienze</p>
+              <h2>Amsterdam, ma fatta bene</h2>
+            </div>
+            <div class="sectionHead__actions">
+              <button class="iconbtn" id="prevExp" type="button" aria-label="Esperienza precedente">‹</button>
+              <button class="iconbtn" id="nextExp" type="button" aria-label="Esperienza successiva">›</button>
+            </div>
+          </div>
+
+          <div class="slider" aria-label="Slider esperienze">
+            <div class="slider__track" id="expTrack">
+              <article class="slide">
+                <img
+                  src="https://images.unsplash.com/photo-1759512909680-aeb5e7c23671?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+                  alt="Canale e ponte ad Amsterdam"
+                  loading="lazy"
+                />
+                <div class="slide__body">
+                  <h3>Canal Walk al crepuscolo</h3>
+                  <p class="muted">Percorso breve, punti fotografici, e una sosta dolce lungo l’acqua.</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <img
+                  src="https://images.unsplash.com/photo-1753810809056-4d5ddb6eeca2?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+                  alt="Biciclette vicino al canale"
+                  loading="lazy"
+                />
+                <div class="slide__body">
+                  <h3>Bike Route “classica”</h3>
+                  <p class="muted">Bici, ponti e quartieri. Ritmo facile, zero stress.</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <img
+                  src="https://images.unsplash.com/photo-1574494349420-ecf8ccbff974?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+                  alt="Calici di bollicine"
+                  loading="lazy"
+                />
+                <div class="slide__body">
+                  <h3>Brindisi in coppia</h3>
+                  <p class="muted">Un welcome toast al rooftop, perfetto per iniziare la notte.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="note">
+            <strong>Tip</strong>
+            <span class="muted">Queste esperienze sono esempi demo: puoi sostituire testi e immagini in 2 minuti.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- OFFERS -->
+      <section class="section" id="offers">
+        <div class="container">
+          <div class="sectionHead">
+            <div>
+              <p class="eyebrow">Offerte</p>
+              <h2>Pacchetti e vantaggi</h2>
+            </div>
+            <p class="muted">Piccole leve che migliorano molto la vacanza.</p>
+          </div>
+
+          <div class="cards cards--3">
+            <article class="card">
+              <div class="card__top">
+                <span class="tag">Best value</span>
+                <h3>Stay 3 Pay 2</h3>
+              </div>
+              <p class="muted">Terza notte inclusa su date selezionate. Ideale per esplorare senza correre.</p>
+              <button class="btn btn--ghost btn--wide jsToast" data-toast="Offerta salvata (demo).">Salva</button>
+            </article>
+
+            <article class="card">
+              <div class="card__top">
+                <span class="tag">Coppie</span>
+                <h3>Rooftop + Toast</h3>
+              </div>
+              <p class="muted">Calici al tramonto e late check-out (quando disponibile).</p>
+              <button class="btn btn--ghost btn--wide jsToast" data-toast="Richiesta inviata (demo).">Richiedi</button>
+            </article>
+
+            <article class="card">
+              <div class="card__top">
+                <span class="tag">Wellness</span>
+                <h3>Spa Reset</h3>
+              </div>
+              <p class="muted">Ingresso spa e trattamento breve per togliere il viaggio di dosso.</p>
+              <button class="btn btn--ghost btn--wide jsToast" data-toast="Ti avviso appena disponibile (demo).">Avvisami</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section section--alt" id="gallery">
+        <div class="container">
+          <div class="sectionHead">
+            <div>
+              <p class="eyebrow">Gallery</p>
+              <h2>Uno sguardo dentro</h2>
+            </div>
+            <p class="muted">Immagini free-to-use, sostituibili con le tue in locale.</p>
+          </div>
+
+          <div class="mosaic">
+            <img
+              src="https://images.unsplash.com/photo-1764377850080-bd8f9a46b49a?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+              alt="Canale di notte"
+              loading="lazy"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+              alt="Camera luminosa"
+              loading="lazy"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1742844552264-71e01c8dd7c0?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+              alt="Lobby con grandi finestre"
+              loading="lazy"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1745327883290-1e9c6447b938?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+              alt="Stanza spa"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCATION -->
+      <section class="section" id="location">
+        <div class="container">
+          <div class="sectionHead">
+            <div>
+              <p class="eyebrow">Location</p>
+              <h2>Arrivi e sei già nel punto giusto</h2>
+            </div>
+            <p class="muted">Mappa demo: sostituisci con l’indirizzo reale quando ti serve.</p>
+          </div>
+
+          <div class="location">
+            <div class="location__map">
+              <iframe
+                title="Mappa Amsterdam (OpenStreetMap)"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=4.884%2C52.366%2C4.904%2C52.376&layer=mapnik"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="location__info">
+              <h3>Come raggiungerci</h3>
+              <ul class="list">
+                <li><strong>Treno:</strong> 10-15 min a piedi dalla zona centrale</li>
+                <li><strong>Tram:</strong> fermate principali a pochi minuti</li>
+                <li><strong>Taxi:</strong> drop-off comodo vicino al canale</li>
+              </ul>
+
+              <div class="faq">
+                <button class="faq__q" type="button" aria-expanded="false">
+                  Orari e policy
+                  <span class="faq__icon">+</span>
+                </button>
+                <div class="faq__a">
+                  <p class="muted">Check-in 15:00. Check-out 11:00. Deposito bagagli disponibile.</p>
+                </div>
+
+                <button class="faq__q" type="button" aria-expanded="false">
+                  Animali
+                  <span class="faq__icon">+</span>
+                </button>
+                <div class="faq__a">
+                  <p class="muted">Demo: aggiungi la tua policy (pet friendly o no).</p>
+                </div>
+
+                <button class="faq__q" type="button" aria-expanded="false">
+                  Parcheggio
+                  <span class="faq__icon">+</span>
+                </button>
+                <div class="faq__a">
+                  <p class="muted">Demo: inserisci info reali, garage vicino o convenzioni.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER -->
+      <section class="section section--alt" id="contact">
+        <div class="container">
+          <div class="newsletter">
+            <div>
+              <p class="eyebrow">Contatti e newsletter</p>
+              <h2>Restiamo in contatto</h2>
+              <p class="muted">
+                Inserisci la mail per offerte e aggiornamenti. In demo, non salva nulla: mostra solo un toast.
+              </p>
+              <p class="muted small">
+                Crediti foto in fondo pagina (Unsplash).
+              </p>
+            </div>
+
+            <form class="newsletter__form" id="newsletterForm">
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="nome@dominio.com" required />
+              </label>
+              <button class="btn" type="submit">Iscrivimi</button>
+              <p class="muted small">Niente spam, solo roba utile (in teoria).</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Sticky mini booking -->
+    <div class="stickyBook" id="stickyBook" aria-hidden="true">
+      <div class="container stickyBook__inner">
+        <div class="stickyBook__left">
+          <strong>Aurum Canal House</strong>
+          <span class="muted small">Verifica date e prezzo</span>
+        </div>
+        <button class="btn" id="stickyGo" type="button">Prenota</button>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <div class="footer__brand">
+            <span class="brand__mark footer__mark" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="56" height="56" rx="14" fill="currentColor"/>
+                <path d="M14 40c10-10 26-10 36 0" stroke="#0B0F14" stroke-width="4" stroke-linecap="round"/>
+                <path d="M20 26h24" stroke="#0B0F14" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="32" cy="20" r="4" fill="#0B0F14"/>
+              </svg>
+            </span>
+            <div>
+              <strong>Aurum Canal House</strong>
+              <div class="muted small">Home page demo (frontend)</div>
+            </div>
+          </div>
+
+          <p class="muted small footer__credits">
+            Foto (Unsplash, free-to-use): Marco Grosso, Point3D Commercial Imaging, Jakub Klucký, Alex Vegas,
+            Zoshua Colah, Ilyuza Mingazova, Kristijan Arsov, Daniel J. Schwarz, tommao wang.
+          </p>
+        </div>
+
+        <div>
+          <strong>Sezioni</strong>
+          <ul>
+            <li><a href="#stay">Soggiorno</a></li>
+            <li><a href="#dine">Dining</a></li>
+            <li><a href="#experiences">Esperienze</a></li>
+            <li><a href="#offers">Offerte</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Info</strong>
+          <ul>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contatti</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Note</strong>
+          <p class="muted small">
+            Questa pagina è un clone “ispirato” come layout, con contenuti originali e immagini free-to-use.
+          </p>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <span class="muted small">© <span id="year"></span> Aurum Canal House. Demo UI.</span>
+        <span class="muted small">Made for practice.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

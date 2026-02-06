@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="B&B demo layout with availability, services and contacts."/>
+  <meta name="theme-color" content="#0d1016"/>
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32"/>
+  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16"/>
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
+  <link rel="manifest" href="site.webmanifest"/>
+
+  <link rel="canonical" href="https://michelbranche.github.io/portfolio/demo-beb-en.html"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="B&B demo | Michel Branche"/>
+  <meta property="og:description" content="B&B demo layout with availability, services and contacts."/>
+  <meta property="og:image" content="https://michelbranche.github.io/portfolio/assets/og/portfolio-og.png"/>
+  <meta property="og:url" content="https://michelbranche.github.io/portfolio/demo-beb-en.html"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="B&B demo | Michel Branche"/>
+  <meta name="twitter:description" content="B&B demo layout with availability, services and contacts."/>
+  <meta name="twitter:image" content="https://michelbranche.github.io/portfolio/assets/og/portfolio-og.png"/>
+
+  <title>B&B demo | Michel Branche</title>
+  <link rel="stylesheet" href="assets/demos/demo-ui.css">
+  <link rel="stylesheet" href="assets/demos/demo-beb.css">
+  <script defer src="assets/demos/demo-ui.js"></script>
+</head>
+<body class="demo-site" data-demo="beb">
+  <div class="demo-banner">
+    <strong>Demo UI</strong>
+    <span>Layout vetrina. Funzioni reali su richiesta.</span>
+    <a href="business-en.html#examples">Back</a>
+  </div>
+
+  <div class="demo-top">
+    <header class="demo-nav">
+      <div class="container demo-nav-inner">
+        <a class="brand" href="#top" aria-label="Go top"><span class="brand-badge" aria-hidden="true"></span>Casa Verde</a>
+
+        <nav class="nav-links" aria-label="Sections">
+          <a href="#rooms">Rooms</a>
+          <a href="#services">Services</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn secondary" href="demo-beb.html">IT</a>
+          <a class="btn" href="#contact" data-demo-action="Request availability">Request availability</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="kicker">B&B and vacation rental UI demo</div>
+            <h1 class="h1">Casa Verde Boutique B&B</h1>
+            <p class="lead">Warm, natural look for small places that want to feel premium. Rooms, services, reviews and contacts made simple.</p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#contact" data-demo-action="Request availability">Request availability</a>
+              <a class="btn secondary" href="#rooms">View rooms</a>
+              <a class="btn secondary" href="business-en.html#examples">Business version</a>
+            </div>
+          </div>
+
+          <aside class="card" aria-label="Quick info">
+            <div class="card-pad">
+              <h3 style="margin:0; letter-spacing:-0.02em;">Quick info</h3>
+              <p style="margin:10px 0 0; color: var(--muted);">
+                Check-in 15:00<br>
+                Check-out 11:00<br>
+                Breakfast included
+              </p>
+              <div class="hero-actions" style="margin-top:14px;">
+                <a class="btn secondary" href="#" data-demo-action="Open map">Open map</a>
+                <a class="btn secondary" href="#" data-demo-action="WhatsApp">WhatsApp</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="rooms">
+        <div class="container">
+          <div class="section-head">
+            <h2>Rooms</h2>
+            <p>Clean cards. In production: photos and real availability.</p>
+          </div>
+
+          <div class="room-grid">
+            <div class="room"><h3>Forest room</h3><p>Double bed, private bathroom, garden view.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn secondary" href="#" data-demo-action="Dettagli">Details</a><a class="btn" href="#contact" data-demo-action="Request availability">Request</a></div></div>
+<div class="room"><h3>Green suite</h3><p>Extra space, reading corner, tea set.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn secondary" href="#" data-demo-action="Dettagli">Details</a><a class="btn" href="#contact" data-demo-action="Request availability">Request</a></div></div>
+<div class="room"><h3>Dawn room</h3><p>Bright, perfect for 1-2 guests.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn secondary" href="#" data-demo-action="Dettagli">Details</a><a class="btn" href="#contact" data-demo-action="Request availability">Request</a></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-head">
+            <h2>Services</h2>
+            <p>Few clear points, mobile friendly.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="mini"><h3>Wi-Fi</h3><p>Fast connection.</p></div>
+            <div class="mini"><h3>Parking</h3><p>Parking on request.</p></div>
+            <div class="mini"><h3>Local tips</h3><p>Routes and suggestions.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reviews">
+        <div class="container">
+          <div class="section-head">
+            <h2>Reviews</h2>
+            <p>In production: Google Reviews widget or auto import.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="review"><div class="stars">★★★★★</div><p style="margin:10px 0 0; color: var(--muted);">Clean, cozy, great breakfast. We will be back.</p></div>
+<div class="review"><div class="stars">★★★★★</div><p style="margin:10px 0 0; color: var(--muted);">Great location and friendly host.</p></div>
+<div class="review"><div class="stars">★★★★★</div><p style="margin:10px 0 0; color: var(--muted);">Lovely room and relaxing vibe.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p>Demo form. Real sending on request.</p>
+          </div>
+
+          <div class="split">
+            <form class="card" data-demo-submit="Request availability">
+              <div class="card-pad">
+                <div class="field"><label>Name</label><input type="text" required></div>
+                <div class="field"><label>Email</label><input type="email" required></div>
+                <div class="field"><label>Message</label><textarea placeholder="I would like availability for..."></textarea></div>
+                <div class="hero-actions">
+                  <button class="btn" type="submit">Send</button>
+                  <a class="btn secondary" href="#" data-demo-action="WhatsApp">WhatsApp</a>
+                </div>
+              </div>
+            </form>
+
+            <div class="card"><div class="card-pad">
+              <h3 style="margin:0;">Notes</h3>
+              <p style="margin:10px 0 0; color: var(--muted);">Natural look to communicate care and calm.</p>
+              <p style="margin:10px 0 0; color: var(--muted);">Optional: availability calendar, payments, email automations.</p>
+              <div class="hero-actions" style="margin-top:12px;">
+                <a class="btn secondary" href="business-en.html#examples">Business version</a>
+                <a class="btn" href="#top" data-demo-action="Request availability">Request availability</a>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <p style="margin:0;">UI demo. Real features on request.</p>
+          <p style="margin:10px 0 0;"><a href="business-en.html#examples">Back to Business version</a></p>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

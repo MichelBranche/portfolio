@@ -2,6 +2,9 @@
   const run = () => {
     const reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+    try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch {}
+    if (!window.location.hash) { window.scrollTo(0, 0); }
+
     /* =========================
        REVEAL ON SCROLL
        - Safe by default: content is visible even if JS fails
@@ -401,6 +404,9 @@
         const rail = section.querySelector(".rail") || section.querySelector("[data-carousel]") || section.querySelector(".m-carousel");
         if (!rail) return;
 
+        // Reset horizontal position on page load (avoid opening mid-rail)
+        window.requestAnimationFrame(() => { rail.scrollLeft = 0; });
+
         const cards = Array.from(rail.querySelectorAll("article"));
         if (!cards.length) return;
 
@@ -466,6 +472,10 @@
                 }
               }
             }
+            // Update rail controls/scrubber after filtering
+            if (rail && rail.classList && rail.classList.contains("rail")) {
+              rail.dispatchEvent(new Event("rail:update"));
+            }
           }, DURATION);
         };
 
@@ -480,6 +490,104 @@
         });
       });
     }
+
+    /* =========================
+       PROJECT RAIL CONTROLS
+       - Adds left/right buttons and keyboard support
+       - Works only if the rail actually overflows
+    ========================= */
+    const railWraps = Array.from(document.querySelectorAll(".rail-wrap"));
+    if (railWraps.length) {
+      railWraps.forEach((wrap) => {
+        const rail = wrap.querySelector(".rail");
+        const prev = wrap.querySelector("[data-rail-prev]");
+        const next = wrap.querySelector("[data-rail-next]");
+        const controls = wrap.querySelector(".rail-controls");
+        const scrubWrap = wrap.querySelector("[data-rail-scrub]");
+        const scrubInput = scrubWrap ? scrubWrap.querySelector('input[type="range"]') : null;
+        if (!rail) return;
+
+        // Reset horizontal position on page load (avoid opening mid-rail)
+        window.requestAnimationFrame(() => { rail.scrollLeft = 0; });
+
+        const getStep = () => Math.max(240, Math.floor(rail.clientWidth * 0.85));
+        const scrollDir = (dir) => {
+          const left = dir * getStep();
+          rail.scrollBy({ left, behavior: reducedMotion ? "auto" : "smooth" });
+        };
+
+        if (prev) prev.addEventListener("click", () => scrollDir(-1));
+        if (next) next.addEventListener("click", () => scrollDir(1));
+
+        // Keyboard: focus the rail and use arrows
+        rail.addEventListener("keydown", (ev) => {
+          if (ev.key === "ArrowRight") {
+            ev.preventDefault();
+            scrollDir(1);
+          }
+          if (ev.key === "ArrowLeft") {
+            ev.preventDefault();
+            scrollDir(-1);
+          }
+          if (ev.key === "Home") {
+            ev.preventDefault();
+            rail.scrollTo({ left: 0, behavior: reducedMotion ? "auto" : "smooth" });
+          }
+          if (ev.key === "End") {
+            ev.preventDefault();
+            rail.scrollTo({ left: rail.scrollWidth, behavior: reducedMotion ? "auto" : "smooth" });
+          }
+        });
+
+        const updateRailUI = () => {
+          const max = Math.max(0, rail.scrollWidth - rail.clientWidth);
+          const hasOverflow = max > 4;
+
+          if (controls) controls.classList.toggle("is-hidden", !hasOverflow);
+
+          if (scrubWrap && scrubInput) {
+            scrubWrap.classList.toggle("is-hidden", !hasOverflow);
+            scrubInput.disabled = !hasOverflow;
+            scrubInput.max = String(Math.max(0, Math.floor(max)));
+            scrubInput.value = String(Math.min(Math.floor(max), Math.floor(rail.scrollLeft)));
+          }
+        };
+
+        const syncScrub = () => {
+          if (!scrubWrap || !scrubInput) return;
+          const max = Math.max(0, rail.scrollWidth - rail.clientWidth);
+          if (max <= 4) return;
+          scrubInput.value = String(Math.min(Math.floor(max), Math.floor(rail.scrollLeft)));
+        };
+
+        if (scrubInput) {
+          scrubInput.addEventListener("input", () => {
+            rail.scrollTo({ left: Number(scrubInput.value), behavior: "auto" });
+          });
+        }
+
+        let raf = 0;
+        rail.addEventListener(
+          "scroll",
+          () => {
+            if (!scrubInput) return;
+            if (raf) return;
+            raf = window.requestAnimationFrame(() => {
+              raf = 0;
+              syncScrub();
+            });
+          },
+          { passive: true }
+        );
+
+        rail.addEventListener("rail:update", updateRailUI);
+
+        updateRailUI();
+        window.addEventListener("resize", updateRailUI, { passive: true });
+      });
+    }
+
+
 /* =========================
        SPOTLIGHT (SUBTLE)
        - Desktop only: pointer fine + hover

@@ -1,258 +1,98 @@
 <!DOCTYPE html>
-
 <html data-theme="dark" lang="it">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Portfolio | Michel Branche</title>
-<link href="style.css" rel="stylesheet"/>
-<script defer="" src="theme.js"></script>
-<script defer="" src="device.js"></script><script defer="" src="interactions.js"></script>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="description" content="Portfolio di Michel Branche. Scegli la versione recruiter o attività: progetti front-end, case study e demo."/>
+  <meta name="theme-color" content="#0d1016"/>
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32"/>
+  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16"/>
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
+  <link rel="manifest" href="site.webmanifest"/>
+
+  <link rel="canonical" href="https://michelbranche.github.io/portfolio/"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Portfolio | Michel Branche"/>
+  <meta property="og:description" content="Portfolio di Michel Branche. Scegli la versione recruiter o attività: progetti front-end, case study e demo."/>
+  <meta property="og:image" content="https://michelbranche.github.io/portfolio/assets/og/portfolio-og.png"/>
+  <meta property="og:url" content="https://michelbranche.github.io/portfolio/"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Portfolio | Michel Branche"/>
+  <meta name="twitter:description" content="Portfolio di Michel Branche. Scegli la versione recruiter o attività: progetti front-end, case study e demo."/>
+  <meta name="twitter:image" content="https://michelbranche.github.io/portfolio/assets/og/portfolio-og.png"/>
+
+  <title>Portfolio | Michel Branche</title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer src="theme.js"></script>
+  <script defer src="router.js"></script>
+  <script defer src="interactions.js"></script>
 </head>
-<body>
-<!-- HEADER -->
-<header class="header">
-<div class="container nav">
-<a aria-label="Torna all'inizio" class="logo" href="#top">Michel</a>
-<div class="nav-right">
-<nav aria-label="Navigazione" class="menu">
-<a href="#projects">Progetti</a>
-<a href="#certifications">Certificazioni</a>
-<a href="examples.html">Esempi attività</a>
-<a href="#skills">Competenze</a>
-<a href="#about">Chi sono</a>
-<a href="#contact">Contatti</a>
-</nav>
-<a aria-label="Apri versione mobile" class="view-toggle" data-view-toggle="mobile" href="mobile.html">Mobile</a>
-<a aria-label="Vai alla versione inglese" class="lang" href="index-en.html">EN</a>
-<button class="theme-toggle" data-theme-toggle="" type="button">Tema</button>
-</div>
-</div>
-</header>
-<!-- HERO -->
-<main class="hero" id="top">
-<div class="container hero-grid">
-<section class="hero-content" data-reveal="">
-<span class="pill">Open to internship · 2026</span>
-<h1>Frontend Developer</h1>
-<p class="lead">
-          Creo interfacce web moderne, pulite e responsive.<br/>
-          Attualmente focalizzato su HTML, CSS e basi di JavaScript.
-        </p>
-<div class="hero-actions">
-<a class="btn btn-primary" href="#projects">Vedi progetti</a><a aria-label="Scarica CV" class="btn btn-ghost" href="assets/cv/Michel-Branche-CV-IT.pdf" rel="noopener noreferrer" target="_blank">Scarica CV</a>
-<a class="btn btn-ghost" href="#contact">Contatti</a>
-</div>
-<div aria-label="Tecnologie" class="tags">
-<span class="tag">HTML5</span>
-<span class="tag">CSS3</span>
-<span class="tag">Flexbox</span>
-<span class="tag">Grid</span>
-<span class="tag">Responsive UI</span>
-<span class="tag">Git &amp; GitHub</span>
-<span class="tag tag-wide">JavaScript (ES6, DOM)</span>
-</div>
-</section>
-<aside aria-label="Foto profilo" class="hero-side" data-reveal="">
-<div class="photo-wrap">
-<img alt="Foto di Michel" class="photo" src="assets/images/profile.jpg"/>
-</div>
-</aside>
-</div>
-</main>
-<!-- PROJECTS -->
-<section class="section section-alt" id="projects">
-<div class="container"><div class="projects-rail"><div class="rail-meta" data-reveal=""><h2>Progetti</h2><p>Selezione di progetti front-end (HTML/CSS/JS). Demo live + codice.</p><p class="rail-hint">Scorri orizzontalmente per vedere tutti i progetti. Su desktop: Shift + rotellina.</p><div aria-label="Filtri progetti" class="filters" role="tablist"><button aria-selected="true" class="chip is-active" data-filter="all" type="button">Tutti</button><button aria-selected="false" class="chip" data-filter="htmlcss" type="button">HTML/CSS</button><button aria-selected="false" class="chip" data-filter="jsdom" type="button">JS/DOM</button><button aria-selected="false" class="chip" data-filter="uiux" type="button">UI/UX</button></div><a class="btn btn-ghost" href="examples.html">Esempi per attività</a></div><div aria-label="Elenco progetti scorribile" class="rail" data-reveal=""><article class="rail-item card spotlight" data-project="1" data-tags="htmlcss uiux">
-<div class="card-image">
-<img alt="Preview Masonry Gallery" loading="lazy" src="assets/images/masonry-thumb.jpg"/>
-</div>
-<div class="card-content">
-<h3>Masonry Gallery</h3>
-<p>Layout tipo Pinterest con card riutilizzabili e micro-interazioni.</p>
-<span class="tech">HTML · CSS</span>
-<div class="card-links">
-<a href="https://michelbranche.github.io/masonry-gallery/" rel="noopener noreferrer" target="_blank">Live</a>
-<a href="https://github.com/MichelBranche/masonry-gallery" rel="noopener noreferrer" target="_blank">Code</a>
-<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
-</div>
-</article><article class="rail-item card spotlight" data-project="1" data-tags="htmlcss uiux">
-<div class="card-image">
-<img alt="Preview Landing Page" loading="lazy" src="assets/images/landing-thumb.jpg"/>
-</div>
-<div class="card-content">
-<h3>Landing Page</h3>
-<p>Landing completa con sezioni (features, pricing, FAQ) e responsive solido.</p>
-<span class="tech">HTML · CSS</span>
-<div class="card-links">
-<a href="https://michelbranche.github.io/landing-page/" rel="noopener noreferrer" target="_blank">Live</a>
-<a href="https://github.com/MichelBranche/landing-page" rel="noopener noreferrer" target="_blank">Code</a>
-<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
-</div>
-</article><article class="rail-item card spotlight" data-project="1" data-tags="jsdom uiux">
-<div class="card-image">
-<img alt="Preview UI Layout" loading="lazy" src="assets/images/ui-layout-thumb.jpg"/>
-</div>
-<div class="card-content">
-<h3>UI Layout</h3>
-<p>Dashboard UI mock con JS: filtro tabella, modal e feedback “toast”.</p>
-<span class="tech">HTML · CSS · JS (DOM)</span>
-<div class="card-links">
-<a href="https://michelbranche.github.io/ui-layout/" rel="noopener noreferrer" target="_blank">Live</a>
-<a href="https://github.com/MichelBranche/ui-layout" rel="noopener noreferrer" target="_blank">Code</a>
-<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
-</div>
-</article><article class="rail-item card spotlight" data-tags="jsdom uiux"><div class="card-image"><img alt="Preview Quiz EPICODE" loading="lazy" src="assets/images/quiz-epicode-thumb.jpg"/></div><div class="card-content"><h3>Quiz EPICODE</h3><p>Quiz interattivo (Build Week) con domande, feedback e risultato finale.</p><span class="tech">HTML · CSS · JS</span><div class="card-links"><a href="https://michelbranche.github.io/Quiz-EPICODE/" rel="noopener noreferrer" target="_blank">Live</a><a href="https://github.com/MichelBranche/Quiz-EPICODE" rel="noopener noreferrer" target="_blank">Code</a><button class="qv-btn" data-quickview="" type="button">Dettagli</button></div></div></article><article class="rail-item card spotlight" data-project="1" data-tags="jsdom uiux">
-<div class="card-image">
-<img alt="Preview Easy Calculator" loading="lazy" src="assets/images/easy-calculator-thumb.jpg"/>
-</div>
-<div class="card-content">
-<h3>Easy Calculator</h3>
-<p>Calcolatrice minimale con supporto tastiera e tema Light/Dark con persistenza.</p>
-<span class="tech">HTML · CSS · JS (DOM)</span>
-<div class="card-links">
-<a href="https://michelbranche.github.io/Easy-Calculator/" rel="noopener noreferrer" target="_blank">Live</a>
-<a href="https://github.com/MichelBranche/Easy-Calculator" rel="noopener noreferrer" target="_blank">Code</a>
-<button class="qv-btn" data-quickview="" type="button">Dettagli</button></div>
-</div>
-</article></div></div></div>
-</section>
-<!-- BUSINESS DEMOS (NUOVA SEZIONE) -->
-<!-- CERTIFICATIONS -->
-<section class="section" id="certifications">
-<div class="container">
-<div class="section-head" data-reveal="">
-<h2>Certificazioni</h2>
-<p>Attestati Epicode completati durante il percorso Web Developer.</p>
-</div>
-<div aria-label="Elenco certificazioni" class="cert-grid" data-reveal="">
-<article class="cert-card" data-reveal="">
-<a aria-label="Apri certificato Epicode M1 in PDF" class="cert-media" href="assets/certs/epicode-m1.pdf" rel="noopener noreferrer" target="_blank">
-<img alt="Certificato Epicode M1 - VSCode, HTML5, CSS" loading="lazy" src="assets/certs/epicode-m1.webp"/>
-</a>
-<div class="cert-body">
-<h3>Epicode - Module M1</h3>
-<p class="cert-meta">VSCode · HTML5 · CSS | Rilasciato il 19/12/2025</p>
-<div class="cert-actions">
-<a href="assets/certs/epicode-m1.pdf" rel="noopener noreferrer" target="_blank">Apri PDF</a>
-</div>
-</div>
-</article>
-<article class="cert-card" data-reveal="">
-<a aria-label="Apri certificato Epicode M2 in PDF" class="cert-media" href="assets/certs/epicode-m2.pdf" rel="noopener noreferrer" target="_blank">
-<img alt="Certificato Epicode M2 - Git, DOM, JavaScript" loading="lazy" src="assets/certs/epicode-m2.webp"/>
-</a>
-<div class="cert-body">
-<h3>Epicode - Module M2</h3>
-<p class="cert-meta">Git · DOM · JavaScript | Rilasciato il 31/01/2026</p>
-<div class="cert-actions">
-<a href="assets/certs/epicode-m2.pdf" rel="noopener noreferrer" target="_blank">Apri PDF</a>
-</div>
-</div>
-</article>
-</div>
-</div>
-</section>
-<!-- SKILLS -->
-<section class="section section-alt" id="skills">
-<div class="container">
-<div class="section-head" data-reveal="">
-<h2>Competenze</h2>
-<p>Focus su UI pulita, responsive design e struttura ordinata.</p>
-</div>
-<div class="skills-grid" data-reveal="">
-<div class="skill">
-<h3>Layout</h3>
-<p>Flexbox, Grid, spacing, gerarchie visive e componenti.</p>
-</div>
-<div class="skill">
-<h3>UI / Styling</h3>
-<p>Tipografia, contrasto, cards moderne, micro-interazioni.</p>
-</div>
-<div class="skill">
-<h3>JavaScript</h3>
-<p>DOM, eventi, logica, interazioni base (in progress).</p>
-</div>
-</div>
-</div>
-</section>
-<!-- ABOUT -->
-<section class="section" id="about">
-<div class="container about-grid" data-reveal="">
-<div class="about-left">
-<h2>Chi sono</h2>
-<p class="about-sub">Breve presentazione e obiettivo.</p>
-<p class="about-text">
-          Ho 24 anni e sono uno studente frontend developer. Sto approfondendo HTML, CSS e JavaScript,
-          con attenzione particolare alla struttura, al responsive design e alla qualità del layout.
-        </p>
-<ul class="about-list">
-<li>Attenzione ai dettagli e pulizia del codice</li>
-<li>Focus su UI moderna e leggibile</li>
-<li>Obiettivo: crescita su JavaScript e React</li>
-</ul>
-</div>
-<div aria-label="Dati rapidi" class="about-right">
-<div class="facts">
-<div class="fact"><span class="fact-k">Età</span><span class="fact-v">24</span></div>
-<div class="fact"><span class="fact-k">Focus</span><span class="fact-v">HTML/CSS · UI</span></div>
-<div class="fact"><span class="fact-k">Ora</span><span class="fact-v">JavaScript (base)</span></div>
-<div class="fact"><span class="fact-k">Prossimo step</span><span class="fact-v">React</span></div>
-</div>
-</div>
-</div>
-</section>
-<!-- CONTACT -->
-<section class="section section-alt" id="contact">
-<div class="container">
-<div class="contact-box" data-reveal="">
-<div>
-<h2>Contatti</h2>
-<p class="contact-sub">Se ti va, scrivimi: rispondo volentieri.</p>
-</div>
-<div class="contact-actions">
-<a class="btn btn-primary" href="mailto:michel.lavoro@gmail.com">Email</a><button class="btn btn-ghost" data-copy-email="michel.lavoro@gmail.com" type="button">Copia email</button>
-<a class="btn btn-ghost" href="https://github.com/MichelBranche">GitHub</a>
-</div>
-</div>
-</div>
-</section>
-<!-- FOOTER -->
-<footer class="footer">
-<div class="container footer-content">
-<p>© 2026 Michel Branche</p>
-<div class="footer-links">
-<a href="mailto:michel.lavoro@gmail.com">Email</a>
-<a href="https://github.com/MichelBranche">GitHub</a>
-</div>
-</div>
-</footer>
-<dialog aria-label="Dettagli progetto" class="p-dialog" id="projectDialog">
-<form class="p-dialog-inner" method="dialog">
-<button aria-label="Chiudi" class="p-dialog-close" type="submit" value="close">×</button>
-<div class="p-dialog-body">
-<div class="p-dialog-media"><img alt="" data-pd-img=""/></div>
-<div class="p-dialog-content">
-<h3 data-pd-title=""></h3>
-<p class="pd-sub" data-pd-sub=""></p><div class="pd-case"><div class="pd-case-row"><span class="pd-case-k">Problema</span><span class="pd-case-v" data-pd-problem=""></span></div><div class="pd-case-row"><span class="pd-case-k">Soluzione</span><span class="pd-case-v" data-pd-solution=""></span></div><div class="pd-case-row"><span class="pd-case-k">Risultato</span><span class="pd-case-v" data-pd-outcome=""></span></div></div>
-<div class="pd-grid">
-<div class="pd-block">
-<h4>Cosa fa</h4>
-<ul class="pd-list" data-pd-features=""></ul>
-</div>
-<div class="pd-block">
-<h4>Cosa ho imparato</h4>
-<ul class="pd-list" data-pd-learn=""></ul>
-</div>
-</div>
-<p class="pd-tech" data-pd-tech=""></p>
-<p class="pd-note" data-pd-note="" hidden=""></p>
-<div class="pd-actions">
-<a class="btn btn-primary" data-pd-live="" href="#" rel="noopener noreferrer" target="_blank">Live</a>
-<a class="btn btn-ghost" data-pd-code="" href="#" rel="noopener noreferrer" target="_blank">Code</a>
-</div>
-</div>
-</div>
-</form>
-</dialog>
-<div aria-live="polite" class="toast" id="toast" role="status"></div></body>
+<body class="chooser-page">
+  <header class="header">
+    <div class="container nav">
+      <a aria-label="Home" class="logo" href="#top">Michel</a>
+      <div class="nav-right">
+        <a class="nav-switch" href="recruiter.html">Per recruiter</a>
+        <a class="nav-switch" href="business.html">Per attività</a>
+        <a aria-label="Vai alla versione inglese" class="lang" href="index-en.html">EN</a>
+        <button class="theme-toggle" data-theme-toggle type="button">Tema</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="chooser-main" id="top">
+    <div class="container chooser-hero" data-reveal>
+      <span class="pill">Portfolio</span>
+      <h1>Michel Branche</h1>
+      <p class="lead">Scegli la versione più adatta a te.</p>
+    </div>
+
+    <section class="container chooser-grid" aria-label="Seleziona una versione">
+      <article class="chooser-card" data-reveal>
+        <div class="chooser-badge">Per recruiter</div>
+        <h2>Portfolio tecnico</h2>
+        <p>Progetti, certificazioni, case study, codice e demo live. Pensato per selezioni e colloqui.</p>
+        <div class="chooser-actions">
+          <a class="btn btn-primary" href="recruiter.html">Apri versione recruiter</a>
+          <a class="btn btn-ghost" href="recruiter.html#projects">Vai ai progetti</a>
+        </div>
+      </article>
+
+      <article class="chooser-card" data-reveal>
+        <div class="chooser-badge chooser-badge-accent">Per attività</div>
+        <h2>Siti per piccole attività</h2>
+        <p>Una pagina semplice, chiara e accattivante per chi cerca un sito web bello e pronto a portare contatti.</p>
+        <div class="chooser-actions">
+          <a class="btn btn-primary" href="business.html">Apri versione attività</a>
+          <a class="btn btn-ghost" href="business.html#examples">Vedi esempi</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="container chooser-foot" data-reveal>
+      <p class="chooser-note">Vuoi solo vedere il codice? Vai direttamente su GitHub.</p>
+      <div class="chooser-actions">
+        <a class="btn btn-ghost" href="https://github.com/MichelBranche" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a class="btn btn-ghost" href="mailto:michel.lavoro@gmail.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Michel Branche</p>
+      <div class="footer-links">
+        <a href="mailto:michel.lavoro@gmail.com">Email</a>
+        <a href="https://github.com/MichelBranche" rel="noopener noreferrer" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <div aria-live="polite" class="toast" id="toast" role="status"></div>
+</body>
 </html>

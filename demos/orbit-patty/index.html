@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#FAF8EE" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>Orbit Patty Aosta | Fast Food a gravità zero</title>
+  <meta name="description" content="Orbit Patty Aosta: fast food a tema spazio con burger, fries e combo. Ordina in locale o in delivery." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Orbit Patty Aosta | Fast Food a gravità zero" />
+  <meta property="og:description" content="Burger oltre l'atmosfera: burger, fries, combo e delivery ad Aosta." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Orbit Patty Aosta",
+  "servesCuisine": [
+    "Hamburger",
+    "Fast Food"
+  ],
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Sant'Anselmo 16",
+    "addressLocality": "Aosta",
+    "postalCode": "11100",
+    "addressRegion": "AO",
+    "addressCountry": "IT"
+  },
+  "telephone": "+39 0165 000000",
+  "email": "ciao@orbitpatty.it",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "11:30",
+      "closes": "23:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "11:30",
+      "closes": "00:00"
+    }
+  ],
+  "image": [
+    "assets/og-image.png",
+    "assets/ufo-burger.png"
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Vai al contenuto</a>
+
+  <header class="header" id="top">
+    <div class="header-shell shell">
+      <div class="header-content">
+        <a class="brand" href="#top" aria-label="Torna all'inizio">
+          <img src="assets/logo.svg" alt="Orbit Patty" />
+        </a>
+
+        <nav class="nav" aria-label="Navigazione principale">
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#promo" class="nav-link">Promo</a>
+          <a href="#location" class="nav-link">Dove siamo</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="btn btn-purple" type="button" data-open-delivery>
+            <span class="btn-inner">
+              <span class="btn-text" data-primary="Ordina" data-secondary="Ordina">Ordina</span>
+              <span class="btn-icon" aria-hidden="true">↗</span>
+            </span>
+          </button>
+          <button class="icon-btn" type="button" id="themeToggle" aria-label="Cambia tema">
+            <span aria-hidden="true">☼</span>
+          </button>
+          <button class="icon-btn" type="button" id="menuToggle" aria-label="Apri menu" aria-expanded="false">
+            <span aria-hidden="true">☰</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-panel" id="mobilePanel" hidden>
+        <a href="#menu" class="mobile-link">Menu</a>
+        <a href="#promo" class="mobile-link">Promo</a>
+        <a href="#location" class="mobile-link">Dove siamo</a>
+        <a href="#faq" class="mobile-link">FAQ</a>
+        <button class="btn btn-orange" type="button" data-open-delivery>
+          <span class="btn-inner">
+            <span class="btn-text" data-primary="Ordina" data-secondary="Ordina">Ordina</span>
+            <span class="btn-icon" aria-hidden="true">↗</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="kicker"><span class="dot"></span> FAST FOOD A GRAVITA ZERO</p>
+          <h1 class="hero-title">
+            ORBIT
+            <span class="accent">PATTY</span>
+          </h1>
+          <p class="hero-sub">
+            Panini a forma di astronave, patatine "meteorite" e salse che non chiedono permesso.
+            Siamo ad Aosta: vieni a mangiare in sala, passa per il take away o ordina in delivery.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-black" href="#menu">
+              <span class="btn-inner">
+                <span class="btn-text" data-primary="Vedi menu" data-secondary="Vedi menu">Vedi menu</span>
+                <span class="btn-icon" aria-hidden="true">↓</span>
+              </span>
+            </a>
+            <button class="btn btn-green" type="button" data-open-delivery>
+              <span class="btn-inner">
+                <span class="btn-text" data-primary="Delivery" data-secondary="Delivery">Delivery</span>
+                <span class="btn-icon" aria-hidden="true">🛵</span>
+              </span>
+            </button>
+            <a class="btn btn-outline" href="#location">
+              <span class="btn-inner">
+                <span class="btn-text" data-primary="Dove" data-secondary="Dove">Dove</span>
+                <span class="btn-icon" aria-hidden="true">📍</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat shell">
+              <p class="stat-num">5</p>
+              <p class="stat-label">Burger</p>
+            </div>
+            <div class="stat shell">
+              <p class="stat-num">3</p>
+              <p class="stat-label">Sides</p>
+            </div>
+            <div class="stat shell">
+              <p class="stat-num">2</p>
+              <p class="stat-label">Dolci</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-shell shell">
+            <img src="assets/ufo-burger.png" alt="" />
+            <div class="art-badges">
+              <span class="badge badge-yellow">NEW</span>
+              <span class="badge badge-purple">UFO BUN</span>
+              <span class="badge badge-green">CRUNCH</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Menu orbitale</h2>
+          <p class="section-sub">Filtra per categoria, cerca ingredienti e apri la scheda prodotto. Veloce, chiaro e mobile-first.</p>
+        </div>
+
+        <div class="menu-controls shell">
+          <div class="chips" role="tablist" aria-label="Filtri menu">
+            <button class="chip is-active" type="button" data-filter="all">Tutto</button>
+            <button class="chip" type="button" data-filter="burger">Burger</button>
+            <button class="chip" type="button" data-filter="sides">Sides</button>
+            <button class="chip" type="button" data-filter="fries">Fries</button>
+            <button class="chip" type="button" data-filter="sweets">Sweets</button>
+            <button class="chip" type="button" data-filter="drinks">Bevande</button>
+          </div>
+
+          <label class="search">
+            <span class="search-label">Cerca</span>
+            <input id="searchInput" type="search" placeholder="Es. spicy, bacon, milkshake" autocomplete="off" />
+          </label>
+        </div>
+
+        <div class="grid" id="menuGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" id="promo">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Promo e combo</h2>
+          <p class="section-sub">Card grandi, tipografia grossa, bordi spessi: stile pop e immediato.</p>
+        </div>
+
+        <div class="promo-grid">
+          <article class="promo shell">
+            <p class="promo-kicker">COMBO</p>
+            <h3 class="promo-title">LUNA MENU</h3>
+            <p class="promo-text">Burger + fries + drink. Il classico che non sbaglia, solo più spaziale.</p>
+            <a class="btn btn-orange" href="#menu">
+              <span class="btn-inner">
+                <span class="btn-text" data-primary="Scegli" data-secondary="Scegli">Scegli</span>
+                <span class="btn-icon" aria-hidden="true">→</span>
+              </span>
+            </a>
+          </article>
+
+          <article class="promo shell">
+            <p class="promo-kicker">LIMITED</p>
+            <h3 class="promo-title">NEBULA SHAKE</h3>
+            <p class="promo-text">Milkshake cremoso con topping croccante. Perfetto per foto e pretesti.</p>
+            <button class="btn btn-purple" type="button" data-open-delivery>
+              <span class="btn-inner">
+                <span class="btn-text" data-primary="Ordina" data-secondary="Ordina">Ordina</span>
+                <span class="btn-icon" aria-hidden="true">↗</span>
+              </span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="location">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Dove atterriamo</h2>
+          <p class="section-sub">Siamo ad Aosta (AO). Tavoli veloci, take away e delivery ogni giorno.</p>
+        </div>
+
+        <div class="loc-grid">
+          <div class="loc-card shell">
+            <h3 class="loc-title">ORBIT PATTY AOSTA</h3>
+            <p class="loc-text">Via Sant'Anselmo 16, 11100 Aosta AO</p>
+            <p class="loc-text">Tel: <a class="link" href="tel:+390165000000">+39 0165 000000</a></p>
+            <p class="loc-text">Email: <a class="link" href="mailto:ciao@orbitpatty.it">ciao@orbitpatty.it</a></p>
+            <p class="loc-text">Orari: Lun - Gio 11:30 - 23:00</p>
+            <p class="loc-text">Ven - Dom 11:30 - 00:00</p>
+
+            <div class="loc-actions">
+              <a class="btn btn-black" href="https://www.google.com/maps/search/?api=1&query=Via+Sant%27Anselmo+16+Aosta" target="_blank" rel="noreferrer">
+                <span class="btn-inner">
+                  <span class="btn-text" data-primary="Apri Maps" data-secondary="Apri Maps">Apri Maps</span>
+                  <span class="btn-icon" aria-hidden="true">↗</span>
+                </span>
+              </a>
+              <button class="btn btn-green" type="button" data-open-delivery>
+                <span class="btn-inner">
+                  <span class="btn-text" data-primary="Delivery" data-secondary="Delivery">Delivery</span>
+                  <span class="btn-icon" aria-hidden="true">🛵</span>
+                </span>
+              </button>
+              <a class="btn btn-outline" href="tel:+390165000000">
+                <span class="btn-inner">
+                  <span class="btn-text" data-primary="Chiama" data-secondary="Chiama">Chiama</span>
+                  <span class="btn-icon" aria-hidden="true">☎</span>
+                </span>
+              </a>
+            </div>
+
+            <p class="small-note">Consiglio: nei weekend prenota il ritiro, qui la gravità si alza.</p>
+          </div>
+
+          <div class="map shell" aria-label="Mappa">
+            <iframe class="map-iframe" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Via%20Sant%27Anselmo%2016%20Aosta&output=embed" title="Mappa Orbit Patty Aosta"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">FAQ</h2>
+          <p class="section-sub">Accordion leggero, accessibile e comodo su mobile.</p>
+        </div>
+
+        <div class="faq shell" id="faqList">
+      <details class="faq-item" open>
+        <summary>Avete opzioni vegetariane?</summary>
+        <p>Sì: trovi opzioni veg nel menu (es. Astro Veg) e diverse sides. In caso di intolleranze chiedi sempre in cassa.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Allergeni e intolleranze</summary>
+        <p>Possiamo indicare gli allergeni principali per ogni prodotto. La cucina è unica: possibili tracce per contaminazione crociata.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Delivery e ritiro</summary>
+        <p>Puoi ordinare in delivery dai servizi disponibili o chiamarci per il ritiro. Nelle ore di punta consigliamo il preordine.</p>
+      </details>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <p class="footer-brand">ORBIT PATTY</p>
+        <p class="footer-note">Fast food a gravità zero ad Aosta. Burger, fries, shakes e combo.</p>
+      </div>
+      <div class="footer-right">
+        <a class="footer-link" href="#top">Torna su</a>
+        <a class="footer-link" href="#menu">Menu</a>
+        <a class="footer-link" href="#location">Dove siamo</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <dialog class="modal shell" id="itemModal" aria-label="Dettagli prodotto">
+    <form method="dialog" class="modal-inner">
+      <button class="modal-close icon-btn" value="cancel" aria-label="Chiudi">✕</button>
+      <div class="modal-body">
+        <div class="modal-top">
+          <p class="modal-kicker" id="modalCategory">Burger</p>
+          <h3 class="modal-title" id="modalTitle">Titolo</h3>
+          <p class="modal-desc" id="modalDesc">Descrizione</p>
+        </div>
+        <div class="modal-meta">
+          <div class="price" id="modalPrice">€ 0,00</div>
+          <div class="tags" id="modalTags"></div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-green" type="button" data-open-delivery>
+            <span class="btn-inner">
+              <span class="btn-text" data-primary="Ordina" data-secondary="Ordina">Ordina</span>
+              <span class="btn-icon" aria-hidden="true">🛵</span>
+            </span>
+          </button>
+          <button class="btn btn-outline" value="cancel">
+            <span class="btn-inner">
+              <span class="btn-text" data-primary="Chiudi" data-secondary="Chiudi">Chiudi</span>
+              <span class="btn-icon" aria-hidden="true">↩</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="modal shell" id="deliveryModal" aria-label="Seleziona delivery">
+    <form method="dialog" class="modal-inner">
+      <button class="modal-close icon-btn" value="cancel" aria-label="Chiudi">✕</button>
+      <div class="modal-body">
+        <div class="modal-top">
+          <p class="modal-kicker">DELIVERY</p>
+          <h3 class="modal-title">Scegli la navicella</h3>
+          <p class="modal-desc">Scegli il servizio, completa l'ordine e torna qui quando vuoi. I link si aprono in una nuova scheda.</p>
+        </div>
+        <div class="delivery-grid">
+          <a class="btn btn-yellow" href="https://www.google.com/search?q=Glovo+Aosta+Orbit+Patty" target="_blank" rel="noreferrer">
+            <span class="btn-inner">
+              <span class="btn-text" data-primary="Glovo" data-secondary="Glovo">Glovo</span>
+              <span class="btn-icon" aria-hidden="true">↗</span>
+            </span>
+          </a>
+          <a class="btn btn-teal" href="https://www.google.com/search?q=Deliveroo+Aosta+Orbit+Patty" target="_blank" rel="noreferrer">
+            <span class="btn-inner">
+              <span class="btn-text" data-primary="Deliveroo" data-secondary="Deliveroo">Deliveroo</span>
+              <span class="btn-icon" aria-hidden="true">↗</span>
+            </span>
+          </a>
+          <a class="btn btn-orange" href="https://www.google.com/search?q=Just+Eat+Aosta+Orbit+Patty" target="_blank" rel="noreferrer">
+            <span class="btn-inner">
+              <span class="btn-text" data-primary="Just Eat" data-secondary="Just Eat">Just Eat</span>
+              <span class="btn-icon" aria-hidden="true">↗</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>

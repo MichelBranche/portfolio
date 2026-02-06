@@ -1,143 +1,182 @@
-<!DOCTYPE html>
-<html lang="it" data-theme="dark">
+<!doctype html>
+<html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demo  -  Caffè / Bar</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="theme.js" defer></script>
-<script defer src="device.js"></script>
-<script src="demo.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo caffè: layout vetrina con orari, mappa e WhatsApp."/>
+  <meta name="theme-color" content="#0d1016"/>
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32"/>
+  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16"/>
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
+  <link rel="manifest" href="site.webmanifest"/>
+
+  <link rel="canonical" href="https://michelbranche.github.io/portfolio/demo-caffe.html"/>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Demo caffè | Michel Branche"/>
+  <meta property="og:description" content="Demo caffè: layout vetrina con orari, mappa e WhatsApp."/>
+  <meta property="og:image" content="https://michelbranche.github.io/portfolio/assets/og/portfolio-og.png"/>
+  <meta property="og:url" content="https://michelbranche.github.io/portfolio/demo-caffe.html"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Demo caffè | Michel Branche"/>
+  <meta name="twitter:description" content="Demo caffè: layout vetrina con orari, mappa e WhatsApp."/>
+  <meta name="twitter:image" content="https://michelbranche.github.io/portfolio/assets/og/portfolio-og.png"/>
+
+  <title>Demo caffè | Michel Branche</title>
+  <link rel="stylesheet" href="assets/demos/demo-ui.css">
+  <link rel="stylesheet" href="assets/demos/demo-caffe.css">
+  <script defer src="assets/demos/demo-ui.js"></script>
 </head>
-
-<body data-page="caffe">
-
-  <header class="page-header">
-    <div class="container">
-      <div class="page-topbar">
-        <a class="back-link" href="examples.html">← Torna agli esempi attività</a>
-        <a class="view-toggle" data-view-toggle="mobile" href="mobile.html" aria-label="Apri versione mobile">Mobile</a>
-        <button class="theme-toggle" type="button" data-theme-toggle>Tema</button>
-      </div>
-      <h1 class="page-title">Demo  -  Caffè / Bar</h1>
-      <p class="page-sub">
-        Feature specifica: <strong>menu filtrabile</strong> + <strong>mini ordine</strong> con carrello (demo).
-      </p>
-
-      <div class="demo-hero">
-        <img src="assets/images/caffe.jpg" alt="Caffè demo hero">
-        <div class="demo-body">
-
-          <div class="cta-row">
-            <button class="btn btn-primary" data-open-modal="modal-caffe">
-              Apri carrello · <span id="caffe-cart-count">0</span>
-            </button>
-            <button class="btn btn-ghost" id="caffe-clear">Svuota</button>
-          </div>
-
-          <div class="panel">
-            <h3>Filtri menu</h3>
-            <div class="tabs" aria-label="Filtri menu">
-              <button class="tab is-active" data-cat="all">Tutto</button>
-              <button class="tab" data-cat="caffe">Caffè</button>
-              <button class="tab" data-cat="dolci">Dolci</button>
-              <button class="tab" data-cat="aperitivi">Aperitivi</button>
-            </div>
-
-            <div class="menu-list" aria-label="Lista prodotti">
-              <div class="menu-line" data-cat="caffe" data-name="Espresso" data-price="1.20">
-                <div><strong>Espresso</strong> <span>· €1,20</span></div>
-                <button class="btn btn-ghost" data-add>Aggiungi</button>
-              </div>
-
-              <div class="menu-line" data-cat="caffe" data-name="Cappuccino" data-price="1.60">
-                <div><strong>Cappuccino</strong> <span>· €1,60</span></div>
-                <button class="btn btn-ghost" data-add>Aggiungi</button>
-              </div>
-
-              <div class="menu-line" data-cat="dolci" data-name="Cornetto" data-price="1.50">
-                <div><strong>Cornetto</strong> <span>· €1,50</span></div>
-                <button class="btn btn-ghost" data-add>Aggiungi</button>
-              </div>
-
-              <div class="menu-line" data-cat="dolci" data-name="Torta del giorno" data-price="3.50">
-                <div><strong>Torta del giorno</strong> <span>· €3,50</span></div>
-                <button class="btn btn-ghost" data-add>Aggiungi</button>
-              </div>
-
-              <div class="menu-line" data-cat="aperitivi" data-name="Spritz" data-price="6.00">
-                <div><strong>Spritz</strong> <span>· €6,00</span></div>
-                <button class="btn btn-ghost" data-add>Aggiungi</button>
-              </div>
-
-              <div class="menu-line" data-cat="aperitivi" data-name="Tagliere" data-price="10.00">
-                <div><strong>Tagliere</strong> <span>· €10,00</span></div>
-                <button class="btn btn-ghost" data-add>Aggiungi</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="demo-panels">
-            <div class="panel">
-              <h3>Funzioni implementabili</h3>
-              <ul>
-                <li>Menu digitale aggiornabile</li>
-                <li>Promo / eventi (CTA)</li>
-                <li>Ordine take-away (pagamento esterno)</li>
-                <li>QR al tavolo</li>
-              </ul>
-            </div>
-
-            <div class="panel">
-              <h3>Perché è utile</h3>
-              <p>Mostra una feature “da business”: conversione (ordine) + UX rapida.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- MODAL CAFFÈ -->
-  <div id="modal-caffe" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Carrello ordine">
-    <div class="modal">
-      <div class="modal-head">
-        <h3>Carrello (demo)</h3>
-        <button class="modal-close" data-close-modal aria-label="Chiudi">✕</button>
-      </div>
-
-      <div class="modal-body">
-        <div class="panel">
-          <h3>Riepilogo</h3>
-          <ul id="caffe-cart-list"></ul>
-          <div class="demo-row">
-            <span class="badge">Totale: <span id="caffe-cart-total">€ 0,00</span></span>
-          </div>
-        </div>
-
-        <div class="form-grid">
-          <div class="field">
-            <label for="caffe-name">Nome</label>
-            <input id="caffe-name" type="text" placeholder="es. Michel" />
-          </div>
-          <div class="field">
-            <label for="caffe-time">Orario ritiro</label>
-            <input id="caffe-time" type="time" />
-          </div>
-        </div>
-
-        <div class="notice">
-          In un progetto reale: invio ordine su WhatsApp / email / API + pagamento esterno.
-        </div>
-      </div>
-
-      <div class="modal-foot">
-        <button class="btn btn-ghost" data-close-modal>Chiudi</button>
-        <button class="btn btn-primary" data-close-modal>Conferma (demo)</button>
-      </div>
-    </div>
+<body class="demo-site" data-demo="caffe">
+  <div class="demo-banner">
+    <strong>Demo UI</strong>
+    <span>Layout vetrina. Funzioni reali su richiesta.</span>
+    <a href="business.html#examples">Torna indietro</a>
   </div>
 
+  <div class="demo-top">
+    <header class="demo-nav">
+      <div class="container demo-nav-inner">
+        <a class="brand" href="#top" aria-label="Go top"><span class="brand-badge" aria-hidden="true"></span>NOVA</a>
+
+        <nav class="nav-links" aria-label="Sections">
+          <a href="#menu">Menu</a>
+          <a href="#location">Dove siamo</a>
+          <a href="#contact">Contatti</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn secondary" href="demo-caffe-en.html">EN</a>
+          <a class="btn" href="#contact" data-demo-action="Ordina take-away">Ordina take-away</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="pill">Demo UI per bar e caffetterie</div>
+            <h1 class="h1">NOVA Coffee Lab</h1>
+            <p class="lead">Una demo moderna e veloce, perfetta per QR code, social e take-away. Menu sintetico, CTA forti e sezione orari chiarissima.</p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#" data-demo-action="Ordina take-away">Ordina take-away</a>
+              <a class="btn secondary" href="#menu">Vedi menu</a>
+              <a class="btn secondary" href="business.html#examples">Per attività</a>
+            </div>
+
+            <div class="feature-strip" aria-label="Highlights">
+              <div class="feature"><strong>Social-first</strong><span>Link rapidi Instagram, TikTok e mappe.</span></div>
+<div class="feature"><strong>Menu chiaro</strong><span>Pochi prodotti top, descrizioni corte.</span></div>
+<div class="feature"><strong>Fidelizzazione</strong><span>Card timbro o newsletter su richiesta.</span></div>
+            </div>
+          </div>
+
+          <aside class="card" aria-label="Quick actions">
+            <div class="card-pad">
+              <h3 style="margin:0; letter-spacing:-0.02em;">Orari</h3>
+              <p style="margin:10px 0 0; color: var(--muted);">Mon - Fri 07:00 - 19:00<br>Sat - Sun 08:00 - 18:00</p>
+              <div class="hero-actions" style="margin-top:14px;">
+                <a class="btn secondary" href="#" data-demo-action="Apri mappa">Apri mappa</a>
+                <a class="btn secondary" href="#" data-demo-action="Instagram">Instagram</a>
+              </div>
+              <hr class="sep" style="margin:14px 0;">
+              <p style="margin:0; color: var(--muted); font-size:0.95rem;">Suggerimento: QR sul bancone che punta a questo sito.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="menu">
+        <div class="container">
+          <div class="section-head">
+            <h2>Menu veloce</h2>
+            <p>Pochi elementi top. Il resto si può espandere su richiesta.</p>
+          </div>
+
+          <div class="menu-list">
+            <div class="menu-card"><h3 style="margin:0; letter-spacing:-0.02em;">Espresso <span style="opacity:.75; font-weight:800;">€1.20</span></h3><p>Classico, intenso.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn" href="#" data-demo-action="Ordina take-away">Ordina take-away</a><a class="btn secondary" href="#" data-demo-action="Preferiti">Preferiti</a></div></div>
+<div class="menu-card"><h3 style="margin:0; letter-spacing:-0.02em;">Flat White <span style="opacity:.75; font-weight:800;">€2.80</span></h3><p>Cremoso, bilanciato.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn" href="#" data-demo-action="Ordina take-away">Ordina take-away</a><a class="btn secondary" href="#" data-demo-action="Preferiti">Preferiti</a></div></div>
+<div class="menu-card"><h3 style="margin:0; letter-spacing:-0.02em;">Filtro del giorno <span style="opacity:.75; font-weight:800;">€3.00</span></h3><p>Origine singola, note fruttate.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn" href="#" data-demo-action="Ordina take-away">Ordina take-away</a><a class="btn secondary" href="#" data-demo-action="Preferiti">Preferiti</a></div></div>
+<div class="menu-card"><h3 style="margin:0; letter-spacing:-0.02em;">Croissant <span style="opacity:.75; font-weight:800;">€1.60</span></h3><p>Vuoto o farcito.</p><div class="hero-actions" style="margin-top:12px;"><a class="btn" href="#" data-demo-action="Ordina take-away">Ordina take-away</a><a class="btn secondary" href="#" data-demo-action="Preferiti">Preferiti</a></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="location">
+        <div class="container">
+          <div class="section-head">
+            <h2>Dove siamo</h2>
+            <p>Blocco semplice con indirizzo e CTA.</p>
+          </div>
+
+          <div class="split">
+            <div class="card"><div class="card-pad">
+              <h3 style="margin:0;">NOVA Coffee Lab</h3>
+              <p style="margin:10px 0 0; color: var(--muted);">Via Esempio 5, Aosta</p>
+              <div class="hero-actions" style="margin-top:12px;">
+                <a class="btn" href="#" data-demo-action="Indicazioni">Indicazioni</a>
+                <a class="btn secondary" href="#" data-demo-action="Chiama">Chiama</a>
+              </div>
+            </div></div>
+
+            <div class="card"><div class="card-pad">
+              <h3 style="margin:0;">Take-away</h3>
+              <p style="margin:10px 0 0; color: var(--muted);">Ordini rapidi, ritiro in 10-15 minuti. Pagamenti e gestione ordini su richiesta.</p>
+              <div class="hero-actions" style="margin-top:12px;">
+                <a class="btn" href="#" data-demo-action="Ordina take-away">Ordina take-away</a>
+                <a class="btn secondary" href="#" data-demo-action="Pagamenti">Pagamenti</a>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contatti</h2>
+            <p>Form demo. In produzione invio email o WhatsApp.</p>
+          </div>
+
+          <div class="split">
+            <form class="card" data-demo-submit="Request">
+              <div class="card-pad">
+                <div class="field"><label>Nome</label><input type="text" required></div>
+                <div class="field"><label>Email</label><input type="email" required></div>
+                <div class="field"><label>Messaggio</label><textarea placeholder="Vorrei info su..."></textarea></div>
+                <div class="hero-actions">
+                  <button class="btn" type="submit">Invia</button>
+                  <a class="btn secondary" href="#" data-demo-action="WhatsApp">WhatsApp</a>
+                </div>
+              </div>
+            </form>
+
+            <div class="card"><div class="card-pad">
+              <h3 style="margin:0;">Note</h3>
+              <p style="margin:10px 0 0; color: var(--muted);">Stile moderno e veloce. Ottimo per attività piccole.</p>
+              <p style="margin:10px 0 0; color: var(--muted);">Se vuoi: menu dinamico, eventi, promo, fidelizzazione.</p>
+              <div class="hero-actions" style="margin-top:12px;">
+                <a class="btn secondary" href="business.html#examples">Per attività</a>
+                <a class="btn" href="#" data-demo-action="Ordina take-away">Ordina take-away</a>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <p style="margin:0;">Demo UI. Funzioni reali su richiesta.</p>
+          <p style="margin:10px 0 0;"><a href="business.html#examples">Torna alla versione Per attività</a></p>
+        </div>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>

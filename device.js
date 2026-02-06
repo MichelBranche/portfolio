@@ -8,15 +8,15 @@
   const file = (path.split("/").pop() || "index.html");
 
   const toMobile = {
-    "index.html": "mobile.html",
-    "index-en.html": "mobile-en.html",
+    "recruiter.html": "mobile.html",
+    "recruiter-en.html": "mobile-en.html",
     "examples.html": "examples-mobile.html",
     "examples-en.html": "examples-en-mobile.html",
   };
 
   const toDesktop = {
-    "mobile.html": "index.html",
-    "mobile-en.html": "index-en.html",
+    "mobile.html": "recruiter.html",
+    "mobile-en.html": "recruiter-en.html",
     "examples-mobile.html": "examples.html",
     "examples-en-mobile.html": "examples-en.html",
   };

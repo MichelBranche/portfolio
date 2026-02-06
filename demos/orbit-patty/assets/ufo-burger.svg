@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700" fill="none">
+  <defs>
+    <linearGradient id="ring" x1="160" y1="200" x2="740" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#652382"/>
+      <stop offset="0.55" stop-color="#ED7215"/>
+      <stop offset="1" stop-color="#2BA905"/>
+    </linearGradient>
+    <linearGradient id="bun" x1="0" y1="260" x2="0" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5C800"/>
+      <stop offset="1" stop-color="#ED7215"/>
+    </linearGradient>
+    <filter id="soft" x="-50" y="-50" width="1000" height="800" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="700" fill="none"/>
+
+  <g opacity="0.9">
+    <circle cx="140" cy="130" r="2" fill="#000" opacity="0.25"/>
+    <circle cx="230" cy="90" r="3" fill="#000" opacity="0.18"/>
+    <circle cx="760" cy="160" r="2" fill="#000" opacity="0.22"/>
+    <circle cx="670" cy="90" r="3" fill="#000" opacity="0.15"/>
+    <circle cx="540" cy="120" r="2" fill="#000" opacity="0.18"/>
+    <circle cx="340" cy="160" r="2" fill="#000" opacity="0.2"/>
+    <circle cx="780" cy="260" r="2" fill="#000" opacity="0.18"/>
+    <circle cx="120" cy="260" r="2" fill="#000" opacity="0.18"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <ellipse cx="450" cy="520" rx="260" ry="36" fill="#652382" opacity="0.18"/>
+  </g>
+
+  <ellipse cx="450" cy="390" rx="250" ry="72" fill="#000" stroke="#fff" stroke-width="8"/>
+  <ellipse cx="450" cy="370" rx="190" ry="52" fill="url(#bun)" stroke="#000" stroke-width="8"/>
+  <path d="M280 392c38 22 302 22 340 0" stroke="#2BA905" stroke-width="10" stroke-linecap="round"/>
+  <path d="M300 412c64 16 236 16 300 0" stroke="#E5480D" stroke-width="10" stroke-linecap="round"/>
+
+  <ellipse cx="450" cy="300" rx="140" ry="46" fill="#FAF8EE" stroke="#000" stroke-width="8"/>
+  <ellipse cx="450" cy="286" rx="92" ry="28" fill="#FFFFFF" opacity="0.65"/>
+
+  <ellipse cx="450" cy="458" rx="320" ry="98" fill="url(#ring)" opacity="0.92" stroke="#000" stroke-width="8"/>
+  <ellipse cx="450" cy="456" rx="260" ry="70" fill="#FAF8EE" opacity="0.45"/>
+
+  <g>
+    <circle cx="310" cy="468" r="10" fill="#fff" opacity="0.92"/>
+    <circle cx="380" cy="484" r="10" fill="#fff" opacity="0.92"/>
+    <circle cx="450" cy="488" r="10" fill="#fff" opacity="0.92"/>
+    <circle cx="520" cy="484" r="10" fill="#fff" opacity="0.92"/>
+    <circle cx="590" cy="468" r="10" fill="#fff" opacity="0.92"/>
+  </g>
+
+  <text x="450" y="620" text-anchor="middle" font-family="Arial Black, Arial" font-size="34" fill="#000" opacity="0.9">UFO BURGER</text>
+</svg>

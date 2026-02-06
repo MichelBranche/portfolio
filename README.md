@@ -1,4 +1,4 @@
-# Portfolio  -  Michel Branche
+# Portfolio - Michel Branche
 
 Portfolio personale con una selezione di progetti front-end.  
 Focus su **UI moderna**, **responsive design** e componenti riutilizzabili.
@@ -48,11 +48,21 @@ Focus su **UI moderna**, **responsive design** e componenti riutilizzabili.
 ## 📂 Struttura
 ```txt
 portfolio/
-  index.html
+  index.html            # scelta versione (recruiter / attività)
+  recruiter.html        # versione per recruiter (IT)
+  recruiter-en.html     # versione per recruiter (EN)
+  business.html         # versione per attività (IT)
+  business-en.html      # versione per attività (EN)
+  mobile.html           # recruiter mobile (IT)
+  mobile-en.html        # recruiter mobile (EN)
+  examples.html         # demo attività (IT)
+  examples-en.html      # demo attività (EN)
   style.css
-  masonry-gallery.html
+  theme.js
+  device.js
+  interactions.js
+  router.js
   assets/
     images/
-      michel.jpg
-      masonry-thumb.jpg
-      portfolio-preview.jpg
+```
+
