@@ -24,6 +24,10 @@ Focus su **UI moderna**, **responsive design** e componenti riutilizzabili.
   - Live: https://michelbranche.github.io/ui-layout/
   - Code: https://github.com/MichelBranche/ui-layout
 
+- **Quiz EPICODE (Build Week)**
+  - Live: https://michelbranche.github.io/Quiz-EPICODE/
+  - Code: https://github.com/MichelBranche/Quiz-EPICODE
+
 - **Easy Calculator**
   - Live: https://michelbranche.github.io/Easy-Calculator/
   - Code: https://github.com/MichelBranche/Easy-Calculator

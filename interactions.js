@@ -221,6 +221,44 @@
             note: "Behavior-first: fewer features, but polished and clean."
           }
         },
+        "Quiz EPICODE": {
+          it: {
+            sub: "Quiz web (Build Week) con flusso completo: start, domande, feedback, risultato finale.",
+            features: [
+              "Navigazione tra domande e gestione risposte",
+              "Feedback visivo e riepilogo finale",
+              "UI responsive e stato gestito in JavaScript"
+            ],
+            learned: [
+              "Gestione stato e flusso di una mini app",
+              "Event handling e DOM update su piu schermate",
+              "Sviluppo iterativo: feature, fix e rifiniture UI"
+            ],
+            problem: "Volevo realizzare un quiz completo, con piu schermate e una UX chiara.",
+            solution: "Ho strutturato il flusso in step e gestito stato e UI via DOM, mantenendo stile coerente.",
+            outcome: "Quiz fluido e leggibile, con feedback chiari e risultato finale.",
+            stack: "HTML5 · CSS3 · JavaScript (DOM)",
+            note: "Build Week: focus su flusso, stati e chiarezza UI."
+          },
+          en: {
+            sub: "Build Week quiz app with a full flow: start, questions, feedback, final result.",
+            features: [
+              "Question navigation and answer handling",
+              "Visual feedback and final summary",
+              "Responsive UI and state handled in JavaScript"
+            ],
+            learned: [
+              "Managing state and flow in a mini app",
+              "Event handling and DOM updates across views",
+              "Iterative work: features, fixes, UI polish"
+            ],
+            problem: "I wanted to build a complete quiz with multiple screens and a clear UX.",
+            solution: "I organized the flow into steps and managed state and UI via the DOM with consistent styling.",
+            outcome: "A smooth, readable quiz with clear feedback and a final result screen.",
+            stack: "HTML5 · CSS3 · JavaScript (DOM)",
+            note: "Build Week focus: flow, states, and UI clarity."
+          }
+        },
         "Easy Calculator": {
           it: {
             sub: "Calcolatrice minimale con tastiera e tema persistente.",
